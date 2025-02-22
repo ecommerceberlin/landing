@@ -8,7 +8,10 @@ import { Initiatives } from '@/components/sections/initiatives';
 import { Brands } from '@/components/sections/brands';
 import { Stats } from '@/components/sections/stats';
 import { GradientBox } from '@/components/containers/gradientbox';
-import { Transparent } from '@/components/containers/transparent';
+import { TransparentHorizontal } from '@/components/containers/transparent-horizontal';
+import { TransparentVertical } from '@/components/containers/transparent-vertical';
+import { RoleButton } from '@/components/nav/rolebutton';
+
 import { About } from '@/components/sections/about';
 export default function Home() {
   return (
@@ -21,10 +24,16 @@ export default function Home() {
         <Hero />
         <Brands />
        
-        <Transparent>
+        <TransparentVertical>
           <Stats />
           <About />
-        </Transparent>
+        </TransparentVertical>
+
+
+        <TransparentHorizontal>
+          <RoleButton className="bg-ebe" />
+          <RoleButton className="bg-gray-100" />
+        </TransparentHorizontal>
 
         <GradientBox title="Title">costam</GradientBox>
 
