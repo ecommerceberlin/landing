@@ -8,8 +8,8 @@ import { Initiatives } from '@/components/sections/initiatives';
 import { Brands } from '@/components/sections/brands';
 import { Stats } from '@/components/sections/stats';
 import { GradientBox } from '@/components/containers/gradientbox';
-import { TransparentHorizontal } from '@/components/containers/transparent-horizontal';
-import { TransparentVertical } from '@/components/containers/transparent-vertical';
+import { BoxWithHorizontalItems } from '@/components/containers/box-horizontal';
+import { BoxWithVerticalItems } from '@/components/containers/box-vertical';
 import { RoleButton } from '@/components/nav/rolebutton';
 import { SectionTitle } from '@/components/text/section-title';
 import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
@@ -18,7 +18,7 @@ import { Speakers } from '@/components/sections/speakers';
 import { RequestACall } from '@/components/forms/request-a-call';
 import { FullPagePhoto } from '@/components/containers/fullpagephoto';
 import { Exhibitors } from '@/components/sections/exhibitors';
-
+import { MoreButton } from '@/components/nav/morebutton';
 
 export default function Home() {
   return (
@@ -35,29 +35,32 @@ export default function Home() {
     <main className="w-full max-w-[100dvw]">      
       <Brands />
 
-      <TransparentVertical>
+      <BoxWithVerticalItems>
         <Stats />
         <About />
-      </TransparentVertical>
+      </BoxWithVerticalItems>
 
-      <TransparentHorizontal>
+      <BoxWithHorizontalItems>
         <RoleButton className="bg-ebe" />
         <RoleButton className="bg-gray-100" />
-      </TransparentHorizontal>
+      </BoxWithHorizontalItems>
 
       <GradientBox title={<SectionTitle label="Title" />}>
+      <BoxWithVerticalItems>
         <Exhibitors />
+        <MoreButton label="View all exhibitors" href="/exhibitors" />
+      </BoxWithVerticalItems>
       </GradientBox>
 
-      <TransparentHorizontal className="bg-ebe">
+      <BoxWithHorizontalItems className="bg-ebe">
         <RoleButton className="" />
         <RequestACall className="" />
-      </TransparentHorizontal>
+      </BoxWithHorizontalItems>
 
-      <TransparentVertical className="items-start">
+      <BoxWithVerticalItems className="items-start">
         <SectionTitle label="MEET OUR SPEAKERS" />
         <Speakers />
-      </TransparentVertical>
+      </BoxWithVerticalItems>
 
       <GrayBox title={<SectionSecondaryTitle label="Title" />} description="Description">
         <Initiatives />

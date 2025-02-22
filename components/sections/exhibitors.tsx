@@ -15,7 +15,7 @@ export function Exhibitors() {
   const sliced = exhibitors.slice(0, 20)
 
   return (
-    <div className="py-10 px-[10%] grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+    <div className="px-[10%] w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">
       {sliced.map((exhibitor) => (
         <div key={exhibitor.id} className="flex flex-col items-center justify-center">
           <Image 
