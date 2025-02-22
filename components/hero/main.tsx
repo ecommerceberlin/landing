@@ -4,13 +4,13 @@ import { Gradient } from './gradient';
 
 export function Hero() {
   return (
-    <div className="relative w-full h-full bg-gradient-to-b from-white via-white to-[#FCE61D] px-5 pb-5">
+    <div className="relative w-full max-w-screen h-full bg-gradient-to-b from-white via-white to-[#FCE61D] px-5 pb-5">
       <div className="relative w-full h-full">
         <Image
           src="https://res.cloudinary.com/eventjuicer/image/upload/q_auto,f_auto,w_auto,c_scale/v1738234466/header.jpg"
           alt="Hero"
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+          sizes="100vw"
           priority
           quality={100}
           className="object-cover"
