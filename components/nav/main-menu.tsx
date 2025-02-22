@@ -108,15 +108,23 @@ export function MainMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="h-full">
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
               Documentation
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
-   
+        <NavigationMenuItem className="h-full">
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"h-[7rem]")}>
+              DE
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+
       </NavigationMenuList>
     </NavigationMenu>
   );

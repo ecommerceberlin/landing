@@ -11,8 +11,12 @@ import { GradientBox } from '@/components/containers/gradientbox';
 import { TransparentHorizontal } from '@/components/containers/transparent-horizontal';
 import { TransparentVertical } from '@/components/containers/transparent-vertical';
 import { RoleButton } from '@/components/nav/rolebutton';
-
+import { SectionTitle } from '@/components/text/section-title';
+import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
 import { About } from '@/components/sections/about';
+import { Speakers } from '@/components/sections/speakers';
+
+
 export default function Home() {
   return (
     <div>
@@ -25,7 +29,7 @@ export default function Home() {
       <Hero />
     </header>
       
-    <main className="w-full h-full">      
+    <main className="w-full">      
       <Brands />
      
       <TransparentVertical>
@@ -38,10 +42,18 @@ export default function Home() {
         <RoleButton className="bg-gray-100" />
       </TransparentHorizontal>
 
-      <GradientBox title="Title">costam</GradientBox>
+      <GradientBox title={  <SectionTitle label="Title" />}>costam</GradientBox>
+
+
+      <TransparentVertical className="items-start">
+        <SectionTitle label="MEET OUR SPEAKERS" />
+        
+        <Speakers />
+      </TransparentVertical>
+
 
       <Testimonials />
-      <GrayBox title="Title" description="Description">
+      <GrayBox title={<SectionSecondaryTitle label="Title" />} description="Description">
         <Initiatives />
       </GrayBox>
     </main>

@@ -1,8 +1,12 @@
+import { cn } from "@/lib/utils";
+interface TransparentVerticalProps {
+    className?: string;
+    children: React.ReactNode;
+}   
 
-
-export function TransparentVertical({ children }: { children: React.ReactNode }) {
+export function TransparentVertical({ children, className }: TransparentVerticalProps) {
     return (
-        <div className="my-20 w-full flex flex-col gap-16 items-center">
+        <div className={cn("my-20 w-full flex flex-col gap-16 items-center", className)}>
             {children}
         </div>
     )
