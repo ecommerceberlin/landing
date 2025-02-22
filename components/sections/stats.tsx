@@ -38,13 +38,13 @@ function StatItem({label, value}: StatItem){
 export function Stats({items = defaultStatItems}:{items: StatItem[]}){
 
     return (
-        <div className="w-full">
-        <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 ">
+        
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-10 ">
             {items.map((item, index) => (
                 <StatItem key={index} label={item.label} value={item.value} />
             ))}
         </div>
-        </div>
+       
     )
 
 }
