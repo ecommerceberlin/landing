@@ -46,7 +46,7 @@ export function Speakers() {
             return (
                 <figure
                   key={presenter.id}
-                  className="shrink-0 w-[250px] h-[500px] flex flex-col mr-4 last:mr-0 bg-white"
+                  className="shrink-0 w-[250px] h-[500px] flex flex-col mr-4 last:mr-0 bg-white group hover:cursor-pointer"
                 >
                   <div className="aspect-[1/2] relative">
                     <Image 
@@ -54,17 +54,17 @@ export function Speakers() {
                       alt={presenter.full_name} 
                       width={300} 
                       height={600} 
-                      className="object-cover w-full h-full object-center grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-cover w-full h-full object-center grayscale group-hover:grayscale-0 transition-all duration-300"
                       quality={100}
                     />
                     {/* <div className="absolute top-0 left-0">
                       <Linkedin className="w-10 h-10 text-white  mix-blend-screen" />
                     </div> */}
-                    <Gradient variation={index % 3} className="top-[250px] w-[100px] h-[150px]" />
+                    <Gradient variation={index % 3} className="top-[250px] w-[100px] h-[150px] opacity-100 group-hover:opacity-50 transition-all duration-300" />
 
 
                       {/* Logo area - 10% height */}
-                  <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-7 pr-10 from-black/80 via-transparent to-transparent bg-gradient-to-t">
+                  <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-7 pr-10 from-black/90 via-black/10 to-transparent bg-gradient-to-t">
                     <div className="text-white text-2xl font-light tracking-tighter">
                       {presenter.full_name}
                     </div>
