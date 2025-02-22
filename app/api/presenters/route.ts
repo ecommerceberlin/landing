@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { getParticipantsByRole } from "@/db/participant/get-participants-by-role"
 import { transformToPresenterDTO } from "@/db/participant/transformer"
 
-export const revalidate = 100
+export const revalidate = 600
 export const runtime = 'edge' // Enable edge runtime
 
 export async function GET(request: NextRequest) {
