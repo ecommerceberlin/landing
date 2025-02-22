@@ -19,24 +19,30 @@ export function Initiatives({
   initiatives: any[];
 }) {
   return (
-    <div>
+    <Accordion type="single" collapsible>
       {initiatives.map((initiative, index) => (
-        <div
-          key={initiative.title}
+        <AccordionItem 
+          key={initiative.title} 
+          value={initiative.title}
           className={cn(
-            'px-5 py-2  cursor-pointer  transition-colors active:scale-[0.98] select-none flex flex-row gap-4 justify-between items-center',
-            index % 2 === 0
-              ? 'bg-ebe hover:bg-gray-200'
-              : 'bg-white hover:bg-gray-200'
+            index % 2 === 0 ? 'bg-ebe' : 'bg-white'
           )}
-          role="button"
         >
-          <h4 className="text-[3rem] font-light uppercase">
-            {initiative.title}
-          </h4>
-          <div className="text-[5rem] font-thin">+</div>
-        </div>
+          <AccordionTrigger 
+            className="px-5 py-2 hover:bg-gray-200 transition-colors"
+          >
+            <div className="flex justify-between items-center w-full">
+              <h4 className="text-[3rem] font-light uppercase">
+                {initiative.title}
+              </h4>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-5 py-4">
+            {/* Add your content here */}
+            Content for {initiative.title}
+          </AccordionContent>
+        </AccordionItem>
       ))}
-    </div>
+    </Accordion>
   );
 }
