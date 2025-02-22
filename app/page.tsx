@@ -22,7 +22,7 @@ export default function Home() {
     <div className="min-h-screen w-full overflow-x-hidden max-w-[100dvw]">
     
     <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]">
-      <div className="w-full h-full">
+      <div className="w-full">
         <NowPlaying />
         <Header />
       </div>
