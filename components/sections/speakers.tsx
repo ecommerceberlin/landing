@@ -53,19 +53,30 @@ export function Speakers() {
                       src={presenter.avatar} 
                       alt={presenter.full_name} 
                       width={300} 
-                      height={500} 
+                      height={600} 
                       className="object-cover w-full h-full object-center grayscale hover:grayscale-0 transition-all duration-300"
+                      quality={100}
                     />
                     {/* <div className="absolute top-0 left-0">
                       <Linkedin className="w-10 h-10 text-white  mix-blend-screen" />
                     </div> */}
-                    <Gradient variation={index % 3} className="top-[275px] w-[150px] h-[200px]" />
+                    <Gradient variation={index % 3} className="top-[250px] w-[100px] h-[150px]" />
+
+
+                      {/* Logo area - 10% height */}
+                  <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-7 pr-10 from-black/80 via-transparent to-transparent bg-gradient-to-t">
+                    <div className="text-white text-xl font-light">
+                      {presenter.full_name}
+                    </div>
+                    <div className="text-white text-sm">
+                      {presenter.position}
+                    </div>
+                   </figcaption>
+
+
                   </div>
     
-                  {/* Logo area - 10% height */}
-                  <figcaption className="h-[10%] min-h-[40px] bg-white flex items-center justify-start pl-5 pb-5">
-                   
-                  </figcaption>
+                
                 </figure>
               )
           })}
