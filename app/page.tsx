@@ -19,9 +19,9 @@ import { RequestACall } from '@/components/forms/request-a-call';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden max-w-screen">
+    <div className="min-h-screen w-full overflow-x-hidden max-w-[100dvw]">
     
-    <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen">
+    <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]">
       <div className="w-full h-full">
         <NowPlaying />
         <Header />
@@ -29,7 +29,7 @@ export default function Home() {
       <Hero />
     </header>
       
-    <main className="w-full min-w-full">      
+    <main className="w-full max-w-[100dvw]">      
       <Brands />
      
       <TransparentVertical>
