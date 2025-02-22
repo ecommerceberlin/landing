@@ -7,7 +7,8 @@ import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import useSWR from 'swr';
 import { PresenterDTO } from '@/db/participant/transformer';
 import { fetcher } from '@/lib/fetcher';
- 
+import {Linkedin} from 'lucide-react';
+import {Gradient} from '@/components/hero/gradient';
 
 const gradientClassName =
   'from-[#FCE61D] via-[rgba(252,230,29,0.4)] to-[rgba(255,255,255,0.1)]';
@@ -36,27 +37,38 @@ export function Speakers() {
           
           )}
         >
-          {presenters.map((presenter, index) => (
-            <figure
-              key={presenter.id}
-              className="shrink-0 w-[300px] h-[500px] flex flex-col mr-4 last:mr-0 bg-white"
-            >
-              <div className="aspect-[3/4] relative">
-                <Image 
-                  src={presenter.avatar} 
-                  alt={presenter.full_name} 
-                  width={300} 
-                  height={500} 
-                  className="object-cover w-full h-full object-center grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
+          {presenters.map((presenter, index) => {
 
-              {/* Logo area - 10% height */}
-              <figcaption className="h-[10%] min-h-[40px] bg-white flex items-center justify-start pl-5 pb-5">
-               
-              </figcaption>
-            </figure>
-          ))}
+            if(!presenter.avatar || !presenter.avatar.includes("https://")) {
+              return null;
+            }
+
+            return (
+                <figure
+                  key={presenter.id}
+                  className="shrink-0 w-[250px] h-[500px] flex flex-col mr-4 last:mr-0 bg-white"
+                >
+                  <div className="aspect-[1/2] relative">
+                    <Image 
+                      src={presenter.avatar} 
+                      alt={presenter.full_name} 
+                      width={300} 
+                      height={500} 
+                      className="object-cover w-full h-full object-center grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                    {/* <div className="absolute top-0 left-0">
+                      <Linkedin className="w-10 h-10 text-white  mix-blend-screen" />
+                    </div> */}
+                    <Gradient variation={index % 3} className="top-[275px] w-[150px] h-[200px]" />
+                  </div>
+    
+                  {/* Logo area - 10% height */}
+                  <figcaption className="h-[10%] min-h-[40px] bg-white flex items-center justify-start pl-5 pb-5">
+                   
+                  </figcaption>
+                </figure>
+              )
+          })}
         </div>
       </div>
       <ScrollBar orientation="horizontal" />
