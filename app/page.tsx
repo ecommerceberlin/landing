@@ -19,7 +19,7 @@ import { RequestACall } from '@/components/forms/request-a-call';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden">
+    <div className="min-h-screen w-full overflow-x-hidden max-w-screen">
     
     <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen">
       <div className="w-full h-full">
