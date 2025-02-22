@@ -16,7 +16,6 @@
     "migrate": "env-cmd -f .env.local tsx scripts/migrate.ts"
   },
   "dependencies": {
- 
     "@hookform/resolvers": "^4.1.0",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -63,10 +62,10 @@
     "@types/lodash": "^4.17.15",
     "@types/negotiator": "^0.6.3",
     "@types/node": "^22",
+    "@types/node-polyglot": "^2.5.0",
     "@types/qrcode": "^1.5.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/node-polyglot": "^2.5.0",
     "autoprefixer": "^10.4.20",
     "env-cmd": "^10.1.0",
     "eslint": "^9",

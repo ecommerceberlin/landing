@@ -20,17 +20,17 @@ export function Hero() {
 
         <Gradient />
 
-        <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-[50%] font-thin  text-white pl-5 pb-5">
+        <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-[50%]  text-white pl-5 pb-5">
           <div className="flex flex-col justify-between h-full">
-            <div className="flex flex-col gap-4 pt-0">
-              <div>
+            <div>
+              
                 <h3 className="uppercase font-light text-[3rem] lg:text-[7rem] leading-[1]">
                   Find your next e-commerce client here
                 </h3>
                 <p className="font-thin text-[3rem] leading-[1]">
                   Unlock your potential with EventJuicer
                 </p>
-              </div>
+              
             </div>
 
             <div className="flex gap-4">
