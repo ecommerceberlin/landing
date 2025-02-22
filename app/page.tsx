@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import { NowPlaying } from '@/components/nav/now-playing';
 import { Header } from '@/components/nav/header';
 import { Hero } from '@/components/hero/main';
@@ -8,6 +8,8 @@ import { Initiatives } from '@/components/sections/initiatives';
 import { Brands } from '@/components/sections/brands';
 import { Stats } from '@/components/sections/stats';
 import { GradientBox } from '@/components/containers/gradientbox';
+import { Transparent } from '@/components/containers/transparent';
+import { About } from '@/components/sections/about';
 export default function Home() {
   return (
     <div className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen">
@@ -18,8 +20,14 @@ export default function Home() {
       <main className="w-full">
         <Hero />
         <Brands />
-        <Stats />
+       
+        <Transparent>
+          <Stats />
+          <About />
+        </Transparent>
+
         <GradientBox title="Title">costam</GradientBox>
+
         <Testimonials />
         <GrayBox title="Title" description="Description">
           <Initiatives />
