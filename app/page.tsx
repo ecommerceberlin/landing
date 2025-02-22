@@ -16,7 +16,7 @@ import { SectionSecondaryTitle } from '@/components/text/section-secondary-title
 import { About } from '@/components/sections/about';
 import { Speakers } from '@/components/sections/speakers';
 import { RequestACall } from '@/components/forms/request-a-call';
-
+import { FullPagePhoto } from '@/components/containers/fullpagephoto';
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -58,10 +58,17 @@ export default function Home() {
       </TransparentVertical>
 
 
-      <Testimonials />
+  
       <GrayBox title={<SectionSecondaryTitle label="Title" />} description="Description">
         <Initiatives />
       </GrayBox>
+
+
+      <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />
+
+
+      <Testimonials />
+      
     </main>
 
     <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
