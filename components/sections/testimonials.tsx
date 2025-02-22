@@ -111,7 +111,7 @@ export function Testimonials() {
           {testimonies.map((testimony, index) => (
             <figure
               key={index}
-              className="shrink-0 w-[300px] h-[400px] flex flex-col mr-4 last:mr-0 bg-white"
+              className="shrink-0 w-[400px] h-[300px] flex flex-col mr-4 last:mr-0 bg-white"
             >
               {/* Testimony area - 90% height */}
               <div

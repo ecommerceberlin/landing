@@ -39,7 +39,7 @@ export function Speakers() {
         >
           {presenters.map((presenter, index) => {
 
-            if(!presenter.avatar || !presenter.avatar.includes("https://")) {
+            if(!presenter.a || !presenter.a.includes("https://")) {
               return null;
             }
 
@@ -50,8 +50,8 @@ export function Speakers() {
                 >
                   <div className="aspect-[1/2] relative">
                     <Image 
-                      src={presenter.avatar} 
-                      alt={presenter.full_name} 
+                      src={presenter.a} 
+                      alt={presenter.n} 
                       width={300} 
                       height={600} 
                       className="object-cover w-full h-full object-center grayscale group-hover:grayscale-0 transition-all duration-300"
@@ -64,15 +64,15 @@ export function Speakers() {
 
 
                       {/* Logo area - 10% height */}
-                  <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-7 pr-10 from-black/90 via-black/10 to-transparent bg-gradient-to-t">
+                  <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-5 pr-10 from-black/90 via-black/10 to-transparent bg-gradient-to-t">
                     <div className="text-white text-2xl font-light tracking-tighter">
-                      {presenter.full_name}
+                      {presenter.n}
                     </div>
                     <div className="text-white text-sm">
-                      {presenter.position}
+                      {presenter.p}
                     </div>
                     <div className="text-white text-sm">
-                      {presenter.organization}
+                      {presenter.c}
                     </div>
                    </figcaption>
 

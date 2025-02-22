@@ -15,11 +15,11 @@ import { SectionTitle } from '@/components/text/section-title';
 import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
 import { About } from '@/components/sections/about';
 import { Speakers } from '@/components/sections/speakers';
-
+import { RequestACall } from '@/components/forms/request-a-call';
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen w-full overflow-x-hidden">
     
     <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen">
       <div className="w-full h-full">
@@ -29,7 +29,7 @@ export default function Home() {
       <Hero />
     </header>
       
-    <main className="w-full">      
+    <main className="w-full min-w-full">      
       <Brands />
      
       <TransparentVertical>
@@ -43,6 +43,12 @@ export default function Home() {
       </TransparentHorizontal>
 
       <GradientBox title={  <SectionTitle label="Title" />}>costam</GradientBox>
+
+    
+      <TransparentHorizontal className="bg-ebe">
+      <RoleButton className="" />
+      <RequestACall className="" />
+      </TransparentHorizontal>
 
 
       <TransparentVertical className="items-start">
