@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function MainMenu() {
   return (
-    <NavigationMenu className="z-100 h-full">
+    <NavigationMenu className="z-100 h-full hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase">
