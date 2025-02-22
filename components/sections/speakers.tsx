@@ -65,11 +65,14 @@ export function Speakers() {
 
                       {/* Logo area - 10% height */}
                   <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-end pl-3 pb-7 pr-10 from-black/80 via-transparent to-transparent bg-gradient-to-t">
-                    <div className="text-white text-xl font-light">
+                    <div className="text-white text-2xl font-light tracking-tighter">
                       {presenter.full_name}
                     </div>
                     <div className="text-white text-sm">
                       {presenter.position}
+                    </div>
+                    <div className="text-white text-sm">
+                      {presenter.organization}
                     </div>
                    </figcaption>
 
