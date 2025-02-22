@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import useSWR from 'swr';
-import { PresenterDTO } from '@/db/participant/transformer';
+import { PresenterDTO } from '@/db/participant/transform-to-presenter';
 import { fetcher } from '@/lib/fetcher';
 import {Linkedin} from 'lucide-react';
 import {Gradient} from '@/components/hero/gradient';

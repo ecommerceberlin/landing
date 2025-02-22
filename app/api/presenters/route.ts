@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { getParticipantsByRole } from "@/db/participant/get-participants-by-role"
-import { transformToPresenterDTO } from "@/db/participant/transformer"
+import { transformToPresenterDTO } from "@/db/participant/transform-to-presenter"
 
 export const revalidate = 600
 export const runtime = 'edge' // Enable edge runtime
