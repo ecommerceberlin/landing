@@ -1,29 +1,14 @@
 
+import { statItems } from "@/settings/stats"
 
-interface StatItem {
+export interface StatItem {
     label: string;
     value: string;
 }
 
-const defaultStatItems: StatItem[] = [
-    {
-        label: 'Stats',
-        value: '10K'
-    },
-    {
-        label: 'Stats',
-        value: '300+'
-    },
-    {
-        label: 'Stats',
-        value: '100'
-    },
-    {
-        label: 'Stats',
-        value: '100'
-    },
-]
-
+interface StatsProps {
+    items: StatItem[]
+}
 
 function StatItem({label, value}: StatItem){
     return (
@@ -35,7 +20,7 @@ function StatItem({label, value}: StatItem){
 }
 
 
-export function Stats({items = defaultStatItems}:{items: StatItem[]}){
+export function Stats({items = statItems}: StatsProps){
 
     return (
         
