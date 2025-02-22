@@ -1,6 +1,6 @@
 import { Kysely } from "kysely"
 import { NeonHTTPDialect } from "kysely-neon"
-import { DB } from '@/db/kysely-types'
+import { DB } from './kysely-types'
 
 if (!process.env.DATABASE_URL) {
   throw new Error('DATABASE_URL environment variable is not set')
