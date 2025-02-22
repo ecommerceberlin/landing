@@ -1,119 +1,50 @@
+"use client"
+
 import * as React from 'react';
-import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
 import { cn } from '@/lib/utils';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
+import useSWR from 'swr';
+import { fetcher } from '@/lib/fetcher';
+import { ExhibitorDTO } from '@/db/participant/transform-to-exhibitor';
 
-export interface Testimony {
-  text: string;
-  company: string;
-  logoUrl: string;
+interface BrandsProps {
+  companyIds: number[];
 }
 
-const gradientClassName =
-  'from-[#FCE61D] via-[rgba(252,230,29,0.4)] to-[rgba(255,255,255,0.1)]';
+export function Brands({companyIds=[]}: BrandsProps) {
+  const { data: exhibitors, isLoading, error } = useSWR<ExhibitorDTO[]>('/api/exhibitors', fetcher);
 
-export const testimonies: Testimony[] = [
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
 
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
+  const filteredExhibitors = exhibitors?.filter(exhibitor => companyIds.includes(exhibitor.id));
 
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
+  if (!exhibitors || isLoading || error) {
+    return <div>Loading...</div>;
+  }
 
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-
-  {
-    text: 'Amazing experience working with them...',
-    company: 'Company One',
-    logoUrl:
-      'https://res.cloudinary.com/eventjuicer/image/upload/v1738234430/Awards_zoi1n1.jpg',
-  },
-  // ... add more testimonies
-];
-
-export function Brands() {
   return (
     <ScrollArea className={cn('w-full max-w-[100vw] overflow-x-hidden bg-ebe')}>
       <div className="flex space-x-4 pb-4">
-        <div
-          className="flex pl-4 pr-4 min-w-fit">
-          {testimonies.map((testimony, index) => (
+       
+          {filteredExhibitors?.map((exhibitor, index) => (
             <figure
               key={index}
-              className="shrink-0 w-[300px] h-[100px] flex items-center justify-center mr-4 last:mr-0 "
+              className="shrink-0 w-[200px] h-[100px] flex items-center justify-center mr-8 last:mr-0 "
             >              
-                <Image
-                  src={testimony.logoUrl}
-                  alt={testimony.company}
-                  width={100}
-                  height={20}
-                  className="object-contain"
+                <CldImage
+                  src={exhibitor.a}
+                  alt={exhibitor.n}
+                  width={200}
+                  height={100}
+                  className="object-contain max-w-[200px] max-h-[80px] p-2"
+                  grayscale={true}
+                  removeBackground={true}
+                  format="png"
                 />
              
             </figure>
           ))}
-        </div>
+        
       </div>
       <ScrollBar orientation="horizontal" />
     </ScrollArea>

@@ -33,7 +33,7 @@ export default function Home() {
     </header>
       
     <main className="w-full max-w-[100dvw]">      
-      <Brands />
+      <Brands companyIds={[2218, 2484, 2236, 2138, 1577, 1649, 1024, 2681]} />
 
       <BoxWithVerticalItems>
         <Stats />
