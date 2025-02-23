@@ -22,7 +22,7 @@ export function About() {
                         
                     </p>
                 </ScrollArea>
-                <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-white to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 h-[12rem] w-full bg-gradient-to-t from-white to-transparent pointer-events-none" />
             </div>
         </div>
     )

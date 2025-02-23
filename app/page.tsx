@@ -44,8 +44,8 @@ export default function Home() {
       </BoxWithVerticalItems>
 
       <BoxWithHorizontalItems>
-        <RoleButton className="bg-ebe" label="visit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
-        <RoleButton className="bg-gray-100" label="exhibit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
+        <RoleButton className="bg-ebe" label="visit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
+        <RoleButton className="bg-gray-100" label="exhibit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
       </BoxWithHorizontalItems>
 
       <GradientBox title={<SectionTitle label="Title" />}>
