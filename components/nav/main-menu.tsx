@@ -15,6 +15,10 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
+export interface MainMenuProps {
+  className?: string;
+}
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Alert Dialog',
@@ -55,7 +59,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function MainMenu() {
   return (
-    <NavigationMenu className="hidden lg:block">
+    <NavigationMenu className="hidden lg:block z-101">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase">
@@ -66,7 +70,7 @@ export function MainMenu() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-none bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
@@ -74,8 +78,7 @@ export function MainMenu() {
                       shadcn/ui
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      lorem ipsum dolor sit amet
                     </p>
                   </a>
                 </NavigationMenuLink>
