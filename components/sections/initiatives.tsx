@@ -15,15 +15,23 @@ export interface Initiative {
 
 interface InitiativesProps {
   initiatives?: Initiative[];
+  title?: React.ReactNode;
+  description?: React.ReactNode;
 }
 
 export const AccordionState = ({children = "+"}: {children?: React.ReactNode}) => <span className="block m-0 p-0 font-thin text-[4rem] md:text-[8rem] leading-none">{children}</span>
 
 export function Initiatives({
   initiatives = defaultInitiatives,
+  title,
+  description,
 }: InitiativesProps) {
   return (
-    <Accordion type="single" collapsible>
+
+    <div className="w-full">
+      {title}
+      {description}
+    <Accordion type="single" collapsible className="mt-10 md:ml-[33%]">
       {initiatives.map((initiative, index) => (
         <AccordionItem 
           key={initiative.title} 
@@ -42,7 +50,7 @@ export function Initiatives({
           </AccordionTrigger>
           <AccordionContent className="px-5 py-4">
             
-            <div className="flex flex-col-reverse md:flex-row gap-4">
+            <div className="flex flex-col-reverse md:flex-row gap-4 mb-5">
               <div className="flex flex-col gap-4 w-1/2 justify-end">
                <Button variant="default" size="hero" className="w-fit">
                 <Link href={initiative.link}>
@@ -62,5 +70,6 @@ export function Initiatives({
         </AccordionItem>
       ))}
     </Accordion>
+    </div>
   );
 }

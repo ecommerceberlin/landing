@@ -65,8 +65,10 @@ export default function Home() {
         <Speakers />
       </BoxWithVerticalItems>
 
-      <GrayBox title={<SectionSecondaryTitle label="Title" />} description="Description">
-        <Initiatives />
+      <GrayBox>
+        <Initiatives 
+          title={<SectionSecondaryTitle label="Initiatives" />}
+        />
       </GrayBox>
 
       <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />
