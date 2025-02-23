@@ -11,7 +11,7 @@ import { brands } from '@/settings/brands';
 
 
 export interface BrandsProps {
-  logotypes: string[];
+  logotypes?: string[];
 }
 
 export function Brands({logotypes = brands}: BrandsProps) {

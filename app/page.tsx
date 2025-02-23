@@ -20,6 +20,9 @@ import { FullPagePhoto } from '@/components/containers/fullpagephoto';
 import { Exhibitors } from '@/components/sections/exhibitors';
 import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
+import { Recap } from '@/components/sections/recap';
+
+
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -33,7 +36,7 @@ export default function Home() {
     </header>
       
     <main className="w-full max-w-[100dvw]">      
-      <Brands companyIds={[2218, 2484, 2236, 2138, 1577, 1649, 1024, 2681]} />
+      <Brands />
 
       <BoxWithVerticalItems>
         <Stats />
@@ -67,6 +70,8 @@ export default function Home() {
       </GrayBox>
 
       <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />
+
+      <Recap />
 
       <Testimonials />
 
