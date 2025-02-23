@@ -12,17 +12,24 @@ interface RequestACallProps {
     className?: string
 }
 
+const ErrorMessage = ({error}: {error: any}) => {
 
+    if(!error) return null
+
+    return (
+        <p className="text-sm text-black/70 mt-1">{error.message}</p>
+    )
+}
 
 export function RequestACall({ className }: RequestACallProps) {
 
-    const { register, handleSubmit } = useForm({
+    const { register, handleSubmit, formState: { errors }  } = useForm({
         mode: "onChange",
         resolver: zodResolver(z.object({
-            name: z.string().min(1),
+            name: z.string().min(3),
             email: z.string().email(),
-            phone: z.string().min(10),
-            message: z.string().min(10)
+            company: z.string().min(3),
+            phone: z.string().min(10)
         }))
     });
 
@@ -36,26 +43,31 @@ export function RequestACall({ className }: RequestACallProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <Label>Name</Label>
-                    <Input placeholder="Name" {...register("name")} />
+                    <Input {...register("name")} />
+                    <ErrorMessage error={errors.name} />
+                </div>
+                <div>
+                    <Label>Company</Label>
+                    <Input {...register("company")} />
+                    <ErrorMessage error={errors.company} />
                 </div>
                 <div>
                     <Label>Email</Label>
-                    <Input placeholder="Email" {...register("email")} />
+                    <Input {...register("email")} />
+                    <ErrorMessage error={errors.email} />
                 </div>
                 <div>
                     <Label>Phone</Label>
-                    <Input placeholder="Phone" {...register("phone")} />
+                    <Input {...register("phone")} />
+                    <ErrorMessage error={errors.phone} />
                 </div>
-                <div>
-                    <Label>Message</Label>
-                    <Input placeholder="Message" {...register("message")} />
-                </div>
+              
             </div>
             
 
             <div className="space-y-4 mt-10">
             
-            <Button type="submit" className="w-full">BOOK A CALL</Button>
+            <Button type="submit" className="w-full cursor-pointer">BOOK A CALL</Button>
             <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
             </div>
 

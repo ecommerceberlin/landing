@@ -19,7 +19,7 @@ import { RequestACall } from '@/components/forms/request-a-call';
 import { FullPagePhoto } from '@/components/containers/fullpagephoto';
 import { Exhibitors } from '@/components/sections/exhibitors';
 import { MoreButton } from '@/components/nav/morebutton';
-
+import { Footer } from '@/components/footer';
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -41,8 +41,8 @@ export default function Home() {
       </BoxWithVerticalItems>
 
       <BoxWithHorizontalItems>
-        <RoleButton className="bg-ebe" />
-        <RoleButton className="bg-gray-100" />
+        <RoleButton className="bg-ebe" label="visit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
+        <RoleButton className="bg-gray-100" label="exhibit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/role" />
       </BoxWithHorizontalItems>
 
       <GradientBox title={<SectionTitle label="Title" />}>
@@ -53,7 +53,7 @@ export default function Home() {
       </GradientBox>
 
       <BoxWithHorizontalItems className="bg-ebe">
-        <RoleButton className="" />
+        <RoleButton className="" label="visit" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." buttonLabel="Role" buttonHref="/" />
         <RequestACall className="" />
       </BoxWithHorizontalItems>
 
@@ -72,7 +72,7 @@ export default function Home() {
 
     </main>
 
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+    <Footer />
     </div>
   );
 }
