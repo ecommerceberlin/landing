@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
-import { z } from "zod";
+import { requestACallSchema } from "@/settings/schemas";
 
 interface RequestACallProps {
     className?: string
@@ -25,12 +25,7 @@ export function RequestACall({ className }: RequestACallProps) {
 
     const { register, handleSubmit, formState: { errors }  } = useForm({
         mode: "onChange",
-        resolver: zodResolver(z.object({
-            name: z.string().min(3),
-            email: z.string().email(),
-            company: z.string().min(3),
-            phone: z.string().min(10)
-        }))
+        resolver: zodResolver(requestACallSchema)
     });
 
     const onSubmit = (data: any) => {
@@ -68,7 +63,7 @@ export function RequestACall({ className }: RequestACallProps) {
             <div className="space-y-4 mt-10">
             
             <Button type="submit" className="w-full cursor-pointer">BOOK A CALL</Button>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <p className="text-md font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
             </div>
 
             </form>

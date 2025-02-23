@@ -1,10 +1,10 @@
-
+import { cn } from "@/lib/utils";
 interface SectionTitleProps {
     label: string;
-
+    className?: string;
 }
 
-export function SectionTitle({ label }: SectionTitleProps) {
+export function SectionTitle({ label, className }: SectionTitleProps) {
     return (
-        <h3 className="text-[3rem] uppercase font-extralight">{label}</h3>)
+        <h3 className={cn("text-[3rem] uppercase font-extralight", className)}>{label}</h3>)
 }

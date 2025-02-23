@@ -61,7 +61,7 @@ export default function Home() {
       </BoxWithHorizontalItems>
 
       <BoxWithVerticalItems className="items-start">
-        <SectionTitle label="MEET OUR SPEAKERS" />
+        <SectionTitle label="MEET OUR SPEAKERS" className="pl-5"/>
         <Speakers />
       </BoxWithVerticalItems>
 
