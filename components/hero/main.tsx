@@ -12,14 +12,14 @@ export function Hero() {
 
 <Gradient />
 
-<div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-[50%]  text-white pl-5 pb-5">
-  <div className="flex flex-col justify-between h-full">
+<div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-fit  text-white pl-5 pb-5">
+  <div className="flex flex-col justify-between h-full space-y-5">
     <div>
       
-        <h3 className="uppercase font-light text-[3rem] lg:text-[7rem] leading-[1]">
+        <h3 className="uppercase font-light text-[3rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem] leading-[1]">
           Find your next e-commerce client here
         </h3>
-        <p className="font-thin text-[3rem] leading-[1]">
+        <p className="font-thin text-[1.75rem] md:text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] leading-[1]">
           Unlock your potential with EventJuicer
         </p>
       

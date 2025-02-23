@@ -67,7 +67,9 @@ export function Initiatives({
                </div>
             </div>
 
-            <Image src={initiative.image} alt={initiative.title} width={1000} height={1000} className="w-full" />
+            <div className="aspect-video">
+            <Image src={initiative.image} alt={initiative.title} width={1000} height={1000} className="w-full object-fill" />
+            </div>
 
           </AccordionContent>
         </AccordionItem>
