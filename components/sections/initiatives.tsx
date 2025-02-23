@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { defaultInitiatives } from '@/settings/inititatives';
-
+import { Plus, Minus } from 'lucide-react';
 export interface Initiative {
   title: string;
 }
@@ -19,18 +19,15 @@ export function Initiatives({
         <AccordionItem 
           key={initiative.title} 
           value={initiative.title}
-          className={cn(
-            index % 2 === 0 ? 'bg-ebe' : 'bg-white'
-          )}
         >
           <AccordionTrigger 
-            className="px-5 py-2 hover:bg-gray-200 transition-colors"
+            className={cn("p-0 px-5 hover:bg-gray-200 transition-colors cursor-pointer text-[2rem] md:text-[4rem] font-light uppercase",
+                index % 2 === 0 ? 'bg-ebe' : 'bg-white'
+            )}
+            openContent={<span className="block m-0 p-0 font-thin text-[4rem] md:text-[8rem] leading-none">-</span>} 
+            closedContent={<span className="block m-0 p-0 font-thin text-[4rem] md:text-[8rem] leading-none">+</span>}
           >
-            <div className="flex justify-between items-center w-full">
-              <h4 className="text-[3rem] font-light uppercase">
-                {initiative.title}
-              </h4>
-            </div>
+           {initiative.title}
           </AccordionTrigger>
           <AccordionContent className="px-5 py-4">
             {/* Add your content here */}
