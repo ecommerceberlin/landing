@@ -67,8 +67,9 @@ export default function Home() {
 
       <GrayBox>
         <Initiatives 
-          title={<SectionSecondaryTitle label="Initiatives" />}
-        />
+         label="Initiatives"
+          description="Unlock the power of collaboration and innovation at the Event Shooters Summit. Our initiatives are designed to inspire and empower event professionals to achieve their goals and make a difference in the industry."
+      />
       </GrayBox>
 
       <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />

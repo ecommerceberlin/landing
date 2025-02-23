@@ -4,7 +4,7 @@ import { defaultInitiatives } from '@/settings/inititatives';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
 export interface Initiative {
   title: string;
   description: string;
@@ -15,29 +15,32 @@ export interface Initiative {
 
 interface InitiativesProps {
   initiatives?: Initiative[];
-  title?: React.ReactNode;
-  description?: React.ReactNode;
+  label: string;
+  description?: string;
 }
 
 export const AccordionState = ({children = "+"}: {children?: React.ReactNode}) => <span className="block m-0 p-0 font-thin text-[4rem] md:text-[8rem] leading-none">{children}</span>
 
 export function Initiatives({
   initiatives = defaultInitiatives,
-  title,
+  label,
   description,
 }: InitiativesProps) {
   return (
 
     <div className="w-full">
-      {title}
-      {description}
-    <Accordion type="single" collapsible className="mt-10 md:ml-[33%]">
+     <div className="max-w-[50rem]">
+     <SectionSecondaryTitle label={label} />
+     <p>{description}</p>
+     </div>
+     <Accordion type="single" collapsible className="mt-10 md:ml-[33%]">
       {initiatives.map((initiative, index) => (
         <AccordionItem 
           key={initiative.title} 
           value={initiative.title}
           className={cn(index % 2 === 0 ? 'bg-ebe' : 'bg-white',
-             'transition-transform duration-300 hover:scale-102'
+             'transition-transform duration-300 hover:scale-102',
+             '[&[data-state=open]]:scale-102'
           )}
         >
           <AccordionTrigger 
