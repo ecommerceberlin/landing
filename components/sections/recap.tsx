@@ -15,7 +15,7 @@ export function Recap({title="E-commerce Berlin Expo 2025", description="Lorem i
         {title} <span className="text-[50%] align-top">(RECAP)</span>
         </h4>
         <div className="flex gap-4 flex-col md:flex-row">
-            <div className="w-full md:w-1/3 flex flex-col gap-4 justify-between pr-20">
+            <div className="w-full md:w-1/3 flex flex-col gap-4 justify-between md:pr-20">
                 <p className="text-xl font-light">{description}</p>
                 <div className="flex gap-4 flex-row justify-start">
                     <div className="flex flex-col gap-2 w-1/2">
@@ -28,7 +28,7 @@ export function Recap({title="E-commerce Berlin Expo 2025", description="Lorem i
                     </div>
                 </div>
             </div>
-            <div className="flex-1 min-h-[500px] bg-gray-100">
+            <div className="flex-1 lg:min-h-[500px] bg-gray-100">
                 <div className="aspect-video w-full h-full relative">
                   <video 
                     src={getCldVideoUrl({
