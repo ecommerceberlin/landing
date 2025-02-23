@@ -1,23 +1,18 @@
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { defaultInitiatives } from '@/settings/inititatives';
 
-const defaultInitiatives = [
-  {
-    title: 'NEWS',
-  },
-  {
-    title: 'AWARDS',
-  },
-  {
-    title: 'PODCAST',
-  },
-];
+export interface Initiative {
+  title: string;
+}
+
+interface InitiativesProps {
+  initiatives?: Initiative[];
+}
 
 export function Initiatives({
   initiatives = defaultInitiatives,
-}: {
-  initiatives: any[];
-}) {
+}: InitiativesProps) {
   return (
     <Accordion type="single" collapsible>
       {initiatives.map((initiative, index) => (
