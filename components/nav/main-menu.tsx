@@ -62,8 +62,8 @@ export function MainMenu() {
     <NavigationMenu className="hidden lg:block z-101">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="uppercase">
-            Getting started
+          <NavigationMenuTrigger>
+            Visit
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -75,7 +75,7 @@ export function MainMenu() {
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      lorem ipsum dolor sit amet
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       lorem ipsum dolor sit amet
@@ -96,7 +96,7 @@ export function MainMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Exhibitors</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -112,9 +112,9 @@ export function MainMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full">
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/exhibit" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
-              Documentation
+              Exhibit
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
