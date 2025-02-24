@@ -28,8 +28,8 @@ export interface MenuOption {
 
 export function MainMenu() {
   return (
-    <NavigationMenu className="hidden lg:block z-101">
-      <NavigationMenuList>
+    <NavigationMenu className="hidden lg:block z-101 relative">
+      <NavigationMenuList className="gap-[1px]">
         <NavigationMenuItem>
           <NavigationMenuTrigger>
             Visit
@@ -70,7 +70,7 @@ export function MainMenu() {
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {menuExhibitors.map((component) => (
                 <ListItem
-                  key={component.title}
+                  key={component.href}
                   title={component.title}
                   href={component.href}
                 >
@@ -80,6 +80,16 @@ export function MainMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
+        <NavigationMenuItem className="h-full">
+          <Link href="/exhibit" legacyBehavior passHref>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
+              Visit
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+
         <NavigationMenuItem className="h-full">
           <Link href="/exhibit" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>

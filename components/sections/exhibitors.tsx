@@ -23,7 +23,7 @@ export function Exhibitors() {
           alt={exhibitor.n} 
           width={100} 
           height={100} 
-          className="object-contain max-w-[80px] max-h-[60px] md:max-w-[100px] md:max-h-[80px]"
+          className="object-contain max-w-[80px] max-h-[60px] md:max-w-[100px] md:max-h-[80px] grayscale hover:grayscale-0 transition-all duration-300"
           />
         </div>
       ))}
