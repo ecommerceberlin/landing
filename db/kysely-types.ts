@@ -74,6 +74,14 @@ export interface Favorite {
   user_id: string;
 }
 
+export interface Newsletter {
+  context: string;
+  created_at: Generated<Timestamp>;
+  data: Json;
+  id: Generated<number>;
+  organizer_id: number;
+}
+
 export interface Participant {
   company_id: Generated<number>;
   created_at: Timestamp | null;
@@ -192,6 +200,7 @@ export interface DB {
   Account: Account;
   Chat: Chat;
   Favorite: Favorite;
+  Newsletter: Newsletter;
   Participant: Participant;
   Poke: Poke;
   PokeComment: PokeComment;

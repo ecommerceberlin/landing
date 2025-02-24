@@ -25,7 +25,7 @@ export function Hero() {
       
     </div>
 
-    <div className="flex gap-4">
+    <div className="flex gap-4 mt-[20vh]">
       <Button variant="secondary" size="hero">
         Get Started
       </Button>

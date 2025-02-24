@@ -53,13 +53,13 @@ export function MainMenu() {
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+                lorem ipsum dolor sit amet
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Introduction">
+              lorem ipsum dolor sit amet
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="Introduction">
+              lorem ipsum dolor sit amet
               </ListItem>
             </ul>
           </NavigationMenuContent>
