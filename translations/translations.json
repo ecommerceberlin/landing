@@ -3,9 +3,19 @@
     "visitor": {
       "role": {
         "title": "Visit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "visitor.role.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "more": "More "
       }
+    },
+    "exhibitor": {
+      "role": {
+        "title": "Exhibit",
+        "description": "exhibitor.role.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "more": "More"
+      }
+    },
+    "stats": {
+      "about": "stats.about\nuisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n\n                        adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. "
     }
   },
   "de": {
@@ -15,6 +25,16 @@
         "description": "",
         "more": ""
       }
+    },
+    "exhibitor": {
+      "role": {
+        "title": "",
+        "description": "",
+        "more": ""
+      }
+    },
+    "stats": {
+      "about": ""
     }
   }
 }

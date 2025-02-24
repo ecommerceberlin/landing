@@ -7,21 +7,21 @@ import { t } from "@/scripts/translate";
 interface RoleButtonProps {
     className?: string
     baseLabel: string
-    buttonHref: string
+    buttonHref: string | null
 }
 
-export function RoleButton({ className, baseLabel, buttonHref = "/" }: RoleButtonProps) {
+export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButtonProps) {
     return (
         <div className={cn("flex-1 p-3 pt-0", className)}>
 
-            <SectionTitle label={t(`${baseLabel}.role.title`)} />
+            <SectionTitle label={t(`${baseLabel}.title`)} />
             
 
             <div className="space-y-4 mt-10">
-            <p className="text-lg font-light">{t(`${baseLabel}.role.description`)}</p>
-            <Button asChild>
-                <Link href={buttonHref}>{t(`${baseLabel}.role.more`)}</Link>
-            </Button>
+            <p className="text-lg font-light">{t(`${baseLabel}.description`)}</p>
+            {buttonHref && <Button asChild>
+                <Link href={buttonHref}>{t(`${baseLabel}.more`)}</Link>
+            </Button>}
             </div>
 
         </div>
