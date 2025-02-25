@@ -9,7 +9,8 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { requestACallSchema } from "@/settings/schemas";
 import { t } from "@/scripts/translate";
-
+import { catchFormAction } from "@/app/actions/catch-form-action";
+import { useState } from "react";
 
 interface RequestACallProps {
     baseLabel: string
@@ -27,7 +28,14 @@ const ErrorMessage = ({error}: {error: any}) => {
 
 export function RequestACall({ baseLabel, className }: RequestACallProps) {
 
-    const { register, handleSubmit, formState: { errors }, trigger, control } = useForm({
+    const { 
+        handleSubmit, 
+        register,
+        formState: { isSubmitting, isSubmitSuccessful, errors },
+        control,
+        trigger,
+        reset
+    } = useForm({
         mode: "onChange",
         resolver: zodResolver(requestACallSchema),
         defaultValues: {
@@ -35,14 +43,32 @@ export function RequestACall({ baseLabel, className }: RequestACallProps) {
         }
     });
 
-    const onSubmit = (data: any) => {
+    const onSubmit = async (data: any) => {
         console.log(data)
+
+        const response = await catchFormAction(baseLabel, data)
+
+        if(response.success) {
+            console.log("Form submitted successfully")
+            reset()
+        } else {
+            console.log("Form submission failed")
+        }
     }
 
     return (
-        <div className={cn("flex-1 p-5", className)}>
+        <div className={cn("flex-1 p-5 w-full", className)}>
+
+
+            {isSubmitSuccessful && (
+                <div className="text-center text-[2rem] my-4 font-medium">
+                {t(`form.status.success`)}
+                </div>
+            )}
+
+
             <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                     <Label>{t(`fields.name.label`)}</Label>
                     <Input {...register("name")} />
@@ -69,7 +95,13 @@ export function RequestACall({ baseLabel, className }: RequestACallProps) {
 
             <div className="space-y-4 mt-10">
             
-            <Button type="submit" className="w-full cursor-pointer">{t(`${baseLabel}.button`)}</Button>
+            <Button 
+                type="submit" 
+                className="w-full cursor-pointer"
+                disabled={isSubmitting}
+            >
+                {isSubmitting ? 'Sending...' : t(`${baseLabel}.button`)}
+            </Button>
             <div className="flex flex-row items-center gap-2">
             <Controller
                 name="accept"
@@ -90,6 +122,7 @@ export function RequestACall({ baseLabel, className }: RequestACallProps) {
             <ErrorMessage error={errors.accept} />
             </div>
 
+            
             </form>
 
         </div>

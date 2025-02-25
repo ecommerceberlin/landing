@@ -15,7 +15,7 @@ export const requestACallSchema = z.object({
         .min(3, { message: t('fields.company.error') })
         .max(100, { message: t('fields.company.error') }),
     phone: z.string()
-        .min(10, { message: t('fields.phone.error') })
+        .min(7, { message: t('fields.phone.error') })
         .max(20, { message: t('fields.phone.error') }),
     accept: z.boolean().refine((data) => data === true, { message: t('fields.accept.error') })
 })
