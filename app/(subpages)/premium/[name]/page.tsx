@@ -1,11 +1,11 @@
-import { Premium } from "@/components/sections/premium"
+import { PremiumList } from "@/components/sections/premium-list"
 
 
 
 export default function PagePremium() {
     return (
         <div>
-           <Premium />
+           <PremiumList />
         </div>
     )
   }
