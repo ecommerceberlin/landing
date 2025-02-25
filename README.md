@@ -5,7 +5,7 @@ First, run the development server:
 
 ```bash
 
-npm install
+npm install --legacy-peer-deps
 
 npm run fetch-translations-local
 
