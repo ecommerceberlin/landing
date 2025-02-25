@@ -21,7 +21,7 @@ import { Exhibitors } from '@/components/sections/exhibitors';
 import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
-
+import { Suspense } from 'react';
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -49,7 +49,9 @@ export default function Home() {
 
       <GradientBox title={<SectionTitle label="Title" />}>
       <BoxWithVerticalItems>
-        <Exhibitors />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Exhibitors />
+        </Suspense>
         <MoreButton label="View all exhibitors" href="/exhibitors" />
       </BoxWithVerticalItems>
       </GradientBox>
@@ -61,7 +63,9 @@ export default function Home() {
 
       <BoxWithVerticalItems className="items-start">
         <SectionTitle label="MEET OUR SPEAKERS" className="pl-5"/>
-        <Speakers />
+        <Suspense fallback={<div className="h-[500px] text-center">Loading...</div>}>
+          <Speakers />
+        </Suspense>
       </BoxWithVerticalItems>
 
       <GrayBox>

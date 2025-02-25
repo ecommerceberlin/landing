@@ -16,6 +16,23 @@
     },
     "stats": {
       "about": "stats.about\nuisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n\n                        adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. "
+    },
+    "fields": {
+      "name": {
+        "label": "Full Name",
+        "error": "Name must be at least 3 chars long"
+      }
+    },
+    "initiatives": {
+      "news": {
+        "title": "News"
+      }
+    },
+    "form": {
+      "status": {
+        "success": "Thank you!",
+        "error": "An error occurred :("
+      }
     }
   },
   "de": {
@@ -35,6 +52,23 @@
     },
     "stats": {
       "about": ""
+    },
+    "fields": {
+      "name": {
+        "label": "",
+        "error": ""
+      }
+    },
+    "initiatives": {
+      "news": {
+        "title": ""
+      }
+    },
+    "form": {
+      "status": {
+        "success": "",
+        "error": ""
+      }
     }
   }
 }

@@ -11,8 +11,6 @@ interface GradientProps {
 export function Gradient({className="top-[5rem] w-[20vw] h-[60vh]", variation=0}: GradientProps) {
 
 
-  console.log(variation);
-
   return (
     <div className={cn("z-50 absolute right-0 grid grid-rows-[1fr_2fr_1fr]", className)}>
       {/* First gradient - right aligned */}
