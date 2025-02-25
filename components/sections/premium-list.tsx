@@ -1,5 +1,4 @@
 import { items } from '@/settings/premium'
-import { VideoYoutube } from '@/components/video-youtube'
 import Image from 'next/image'
 import {Gradient} from '@/components/hero/gradient'
 import Link from 'next/link'
@@ -24,7 +23,7 @@ export function PremiumList() {
                         
                         <Gradient 
                             variation={index % 3} 
-                            className="absolute bottom-0 left-0 w-[100px] h-[100px] opacity-100 group-hover:opacity-50 transition-all duration-300" 
+                            className="absolute bottom-[30%] right-0 w-[100px] h-[100px] opacity-100 group-hover:opacity-50 transition-all duration-300" 
                         />
 
                         <figcaption className="absolute inset-0 flex flex-col items-start justify-end p-5 bg-gradient-to-t from-black/90 via-black/10 to-transparent">
