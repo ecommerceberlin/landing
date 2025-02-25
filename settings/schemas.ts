@@ -1,11 +1,20 @@
-
 import { z } from "zod";
+import {t} from '@/scripts/translate'
 
 
 
 export const requestACallSchema = z.object({
-    name: z.string().min(3).max(100),
-    email: z.string().email().min(3).max(100),
-    company: z.string().min(3).max(100),
-    phone: z.string().min(10).max(20)
+    name: z.string()
+        .min(3, { message: t('fields.name.error') })
+        .max(100, { message: t('fields.name.error') }),
+    email: z.string()
+        .email({ message: t('fields.email.error') })
+        .min(3, { message: t('fields.email.error') })
+        .max(100, { message: t('fields.email.error') }),
+    company: z.string()
+        .min(3, { message: t('fields.company.error') })
+        .max(100, { message: t('fields.company.error') }),
+    phone: z.string()
+        .min(10, { message: t('fields.phone.error') })
+        .max(20, { message: t('fields.phone.error') })
 })

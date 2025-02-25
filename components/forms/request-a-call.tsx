@@ -7,8 +7,9 @@ import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { requestACallSchema } from "@/settings/schemas";
-
+import { t } from "@/scripts/translate";
 interface RequestACallProps {
+    baseLabel: string
     className?: string
 }
 
@@ -21,7 +22,7 @@ const ErrorMessage = ({error}: {error: any}) => {
     )
 }
 
-export function RequestACall({ className }: RequestACallProps) {
+export function RequestACall({ baseLabel, className }: RequestACallProps) {
 
     const { register, handleSubmit, formState: { errors }  } = useForm({
         mode: "onChange",
@@ -37,22 +38,22 @@ export function RequestACall({ className }: RequestACallProps) {
             <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                    <Label>Name</Label>
+                    <Label>{t(`fields.name.label`)}</Label>
                     <Input {...register("name")} />
                     <ErrorMessage error={errors.name} />
                 </div>
                 <div>
-                    <Label>Company</Label>
+                    <Label>{t(`fields.company.label`)}</Label>
                     <Input {...register("company")} />
                     <ErrorMessage error={errors.company} />
                 </div>
                 <div>
-                    <Label>Email</Label>
+                    <Label>{t(`fields.email.label`)}</Label>
                     <Input {...register("email")} />
                     <ErrorMessage error={errors.email} />
                 </div>
                 <div>
-                    <Label>Phone</Label>
+                    <Label>{t(`fields.phone.label`)}</Label>
                     <Input {...register("phone")} />
                     <ErrorMessage error={errors.phone} />
                 </div>
@@ -62,8 +63,8 @@ export function RequestACall({ className }: RequestACallProps) {
 
             <div className="space-y-4 mt-10">
             
-            <Button type="submit" className="w-full cursor-pointer">BOOK A CALL</Button>
-            <p className="text-md font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <Button type="submit" className="w-full cursor-pointer">{t(`${baseLabel}.button`)}</Button>
+            <p className="text-md font-light">{t(`${baseLabel}.terms`)}</p>
             </div>
 
             </form>

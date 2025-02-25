@@ -57,7 +57,7 @@ export default function Home() {
 
       <BoxWithHorizontalItems className="bg-ebe">
         <RoleButton baseLabel="exhibitor.book-a-call" />
-        <RequestACall className="" />
+        <RequestACall baseLabel="exhibitor.book-a-call" />
       </BoxWithHorizontalItems>
 
       <BoxWithVerticalItems className="items-start">

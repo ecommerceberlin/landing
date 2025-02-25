@@ -7,7 +7,7 @@ import { t } from "@/scripts/translate";
 interface RoleButtonProps {
     className?: string
     baseLabel: string
-    buttonHref: string | null
+    buttonHref?: string | null
 }
 
 export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButtonProps) {

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { DM_Sans } from 'next/font/google';
 import { metadata as metadataSettings } from '@/settings/metadata';
+
+import { RefererTracker } from '@/components/forms/referer-tracker';
+
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -9,11 +12,12 @@ export const metadata: Metadata = {
   description: metadataSettings.description,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en" className={dmSans.className}>
       <head>
@@ -22,6 +26,7 @@ export default function RootLayout({
       </head>
 
       <body>{children}</body>
+      <RefererTracker />
     </html>
   );
 }
