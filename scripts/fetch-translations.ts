@@ -3,7 +3,7 @@ import path from 'path'
 
 async function fetchTranslations() {
   try {
-    const url = process.env.NEXT_PUBLIC_TRANSLATIONS_URL
+    const url = process.env.TRANSLATIONS_URL
     if (!url) {
       // throw new Error('NEXT_PUBLIC_TRANSLATIONS_URL is not defined in environment variables')
     }
