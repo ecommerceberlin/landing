@@ -22,7 +22,6 @@ import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
 
-
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -66,10 +65,7 @@ export default function Home() {
       </BoxWithVerticalItems>
 
       <GrayBox>
-        <Initiatives 
-         label="Initiatives"
-          description="Unlock the power of collaboration and innovation at the Event Shooters Summit. Our initiatives are designed to inspire and empower event professionals to achieve their goals and make a difference in the industry."
-      />
+        <Initiatives baseLabel="initiatives" />
       </GrayBox>
 
       <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />

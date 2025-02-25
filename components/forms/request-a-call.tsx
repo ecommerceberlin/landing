@@ -3,11 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { requestACallSchema } from "@/settings/schemas";
 import { t } from "@/scripts/translate";
+
+
 interface RequestACallProps {
     baseLabel: string
     className?: string
@@ -24,9 +27,12 @@ const ErrorMessage = ({error}: {error: any}) => {
 
 export function RequestACall({ baseLabel, className }: RequestACallProps) {
 
-    const { register, handleSubmit, formState: { errors }  } = useForm({
+    const { register, handleSubmit, formState: { errors }, trigger, control } = useForm({
         mode: "onChange",
-        resolver: zodResolver(requestACallSchema)
+        resolver: zodResolver(requestACallSchema),
+        defaultValues: {
+            accept: true
+        }
     });
 
     const onSubmit = (data: any) => {
@@ -64,7 +70,24 @@ export function RequestACall({ baseLabel, className }: RequestACallProps) {
             <div className="space-y-4 mt-10">
             
             <Button type="submit" className="w-full cursor-pointer">{t(`${baseLabel}.button`)}</Button>
-            <p className="text-md font-light">{t(`${baseLabel}.terms`)}</p>
+            <div className="flex flex-row items-center gap-2">
+            <Controller
+                name="accept"
+                control={control}
+                render={({ field }) => (
+                    <Checkbox 
+                        checked={field.value}
+                        defaultChecked={true}
+                        onCheckedChange={(checked) => {
+                            field.onChange(checked);
+                            trigger("accept"); 
+                        }}
+                    />
+                )}
+                />
+                <p className="text-md font-light">{t(`${baseLabel}.terms`)}</p>
+            </div>
+            <ErrorMessage error={errors.accept} />
             </div>
 
             </form>

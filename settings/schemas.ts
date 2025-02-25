@@ -5,8 +5,8 @@ import {t} from '@/scripts/translate'
 
 export const requestACallSchema = z.object({
     name: z.string()
-        .min(3, { message: t('fields.name.error') })
-        .max(100, { message: t('fields.name.error') }),
+        .min(3, { message: t('fields.full_name.error') })
+        .max(100, { message: t('fields.full_name.error') }),
     email: z.string()
         .email({ message: t('fields.email.error') })
         .min(3, { message: t('fields.email.error') })
@@ -16,5 +16,6 @@ export const requestACallSchema = z.object({
         .max(100, { message: t('fields.company.error') }),
     phone: z.string()
         .min(10, { message: t('fields.phone.error') })
-        .max(20, { message: t('fields.phone.error') })
+        .max(20, { message: t('fields.phone.error') }),
+    accept: z.boolean().refine((data) => data === true, { message: t('fields.accept.error') })
 })
