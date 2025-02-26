@@ -34,9 +34,11 @@ export default function SubpageLayout({
 
       </GrayBox>
     
-        {related}
+       
 
     </main>
+    
+    {related}
     
     <Footer />
     </div>
