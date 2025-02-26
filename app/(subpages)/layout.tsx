@@ -3,7 +3,7 @@ import { NowPlaying } from "@/components/nav/now-playing";
 import { SectionTitle } from "@/components/text/section-title";
 import { GrayBox } from "@/components/containers/graybox";
 import { Footer } from "@/components/footer";
-
+import { nowPlaying } from "@/settings/now-playing";
 
 export default function SubpageLayout({
   children,
@@ -22,7 +22,7 @@ export default function SubpageLayout({
     <div className="min-h-screen w-[100dvw] max-w-[100dvw]">
     
     <header className="w-full">
-        <NowPlaying />
+        <NowPlaying {...nowPlaying} />
         <Header />
     </header>
 
