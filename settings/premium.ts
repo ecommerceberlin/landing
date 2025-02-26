@@ -17,7 +17,18 @@ export const items: PremiumItem[] = [
 
             "https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg",
             
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png",
+
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png",
+
+            "https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg",
+
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png",
+
+            "https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg",
+            
             "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png"
+            
         ]
     },
     {

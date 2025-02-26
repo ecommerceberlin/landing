@@ -8,6 +8,6 @@ const ReactPlayer = dynamic(() => import('react-player/youtube').then(mod => mod
     loading: () => <div className="h-[200px] w-full bg-gray-100">Loading...</div>
 })
 
-export function VideoYoutube({url}: {url: string}) {
-    return  <ReactPlayer url={url} />
+export function VideoYoutube({url, className}: {url: string, className?: string}) {
+    return  <ReactPlayer url={url} className={className} />
 }
