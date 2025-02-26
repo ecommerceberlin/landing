@@ -2,18 +2,38 @@ import { items } from '@/settings/premium'
 import { VideoYoutube } from '@/components/video-youtube'
 import {t} from '@/scripts/translate'
 import Image from 'next/image'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { cn } from '@/lib/utils'
+import { PremiumItem } from '@/types'
 
-export function Premium({name}: {name: string}) {
-    const item = items.find(item => item.name === name)
+interface PremiumProps {
+    media: string[];
+    label: string;
+}
+
+export function Premium({media, label}: PremiumProps) {
     return (
         <div className="md:ml-[25vw] flex flex-col gap-4">
-            <h3 className="text-2xl md:text-[2rem] font-thin tracking-tighter">{t(`premium.${item?.name}.description`)}</h3>
-            <div>
-            {item?.images.map((image, index) => (
-                <Image key={index} src={image} alt={item?.name} width={100} height={100} />
-            ))}
-            </div>
-            {item?.videoSrc && <VideoYoutube url={item?.videoSrc} />}
+        <h3 className="text-2xl md:text-[2rem] font-thin tracking-tighter">{t(`premium.${label}.title`)}</h3>
+
+        <ScrollArea className={cn('my-5 w-full max-w-[100vw] overflow-x-hidden')}>
+        <div
+        className={cn(
+        'flex space-x-4 pb-4 bg-gradient-to-t',
+        )}
+        >
+        <div
+        className={cn(
+        'flex pl-4 pr-4 min-w-fit',
+        // gradientClassName,
+        )}>
+        {media?.map((media, index) => {
+        return (
+        <Image key={index} src={media} alt={`${label} media`} width={100} height={100} />
+        )})}
+        </div>
+        </div>
+        </ScrollArea>
         </div>
     )
 }

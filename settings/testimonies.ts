@@ -51,7 +51,7 @@ export const testimonies: Testimony[] = [
     {
     text: "The organized trade fair was a perfect blend of professionalism and innovation. Its inviting atmosphere and thoughtfully arranged exhibits provided an exceptional platform to connect and learn.",
     logotype: "https://res.cloudinary.com/eventjuicer/image/upload/v1732852190/c_2710_logotype.png" 
-    },
+    }
        
   ];
   
