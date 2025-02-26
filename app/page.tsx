@@ -23,6 +23,7 @@ import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
 import { Suspense } from 'react';
 import { nowPlaying } from '@/settings/now-playing';
+import { brands } from '@/settings/brands';
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
     </header>
       
     <main className="w-full max-w-[100dvw]">      
-      <Brands />
+      <Brands items={brands} />
 
       <BoxWithVerticalItems>
         <Stats />
