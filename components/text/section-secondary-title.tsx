@@ -1,10 +1,10 @@
-
+import { cn } from "@/lib/utils";
 interface SectionSecondaryTitleProps {
     label: string;
-
+    className?: string;
 }
 
-export function SectionSecondaryTitle({ label }: SectionSecondaryTitleProps) {
+export function SectionSecondaryTitle({ label, className }: SectionSecondaryTitleProps) {
     return (
-        <h3 className="text-[2rem] uppercase font-extralight">{label}</h3>)
+        <h3 className={cn("text-[2rem] uppercase font-extralight", className)}>{label}</h3>)
 }

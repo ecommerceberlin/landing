@@ -22,6 +22,8 @@ import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
 import { Suspense } from 'react';
+
+
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">

@@ -9,8 +9,16 @@ export const items: PremiumItem[] = [
         thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822478/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard-cover.jpg",
         media: [
             "https://youtu.be/4lcXFa2roiI",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png",
+
+            "https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg",
+
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png",
+
+            "https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg",
+            
             "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822477/Website/PREMIUM%20SERVICES/ebe-premium-services-lanyard.png"
-            ]
+        ]
     },
     {
         ticketId: 2743, 

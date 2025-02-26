@@ -14,7 +14,7 @@ interface PremiumProps {
 export function Premium({media, label}: PremiumProps) {
     return (
         <div className="md:ml-[25vw] flex flex-col gap-4">
-        <h3 className="text-2xl md:text-[2rem] font-thin tracking-tighter">{t(`premium.${label}.title`)}</h3>
+        <h3 className="text-2xl md:text-[2rem] font-thin tracking-tighter">{t(`premium.${label}.description`)}</h3>
 
         <ScrollArea className={cn('my-5 w-full max-w-[100vw] overflow-x-hidden')}>
         <div
@@ -28,9 +28,14 @@ export function Premium({media, label}: PremiumProps) {
         // gradientClassName,
         )}>
         {media?.map((media, index) => {
-        return (
-        <Image key={index} src={media} alt={`${label} media`} width={100} height={100} />
-        )})}
+
+            if (media.includes('https://youtu') || media.includes('youtube.com/')) {
+                return <VideoYoutube key={index} url={media} />
+            }
+            return (
+                <Image key={index} src={media} alt={`${label} media`} width={300} height={200} />
+            )
+        })}
         </div>
         </div>
         </ScrollArea>
