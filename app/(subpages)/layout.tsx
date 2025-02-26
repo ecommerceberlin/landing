@@ -2,7 +2,7 @@ import { Header } from "@/components/nav/header";
 import { NowPlaying } from "@/components/nav/now-playing";
 import { SectionTitle } from "@/components/text/section-title";
 import { GrayBox } from "@/components/containers/graybox";
-
+import { Footer } from "@/components/footer";
 
 
 export default function SubpageLayout({
@@ -34,11 +34,13 @@ export default function SubpageLayout({
 
       </GrayBox>
     
-        {related}
+       
 
     </main>
     
+    {related}
     
+    <Footer />
     </div>
   )
 

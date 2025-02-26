@@ -22,13 +22,15 @@ import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
 import { Suspense } from 'react';
+import { nowPlaying } from '@/settings/now-playing';
+
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
     
     <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]">
       <div className="w-full">
-        <NowPlaying />
+        <NowPlaying {...nowPlaying} />
         <Header />
       </div>
       <Hero />
