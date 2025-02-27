@@ -17,6 +17,7 @@ export function Recap({baseLabel, videoSrc, stats = []}: RecapProps) {
     return (
     <div className="w-full px-5 my-10 md:my-30">
         <h4 className="text-[4rem] font-light uppercase max-w-[45rem] leading-[1] pb-10">
+            {t(`${baseLabel}.title`)}
          <span className="text-[50%] align-top">(RECAP)</span>
         </h4>
         <div className="flex gap-4 flex-col md:flex-row">
