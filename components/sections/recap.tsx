@@ -2,30 +2,35 @@
 
 
 import {getCldVideoUrl} from "next-cloudinary";
-interface RecapProps {
-    title?: string;
-    description: string;
-    videoSrc?: string;
+import {t} from '@/scripts/translate'
+import { StatItem } from "@/components/sections/stats";
+
+
+
+export interface RecapProps {
+    baseLabel: string;
+    videoSrc: string;
+    stats: StatItem[];
 }
 
-export function Recap({title="E-commerce Berlin Expo 2025", description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.", videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1738233915/EBE_recap_ogxdam.mov"}: RecapProps) {
+export function Recap({baseLabel, videoSrc, stats = []}: RecapProps) {
     return (
     <div className="w-full px-5 my-10 md:my-30">
         <h4 className="text-[4rem] font-light uppercase max-w-[45rem] leading-[1] pb-10">
-        {title} <span className="text-[50%] align-top">(RECAP)</span>
+         <span className="text-[50%] align-top">(RECAP)</span>
         </h4>
         <div className="flex gap-4 flex-col md:flex-row">
             <div className="w-full md:w-1/3 flex flex-col gap-4 justify-between md:pr-20">
-                <p className="text-xl font-light">{description}</p>
+                <p className="text-xl font-light">{t(`${baseLabel}.description`)}</p>
                 <div className="flex gap-4 flex-row justify-start">
-                    <div className="flex flex-col gap-2 w-1/2">
-                        <div className="text-[5rem] font-light">120+</div>
-                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+
+                    {stats.map((stat) => (
+                        <div className="flex flex-col gap-2 w-1/2">
+                        <div className="text-[5rem] font-light">{stat.value}</div>
+                        <p>{stat.label}</p>
                     </div>
-                    <div className="flex flex-col gap-2 w-1/2">
-                        <div className="text-[5rem] font-light">97</div>
-                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                    </div>
+                    ))}
+
                 </div>
             </div>
             <div className="flex-1 lg:min-h-[500px] bg-gray-100">

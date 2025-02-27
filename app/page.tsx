@@ -12,7 +12,6 @@ import { BoxWithHorizontalItems } from '@/components/containers/box-horizontal';
 import { BoxWithVerticalItems } from '@/components/containers/box-vertical';
 import { RoleButton } from '@/components/nav/rolebutton';
 import { SectionTitle } from '@/components/text/section-title';
-import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
 import { About } from '@/components/sections/about';
 import { Speakers } from '@/components/sections/speakers';
 import { RequestACall } from '@/components/forms/request-a-call';
@@ -26,6 +25,7 @@ import { nowPlaying } from '@/settings/now-playing';
 import { brands } from '@/settings/brands';
 import { hero } from '@/settings/hero';
 import { statItems } from '@/settings/stats';
+import { recap } from '@/settings/recap';
 
 export default function Home() {
   return (
@@ -79,7 +79,7 @@ export default function Home() {
 
       <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />
 
-      <Recap />
+      <Recap {...recap} />
 
       <Testimonials />
 
