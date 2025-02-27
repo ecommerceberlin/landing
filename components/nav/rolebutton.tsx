@@ -14,9 +14,8 @@ export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButt
     return (
         <div className={cn("flex-1 p-3 pt-0", className)}>
 
-            <SectionTitle label={t(`${baseLabel}.title`)} />
+            <SectionTitle label={`${baseLabel}.title`} />
             
-
             <div className="space-y-4 mt-10">
             <p className="text-lg font-light">{t(`${baseLabel}.description`)}</p>
             {buttonHref && <Button asChild>

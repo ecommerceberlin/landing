@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
-import { SectionTitle } from '@/components/text/section-title';
+
+
 const gradientClassName =
   'from-[#FCE61D] via-[rgba(252,230,29,0.4)] to-[rgba(255,255,255,0.1)]';
 

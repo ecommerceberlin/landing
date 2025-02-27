@@ -52,12 +52,12 @@ export default function Home() {
         <RoleButton className="bg-gray-100" baseLabel="exhibitor.role" buttonHref="/role" />
       </BoxWithHorizontalItems>
 
-      <GradientBox title={<SectionTitle label="Title" />}>
+      <GradientBox title={<SectionTitle label="exhibitor.list-archive.title" />}>
       <BoxWithVerticalItems>
         <Suspense fallback={<div>Loading...</div>}>
           <Exhibitors />
         </Suspense>
-        <MoreButton label="View all exhibitors" href="/exhibitors" />
+        {/* <MoreButton label="View all exhibitors" href="/exhibitors" /> */}
       </BoxWithVerticalItems>
       </GradientBox>
 
@@ -67,7 +67,7 @@ export default function Home() {
       </BoxWithHorizontalItems>
 
       <BoxWithVerticalItems className="items-start">
-        <SectionTitle label="MEET OUR SPEAKERS" className="pl-5"/>
+        <SectionTitle label="speaker.list-archive.title" className="pl-5"/>
         <Suspense fallback={<div className="h-[500px] text-center">Loading...</div>}>
           <Speakers />
         </Suspense>
