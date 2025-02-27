@@ -24,6 +24,7 @@ import { Recap } from '@/components/sections/recap';
 import { Suspense } from 'react';
 import { nowPlaying } from '@/settings/now-playing';
 import { brands } from '@/settings/brands';
+import { hero } from '@/settings/hero';
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
         <NowPlaying {...nowPlaying} />
         <Header />
       </div>
-      <Hero />
+      <Hero {...hero} />
     </header>
       
     <main className="w-full max-w-[100dvw]">      
