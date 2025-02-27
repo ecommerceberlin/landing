@@ -26,7 +26,7 @@ import { brands } from '@/settings/brands';
 import { hero } from '@/settings/hero';
 import { statItems } from '@/settings/stats';
 import { recap } from '@/settings/recap';
-
+import { footer } from '@/settings/footer';
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
@@ -85,7 +85,7 @@ export default function Home() {
 
     </main>
 
-    <Footer />
+    <Footer {...footer} />
     </div>
   );
 }
