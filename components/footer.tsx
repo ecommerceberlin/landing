@@ -42,9 +42,9 @@ export function Footer({baseLabel="support", people=[], links=[], legal=[], soci
   return (
     <footer className="bg-ebe w-full p-5 min-h-[50vh]">
 
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-col md:flex-row gap-4">
 
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
       <SectionSecondaryTitle label={`${baseLabel}.title`} />
 
       <div className="grid grid-cols-2 gap-4 mt-10">
@@ -96,7 +96,7 @@ const IconComponent = socialIcons[link.label.toLowerCase() as keyof typeof socia
 
 
       </div>
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
       
       <div className="grid grid-cols-2 gap-4">
       {links.map((link) => (
