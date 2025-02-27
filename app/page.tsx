@@ -25,6 +25,7 @@ import { Suspense } from 'react';
 import { nowPlaying } from '@/settings/now-playing';
 import { brands } from '@/settings/brands';
 import { hero } from '@/settings/hero';
+import { statItems } from '@/settings/stats';
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
       <Brands items={brands} />
 
       <BoxWithVerticalItems>
-        <Stats />
+        <Stats items={statItems} />
         <About />
       </BoxWithVerticalItems>
 

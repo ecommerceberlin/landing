@@ -1,5 +1,5 @@
 
-import { statItems } from "@/settings/stats"
+ 
 
 export interface StatItem {
     label: string;
@@ -20,7 +20,7 @@ function StatItem({label, value}: StatItem){
 }
 
 
-export function Stats({items = statItems}: StatsProps){
+export function Stats({items = []}: StatsProps){
 
     return (
         

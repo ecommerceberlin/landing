@@ -4,19 +4,22 @@ import { StatItem } from "@/components/sections/stats"
 
 export const statItems: StatItem[] = [
     {
-        label: 'Stats',
+        label: 'stats.visitors',
         value: '10K'
     },
     {
-        label: 'Stats',
+        label: 'stats.exhibitors',
         value: '300+'
     },
     {
-        label: 'Stats',
+        label: 'stats.speakers',
         value: '100'
     },
     {
-        label: 'Stats',
+        label: 'stats.masterclasses',
         value: '100'
     },
 ]
+
+
+
