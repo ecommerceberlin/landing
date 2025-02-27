@@ -19,3 +19,11 @@ export const requestACallSchema = z.object({
         .max(20, { message: t('fields.phone.error') }),
     accept: z.boolean().refine((data) => data === true, { message: t('fields.accept.error') })
 })
+
+
+export const joinNewsletterSchema = z.object({
+    email: z.string()
+        .email({ message: t('fields.email.error') })
+        .min(3, { message: t('fields.email.error') })
+        .max(100, { message: t('fields.email.error') }),
+})
