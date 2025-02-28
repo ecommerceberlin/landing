@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
+
 import { cn } from "@/lib/utils"
 import { SectionTitle } from "@/components/text/section-title";
-import Link from "next/link";
 import { t } from "@/scripts/translate";
+import { MoreButton } from "@/components/nav/morebutton";
 
 interface RoleButtonProps {
     className?: string
@@ -18,9 +18,7 @@ export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButt
             
             <div className="space-y-4 mt-10">
             <p className="text-lg font-light">{t(`${baseLabel}.description`)}</p>
-            {buttonHref && <Button asChild variant="hero" size="hero">
-                <Link href={buttonHref}>{t(`${baseLabel}.more`)}</Link>
-            </Button>}
+            {buttonHref && <MoreButton label={`${baseLabel}.more`} href={buttonHref} variant="hero" size="hero" />}
             </div>
 
         </div>

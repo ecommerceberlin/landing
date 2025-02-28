@@ -23,7 +23,7 @@ export default function SubpageLayout({
     <NowPlaying {...nowPlaying} />
     <Header />
     </header>
-    <main className="m-0 px-5 py-10 w-full max-w-[100dvw]">
+    <main className="m-0 px-5 pt-10 w-full max-w-[100dvw]">
     <GrayBox>
     <div className="text-left text-[3rem] md:text-[4rem] xl:text-[5rem] font-extralight">{title}</div>
     {children}

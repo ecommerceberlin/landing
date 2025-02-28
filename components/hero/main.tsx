@@ -1,9 +1,9 @@
-
-import { Button } from '@/components/ui/button';
 import { Gradient } from './gradient';
 import { FullPagePhoto } from '@/components/containers/fullpagephoto';
 import { t } from '@/scripts/translate';
-import Link from 'next/link';
+import {MoreButton} from '@/components/nav/morebutton'
+
+
 
 export interface HeroButtonProps {
   label: string;
@@ -16,7 +16,6 @@ export interface HeroProps {
   image: string;
   buttons: HeroButtonProps[];
 }
-
 
 
 export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) {
@@ -36,11 +35,7 @@ export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) 
       </div>
       <div className="flex gap-4 mt-[20vh]">
       {buttons.map((button) => (
-      <Button key={button.href} variant="hero" size="hero" asChild>
-      <Link href={button.href} key={button.label}>      
-      {t(button.label)}
-      </Link>
-      </Button>
+      <MoreButton key={button.href} label={button.label} href={button.href} variant="hero" size="hero" />
       ))}
       </div>
       </div>

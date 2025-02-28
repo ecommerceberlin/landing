@@ -15,6 +15,7 @@ import { useState } from "react";
 interface RequestACallProps {
     baseLabel: string
     className?: string
+    context?: string
 }
 
 const ErrorMessage = ({error}: {error: any}) => {
@@ -26,7 +27,7 @@ const ErrorMessage = ({error}: {error: any}) => {
     )
 }
 
-export function RequestACall({ baseLabel, className }: RequestACallProps) {
+export function RequestACall({ baseLabel, className, context }: RequestACallProps) {
 
     const { 
         handleSubmit, 
@@ -46,7 +47,7 @@ export function RequestACall({ baseLabel, className }: RequestACallProps) {
     const onSubmit = async (data: any) => {
         console.log(data)
 
-        const response = await catchFormAction(baseLabel, data)
+        const response = await catchFormAction(context || baseLabel, data)
 
         if(response.success) {
             console.log("Form submitted successfully")
