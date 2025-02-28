@@ -1,3 +1,6 @@
+
+import { SectionSecondaryTitle } from "@/components/text/section-secondary-title"
+
 export default function VisitTitle() {
-    return <h1>Visit Page</h1>
-  }
+    return <SectionSecondaryTitle label="visitor.role.title" />
+}
