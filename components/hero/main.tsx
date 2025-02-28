@@ -23,7 +23,7 @@ export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) 
   return (
     <FullPagePhoto src={image}>
       <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
-      <Gradient />
+      <Gradient className="top-[3rem] w-[20vw] h-[40vh]" />
       <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-fit  text-white pl-5 pb-5">
       <div className="flex flex-col justify-between h-full space-y-5">
       <div>

@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
 const gradientClassName =
-  'w-full h-full from-[#FCE61D] via-[rgba(252,230,29,0.4)] to-[rgba(255,255,255,0.1)]';
+  'w-full h-full from-[#FCE61D] to-[rgba(255,255,255,0.2)]';
 
 interface GradientProps {
   className?: string;
