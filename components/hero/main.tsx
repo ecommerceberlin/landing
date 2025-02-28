@@ -36,7 +36,7 @@ export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) 
       </div>
       <div className="flex gap-4 mt-[20vh]">
       {buttons.map((button) => (
-      <Button key={button.href} variant="secondary" size="hero" asChild>
+      <Button key={button.href} variant="hero" size="hero" asChild>
       <Link href={button.href} key={button.label}>      
       {t(button.label)}
       </Link>

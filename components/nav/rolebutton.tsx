@@ -18,7 +18,7 @@ export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButt
             
             <div className="space-y-4 mt-10">
             <p className="text-lg font-light">{t(`${baseLabel}.description`)}</p>
-            {buttonHref && <Button asChild>
+            {buttonHref && <Button asChild variant="hero" size="hero">
                 <Link href={buttonHref}>{t(`${baseLabel}.more`)}</Link>
             </Button>}
             </div>
