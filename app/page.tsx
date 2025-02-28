@@ -48,8 +48,8 @@ export default function Home() {
       </BoxWithVerticalItems>
 
       <BoxWithHorizontalItems>
-        <RoleButton className="bg-ebe" baseLabel="visitor.role"  buttonHref="/role" />
-        <RoleButton className="bg-gray-100" baseLabel="exhibitor.role" buttonHref="/role" />
+        <RoleButton className="bg-ebe" baseLabel="visitor.role"  buttonHref="/visit" />
+        <RoleButton className="bg-gray-100" baseLabel="exhibitor.role" buttonHref="/exhibit" />
       </BoxWithHorizontalItems>
 
       <GradientBox title={<SectionTitle label="exhibitor.list-archive.title" />}>
