@@ -30,7 +30,7 @@ export function MainMenu() {
   return (
     <NavigationMenu className="hidden lg:block z-101 relative">
       <NavigationMenuList>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>
             Visit
           </NavigationMenuTrigger>
@@ -42,7 +42,7 @@ export function MainMenu() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-none bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
+                    
                     <div className="mb-2 mt-4 text-lg font-medium">
                       lorem ipsum dolor sit amet
                     </div>
@@ -63,8 +63,8 @@ export function MainMenu() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
+        </NavigationMenuItem> */}
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Exhibitors</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -79,10 +79,10 @@ export function MainMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
 
         <NavigationMenuItem className="h-full">
-          <Link href="/exhibit" legacyBehavior passHref>
+          <Link href="/visit" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
               Visit
             </NavigationMenuLink>
@@ -98,13 +98,13 @@ export function MainMenu() {
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="h-full">
+        {/* <NavigationMenuItem className="h-full">
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"h-[7rem]")}>
               DE
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
 
 
       </NavigationMenuList>
