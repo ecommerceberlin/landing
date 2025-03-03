@@ -108,7 +108,7 @@ const IconComponent = socialIcons[link.label.toLowerCase() as keyof typeof socia
       ))}
       </div>
 
-      <Newsletter baseLabel="newletter" />
+      <Newsletter baseLabel="newsletter" />
       
       </div>
     </div>
