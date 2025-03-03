@@ -7,7 +7,7 @@ interface TransparentHorizontalProps {
 
 export function BoxWithHorizontalItems({ children, className }: TransparentHorizontalProps) {
     return (
-        <div className={cn("my-20 w-full flex flex-col md:flex-row gap-4 items-center", className)}>
+        <div className={cn("w-full flex flex-col md:flex-row gap-4 items-start", className)}>
             {children}
         </div>
     )

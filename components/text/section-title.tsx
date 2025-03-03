@@ -8,5 +8,5 @@ interface SectionTitleProps {
 
 export function SectionTitle({ label, className }: SectionTitleProps) {
     return (
-        <h3 className={cn("text-[3rem] uppercase font-light", className)}>{t(label)}</h3>)
+        <h3 className={cn("text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] uppercase font-light leading-none", className)}>{t(label)}</h3>)
 }

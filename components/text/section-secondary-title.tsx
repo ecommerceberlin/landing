@@ -8,5 +8,5 @@ interface SectionSecondaryTitleProps {
 
 export function SectionSecondaryTitle({ label, className }: SectionSecondaryTitleProps) {
     return (
-        <h3 className={cn("text-[2rem] uppercase font-extralight", className)}>{t(label)}</h3>)
+        <h3 className={cn("text-[2rem] uppercase font-extralight leading-none", className)}>{t(label)}</h3>)
 }

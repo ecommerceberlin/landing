@@ -9,7 +9,7 @@ import { MoreButton } from '@/components/nav/morebutton';
 export interface Initiative {
   label: string;
   image: string;
-  link: string;
+  link: string | null;
   color: "bg-ebe" | "bg-white";
 }
 
@@ -29,7 +29,7 @@ export function Initiatives({
   return (
 
     <div className="w-full">
-     <div className="max-w-[50rem]">
+     <div className="max-w-[50rem] space-y-4">
      <SectionSecondaryTitle label={t(`${baseLabel}.title`)} />
      <p>{t(`${baseLabel}.description`)}</p>
      </div>

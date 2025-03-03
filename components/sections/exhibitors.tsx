@@ -4,6 +4,30 @@ import useSWR from 'swr';
 import { fetcher } from '@/lib/fetcher';
 import { ExhibitorDTO } from '@/db/participant/transform-to-exhibitor';
 import Image from 'next/image';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Suspense } from 'react';
+
+
+function Container({children}: {children: React.ReactNode}){
+
+  return ( <div className="px-[10%] w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">{children}</div>)
+}
+
+
+
+export function ExhibitorsLoading(){
+
+  return (
+    <Container>
+      {Array.from({length: 20}).map((_, index) => (
+        <div key={index} className="flex flex-col items-center justify-center">
+          <Skeleton className="w-[80px] h-[60px] md:w-[100px] md:h-[80px] animate-pulse"></Skeleton>
+        </div>  
+      ))}
+    </Container>
+  )
+}
+
 
 export function Exhibitors() {
   const { data: exhibitors, isLoading, error } = useSWR<ExhibitorDTO[]>('/api/exhibitors', fetcher);
@@ -15,7 +39,8 @@ export function Exhibitors() {
   const sliced = exhibitors.slice(0, 20)
 
   return (
-    <div className="px-[10%] w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">
+    
+    <Container>
       {sliced.map((exhibitor) => (
         <div key={exhibitor.id} className="flex flex-col items-center justify-center">
           <Image 
@@ -27,6 +52,7 @@ export function Exhibitors() {
           />
         </div>
       ))}
-    </div>
+    </Container>
+    
   );
 }
