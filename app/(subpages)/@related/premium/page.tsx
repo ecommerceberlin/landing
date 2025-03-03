@@ -6,7 +6,7 @@ import { RequestACall } from "@/components/forms/request-a-call"
 export default function PremiumRelated() {
     return (
        
-      <BoxWithHorizontalItems className="bg-ebe">
+      <BoxWithHorizontalItems className="bg-ebe mb-[20rem]">
       <RoleButton baseLabel="premium.book-a-call" />
       <RequestACall baseLabel="premium.book-a-call" />
      </BoxWithHorizontalItems>
