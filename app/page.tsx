@@ -27,11 +27,12 @@ import { hero } from '@/settings/hero';
 import { statItems } from '@/settings/stats';
 import { recap } from '@/settings/recap';
 import { footer } from '@/settings/footer';
+import {cn} from '@/lib/utils'
+
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
-    
-    <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]">
+    <header className={cn("w-full grid grid-rows-[7rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]", nowPlaying.enabled && "grid-rows-[10rem_1fr]")}>
       <div className="w-full">
         {/* <NowPlaying {...nowPlaying} /> */}
         <Header />

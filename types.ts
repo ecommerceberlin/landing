@@ -1,5 +1,6 @@
 
 export interface NowPlaying {
+    enabled: boolean;
     baseLabel: string;
     link: string;
 }
