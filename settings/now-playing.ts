@@ -1,3 +1,7 @@
 import { NowPlaying } from "@/types";
 
-export const nowPlaying: NowPlaying = { baseLabel: "premium", link: "/premium" }
+export const nowPlaying: NowPlaying = { 
+    enabled: false,
+    baseLabel: "premium", 
+    link: "/premium" 
+}
