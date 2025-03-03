@@ -18,7 +18,7 @@ export const defaultInitiatives: Initiative[]  = [
     {
       label: 'podcast',
       image: 'https://res.cloudinary.com/eventjuicer/image/upload/v1738234013/Podcast_qubnw2.jpg',
-      link: null,
+      link: "https://www.youtube.com/playlist?list=PLeDETsL2Wpbploo4HkP2nMkxVQeh6YP1m",
       color: 'bg-ebe'
     }
   ];
