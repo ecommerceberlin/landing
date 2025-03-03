@@ -9,14 +9,14 @@ export function PremiumItem({media, label, ticketId, thumbnail}: PremiumItemType
     return (
         <div className="md:ml-[25vw] flex flex-col gap-4 space-y-4">
 
-            <Markdown className="mt-5 text-lg md:text-[2rem] font-extralight tracking-tight [&>ul]:m-4">{t(`premium.${label}.description`)}</Markdown>
+            <Markdown className="mt-5 text-lg md:text-[2rem] font-extralight tracking-normal [&>ul]:m-4">{t(`premium.${label}.description`)}</Markdown>
 
             <ScrollArea className="w-full">
                 <div className="flex space-x-4 pb-4" style={{ width: `${media?.length * 320}px` }}>
                     {media?.map((media, index) => (
                         <div 
                             key={index} 
-                            className="relative aspect-video w-fit h-[300px] flex-shrink-0 overflow-hidden"
+                            className="relative aspect-video w-fit h-[500px] flex-shrink-0 overflow-hidden"
                         >
                             <MediaItem media={media} />
                         </div>

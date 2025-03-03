@@ -27,7 +27,7 @@ export function Recap({baseLabel, videoSrc, stats = []}: RecapProps) {
                     {stats.map((stat) => (
                         <div key={stat.label} className="flex flex-col gap-2 w-1/2">
                         <div className="text-[5rem] font-light">{stat.value}</div>
-                        <p>{stat.label}</p>
+                        <p>{t(stat.label)}</p>
                     </div>
                     ))}
 

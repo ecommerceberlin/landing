@@ -16,7 +16,7 @@ import { About } from '@/components/sections/about';
 import { Speakers } from '@/components/sections/speakers';
 import { RequestACall } from '@/components/forms/request-a-call';
 import { FullPagePhoto } from '@/components/containers/fullpagephoto';
-import { Exhibitors } from '@/components/sections/exhibitors';
+import { Exhibitors, ExhibitorsLoading } from '@/components/sections/exhibitors';
 import { MoreButton } from '@/components/nav/morebutton';
 import { Footer } from '@/components/footer';
 import { Recap } from '@/components/sections/recap';
@@ -28,6 +28,9 @@ import { statItems } from '@/settings/stats';
 import { recap } from '@/settings/recap';
 import { footer } from '@/settings/footer';
 import {cn} from '@/lib/utils'
+import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
+
+
 
 export default function Home() {
   return (
@@ -48,14 +51,17 @@ export default function Home() {
         <About />
       </BoxWithVerticalItems>
 
-      <BoxWithHorizontalItems>
-        <RoleButton className="bg-ebe" baseLabel="visitor.role"  buttonHref="/visit" />
+      <BoxWithHorizontalItems className="mb-20">
+        
+        <RoleButton className="bg-ebe" baseLabel="visitor.role"  buttonHref="/visit" /> 
+      
         <RoleButton className="bg-gray-100" baseLabel="exhibitor.role" buttonHref="/exhibit" />
+        
       </BoxWithHorizontalItems>
 
-      <GradientBox title={<SectionTitle label="exhibitor.list-archive.title" />}>
+      <GradientBox title={<SectionSecondaryTitle label="exhibitor.list-archive.title" />}>
       <BoxWithVerticalItems>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<ExhibitorsLoading />}>
           <Exhibitors />
         </Suspense>
         {/* <MoreButton label="View all exhibitors" href="/exhibitors" /> */}

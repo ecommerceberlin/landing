@@ -12,11 +12,11 @@ interface RoleButtonProps {
 
 export function RoleButton({ className, baseLabel, buttonHref = null }: RoleButtonProps) {
     return (
-        <div className={cn("flex-1 p-3 pt-0", className)}>
+        <div className={cn("flex-1 w-full h-full px-3 py-5", className)}>
 
             <SectionTitle label={`${baseLabel}.title`} />
             
-            <div className="space-y-4 mt-10">
+            <div className="space-y-4">
             <p className="text-lg font-light">{t(`${baseLabel}.description`)}</p>
             {buttonHref && <MoreButton label={`${baseLabel}.more`} href={buttonHref} variant="hero" size="hero" />}
             </div>
