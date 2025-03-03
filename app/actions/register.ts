@@ -56,7 +56,7 @@ OLD SYSTEM
     "fields": {
         "url": "https://ecommerceberlin.com/visit",
         "locale": "en",
-        "email": "adam@zygadlewicz.com",
+        "email": "adaxxxxxdlewicz.com",
         "fname": "adam",
         "lname": "zygadlewicz",
         "cname2": "test",
@@ -91,7 +91,7 @@ OLD SYSTEM
 /*
 {
     "values": {
-        "email": "adam@zygadlewicz.com",
+        "email": "adxxxxxwicz.com",
         "fname": "adam",
         "lname": "zygadlewicz",
         "cname2": "test",
