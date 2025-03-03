@@ -23,7 +23,7 @@ export function Speakers() {
   }
 
   return (
-    <ScrollArea className={cn('my-5 w-full max-w-[100vw] overflow-x-hidden')}>
+    <ScrollArea className={cn('my-5 w-full min-w-[100dvw] max-w-[100dvw] overflow-x-hidden')}>
       <div
         className={cn(
           'flex space-x-4 pb-4 bg-gradient-to-t',

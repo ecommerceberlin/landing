@@ -12,7 +12,7 @@ export interface BrandsProps {
 export function Brands({items}: BrandsProps) {
 
   return (
-    <ScrollArea className={cn('w-full max-w-[100vw] overflow-x-hidden bg-ebe')}>
+    <ScrollArea className={cn('w-full min-w-[100dvw] max-w-[100dvw] overflow-x-hidden bg-ebe')}>
       <div className="flex space-x-4 pb-4">
        
           {items?.map((item, idx) => (
