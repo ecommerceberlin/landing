@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "tunnel": "ngrok http --url=legible-key-frog.ngrok-free.app 3000",
     "dev:en": "cross-env NEXT_PUBLIC_LOCALE=en next dev",
     "dev:de": "cross-env NEXT_PUBLIC_LOCALE=de next dev",
     "dev:pl": "cross-env NEXT_PUBLIC_LOCALE=pl next dev",

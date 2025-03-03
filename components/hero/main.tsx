@@ -23,17 +23,17 @@ export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) 
     <FullPagePhoto src={image}>
       <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
       <Gradient className="top-[3rem] w-[20vw] h-[40vh]" />
-      <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-fit  text-white pl-5 pb-5">
-      <div className="flex flex-col justify-between h-full space-y-5">
-      <div>
+      <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-fit  text-white p-5">
+      <div className="flex flex-col justify-between h-fit space-y-20 md:space-y-[10rem]">
+      <div className="space-y-2">
       <h3 className="uppercase font-light text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[6rem] leading-[1]">
       {t(label)}
       </h3>
-      <p className="font-thin text-base md:text-[1.5rem] lg:text-[2rem] xl:text-[3rem] leading-[1]">
+      <p className="font-extralight md:font-thin text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[3rem] leading-[1]">
       {t(secondaryLabel)}
       </p>
       </div>
-      <div className="flex gap-4 mt-[20vh]">
+      <div className="flex gap-4">
       {buttons.map((button) => (
       <MoreButton key={button.href} label={button.label} href={button.href} variant="hero" size="hero" />
       ))}
