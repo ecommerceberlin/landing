@@ -9,7 +9,7 @@ import { MoreButton } from '@/components/nav/morebutton';
 export interface Initiative {
   label: string;
   image: string;
-  link: string;
+  link: string | null;
   color: "bg-ebe" | "bg-white";
 }
 
