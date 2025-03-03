@@ -32,7 +32,7 @@ import {cn} from '@/lib/utils'
 export default function Home() {
   return (
     <div className="min-h-screen w-[100dvw]">
-    <header className={cn("w-full grid grid-rows-[7rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]", nowPlaying.enabled && "grid-rows-[10rem_1fr_10rem]")}>
+    <header className={cn("w-full grid grid-rows-[7rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]", nowPlaying.enabled && "grid-rows-[10rem_1fr]")}>
       <div className="w-full">
         <NowPlaying {...nowPlaying} />
         <Header />
