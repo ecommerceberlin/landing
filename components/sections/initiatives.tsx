@@ -1,11 +1,10 @@
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { defaultInitiatives } from '@/settings/inititatives';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import Image from 'next/image';
 import { SectionSecondaryTitle } from '@/components/text/section-secondary-title';
 import { t } from '@/scripts/translate';
+import { MoreButton } from '@/components/nav/morebutton';
 
 export interface Initiative {
   label: string;
@@ -56,11 +55,7 @@ export function Initiatives({
             
             <div className="flex flex-col-reverse md:flex-row gap-4 mb-5">
               <div className="flex flex-col gap-4 w-1/2 justify-end">
-              {initiative.link && <Button variant="default" size="hero" className="w-fit">
-                <Link href={initiative.link}>
-                  {t(`${baseLabel}.${initiative.label}.button`)}
-                </Link>
-               </Button>}
+              {initiative.link && <MoreButton label={t(`${baseLabel}.${initiative.label}.button`)} href={initiative.link} variant="hero" size="hero" className="w-fit"/>}
               </div>
 
               <div className="flex flex-col gap-4 w-1/2 justify-end">
