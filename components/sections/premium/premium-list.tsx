@@ -1,10 +1,12 @@
 
-import Image from 'next/image'
+
 import {Gradient} from '@/components/hero/gradient'
 import {t} from '@/scripts/translate'
 import { PremiumItem } from '@/types'
-import {Skeleton} from '@/components/ui/skeleton'
+
 import {MoreButton} from '@/components/nav/morebutton'
+import {PremiumItemPrice} from '@/components/sections/premium/premium-item-price'
+import {PremiumListItemImage} from '@/components/sections/premium/premium-list-item-image'
 
 interface PremiumListProps {
     items: PremiumItem[];
@@ -27,30 +29,25 @@ export function PremiumList({items=[], baseLabel="premium", excludeLabel}: Premi
                         className="relative aspect-square w-full group"
                     >
                         {/* <Link href={`/premium/${item.label}`} className="block w-full h-full"> */}
-                            {item.thumbnail ? <Image 
-                                src={item.thumbnail} 
-                                alt={item.label} 
-                                fill 
-                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                                quality={100}
-                            /> : <Skeleton className="w-full h-full" />}
-                            
+                           
+                            <PremiumListItemImage image={item.thumbnail} />
                             <Gradient 
                                 variation={index % 3} 
                                 className="absolute bottom-[30%] right-0 w-[100px] h-[100px] opacity-100 group-hover:opacity-50 transition-all duration-300" 
                             />
     
-                            <figcaption className="absolute inset-0 flex flex-col items-start justify-end p-5 bg-gradient-to-t from-black/90 via-black/10 to-transparent ">
+                            <figcaption className="absolute inset-0 flex flex-col items-start justify-end p-5 bg-gradient-to-t from-black/90 via-black/10 to-transparent z-10">
                                 <div className="text-white space-y-4">
-                                    <h3 className="text-2xl md:text-[2rem] font-thin tracking-tighter">
+                                    <h3 className="text-[2rem] md:text-[3rem] font-thin tracking-tighter">
                                         {t(`premium.${item.label}.title`)}
                                     </h3>
                                    
-                                    <div className="flex justify-between items-center">
+                                    <div className="flex flex-col md:flex-row justify-between items-center w-full">
 
-                                        <div className="text-sm font-extrabold">PRICE EUR</div>
-
-                                        <MoreButton label={`${baseLabel}.item.button`} href={`/premium/${item.label}`} variant="hero" />
+                                       
+                                        <PremiumItemPrice ticketId={item.ticketId} className="flex-1" />
+                                        
+                                        <MoreButton label={`${baseLabel}.item.button`} href={`/premium/${item.label}`} variant="hero" size="hero" className="w-fit"/>
                                     </div>
                                 </div>
     
