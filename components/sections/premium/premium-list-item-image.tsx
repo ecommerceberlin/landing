@@ -19,4 +19,4 @@ export function PremiumListItemImage({image}: {image: string}) {
     
 
     //grayscale group-hover:grayscale-0 transition-all duration-300
-}
+}0

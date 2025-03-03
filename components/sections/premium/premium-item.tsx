@@ -6,7 +6,7 @@ import { PremiumItem as PremiumItemType } from '@/types'
 import { Markdown } from '@/components/text/markdown'
 import { BoxWithHorizontalItems } from '@/components/containers/box-horizontal';
 import { PremiumItemPrice } from '@/components/sections/premium/premium-item-price';
-
+import { PremiumItemStatus } from '@/components/sections/premium/premium-item-status';
 export function PremiumItem({media, label, ticketId, thumbnail}: PremiumItemType) {
     return (
 
@@ -14,7 +14,11 @@ export function PremiumItem({media, label, ticketId, thumbnail}: PremiumItemType
 
             <BoxWithHorizontalItems>
 
-            <Markdown className="mt-5 text-lg md:text-[2rem] font-extralight tracking-normal [&>ul]:m-4 max-w-[800px] flex-1">{t(`premium.${label}.description`)}</Markdown>
+            <div className="mt-5 max-w-[800px] flex-1 relative">
+            <Markdown className="text-lg md:text-[2rem]font-extralight tracking-normal [&>ul]:m-4 w-full">{t(`premium.${label}.description`)}</Markdown>
+
+            <PremiumItemStatus ticketId={ticketId} size="large" />
+            </div>
 
             <div className="w-fit mt-7 px-10">
                 <PremiumItemPrice ticketId={ticketId} />

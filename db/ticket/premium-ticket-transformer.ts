@@ -7,6 +7,7 @@ export type ApiTicketPremiumDTO = {
     start: string
     end: string 
     remaining: number
+    in_dates: number
     errors: string[]
 } 
 
@@ -18,7 +19,8 @@ export function transformToApiTicketPremiumDTO(ticket: any): ApiTicketPremiumDTO
         bookable: ticket.bookable,
         start: ticket.start,
         end: ticket.end,
-        remaining: ticket.remaining,
+        remaining: Number(ticket.remaining),
+        in_dates: Number(ticket.in_dates),
         errors: ticket.errors
     }
 }
