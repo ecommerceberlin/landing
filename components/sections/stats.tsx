@@ -1,4 +1,4 @@
-
+import {t} from '@/scripts/translate'
  
 
 export interface StatItem {
@@ -14,7 +14,7 @@ function StatItem({label, value}: StatItem){
     return (
         <div className="w-full flex flex-col items-center justify-center">
             <div className="text-[4rem] font-extralight">{value}</div>
-            <div className="text-4xl font-thin">{label}</div>
+            <div className="text-4xl font-thin">{t(label)}</div>
         </div>
     )
 }
