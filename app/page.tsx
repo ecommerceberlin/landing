@@ -33,7 +33,7 @@ export default function Home() {
     
     <header className="w-full grid grid-rows-[10rem_1fr]  justify-items-center min-h-screen max-w-[100dvw]">
       <div className="w-full">
-        <NowPlaying {...nowPlaying} />
+        {/* <NowPlaying {...nowPlaying} /> */}
         <Header />
       </div>
       <Hero {...hero} />

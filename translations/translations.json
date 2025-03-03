@@ -2,30 +2,69 @@
   "en": {
     "visitor": {
       "role": {
-        "title": "Visit",
-        "description": "visitor.role.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "more": "More "
+        "title": "GET YOUR TICKET",
+        "description": "Ready to unleash your potential? Get to know the latest eCommerce innovations, attend world-class talks, and connect with leaders shaping the future.",
+        "more": "REGISTER"
       }
     },
     "exhibitor": {
       "role": {
-        "title": "Exhibit",
-        "description": "exhibitor.role.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "more": "More"
+        "title": "GET YOUR BOOTH",
+        "description": "Showcase your brand to a global audience. Join our exhibitor lineup, meet new clients on the spot, and expand your reach at Europe’s premier eCommerce event.",
+        "more": "JOIN"
+      },
+      "book-a-call": {
+        "title": "BECOME AN EXHIBITOR",
+        "description": "Make your mark among 13,000+ attendees and 340 cutting-edge exhibitors. Elevate your brand at Europe’s most dynamic eCommerce event – where fresh ideas flourish, partnerships take root, and the future of online retail takes shape.",
+        "button": "BOOK A CALL",
+        "terms": "By submitting this form, you agree to our privacy policy and consent to receiving communications. You may opt out anytime."
+      },
+      "list-archive": {
+        "title": "SEE WHO EXHIBITED WITH US"
       }
     },
     "stats": {
-      "about": "stats.about\nuisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n\n                        adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. \n                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. "
+      "about": "Step into Europe’s most exciting e-commerce event! With over 13,000 visitors and 340 forward-thinking exhibitors, this is where innovation takes center stage. \n\nConnect with industry experts, explore emerging trends, and shape the future of online business – together. ",
+      "visitors": "Visitors",
+      "exhibitors": "Exhibitors",
+      "speakers": "Speakers",
+      "masterclasses": "Masterclasses"
     },
     "fields": {
       "name": {
-        "label": "Full Name",
+        "label": "NAME AND SURNAME",
         "error": "Name must be at least 3 chars long"
+      },
+      "company": {
+        "label": "COMPANY"
+      },
+      "email": {
+        "label": "EMAIL"
+      },
+      "phone": {
+        "label": "PHONE NUMBER"
+      },
+      "full_name": {
+        "error": "Please enter at least 3 characters in the full name field"
       }
     },
     "initiatives": {
       "news": {
-        "title": "News"
+        "title": "News",
+        "description": "Stay current with in-depth articles, breaking updates, and expert insights to keep your eCommerce strategy ahead of the curve.",
+        "button": "SEE MORE"
+      },
+      "title": "DISCOVER OUR OTHER INITIATIVES",
+      "description": "Looking to broaden your impact beyond the Expo? We offer more ways to grow and connect in the eCommerce space.",
+      "awards": {
+        "title": "AWARDS",
+        "description": "Celebrate the year’s most outstanding achievements and meet the companies setting new standards in online business during our annual Gala.",
+        "button": "SEE MORE"
+      },
+      "podcast": {
+        "title": "PODCAST",
+        "description": "Listen in on meaningful conversations with eCommerce leaders and drive growth for your own ventures.",
+        "button": "SEE MORE"
       }
     },
     "form": {
@@ -33,6 +72,98 @@
         "success": "Thank you!",
         "error": "An error occurred :("
       }
+    },
+    "premium": {
+      "vipzone": {
+        "title": "VIP Zone Sponsorship",
+        "description": "# Experience exceptional brand awareness at the exclusive VIP Zone. With 800 m² of space, the area provides a sophisticated environment for impressing top decision-makers in the industry!\n\n# Benefits:\n\n### Branding & Promotional Benefits\n\n* Exclusive branded space of over 800 m²  \n* Inclusion in the venue map in the printed brochure\n* Company logo included on the onsite branding\n* A speaking slot at the E-commerce Berlin Expo 2025 (please note that sales pitches are not allowed in presentations)\n* Opportunity to network with top decision-makers in the industry \n* A possibility to distribute up to 100 VIP invitations to the event\n* Four tickets for the exclusive E-commerce Germany Awards Gala & Networking Event, held on the 1st day of the Expo\n* Two meeting spots in the VIP Zone exclusively for the sponsor's use\n\n\n### Benefits Before the Event\n\n* Co-branded email send-out to the attendees two weeks before the event\n* Access to the list of attendees ahead of the E-commerce Berlin Expo, in accordance with the GDPR guidelines\n* Access to the press list a week prior to the event\n\n### Online Benefits\n\n* Company logo featured on the event website\n* Two social media blasts before the event (21,000+ reach)\n* E-commerce Berlin Expo marketing pack\n* A possibility to publish two articles throughout the year on ecommercegermany.com (with 30,000 unique visitors per month)\n* Both articles featured in the E-commerce Germany News newsletter (with 33,000 Newsletter subscribers)\n\n### Expo stand:\n\n* Any 9 sqm space of your choice from the Expo [floor plan](https://ecommerceberlin.com/exhibit).\n\n# Optional Branding Upgrade:\n\n* Logotype placement on walls and stairs by the entrance of the VIP Zone (available for an additional fee of 3000 Euro; please contact us for more details)"
+      },
+      "mainstage": {
+        "title": "Main Stage Patronage",
+        "description": "# Make a lasting impact with the Main Stage Sponsorship, which provides an exclusive speaking slot and onsite branding opportunities that are sure to capture the attention of the highly-targeted audience\n\n# Benefits:\n\n### Onsite Branding & Promotion\n\n* A speaking slot at the E-commerce Berlin Expo 2025 (please note that sales pitches are not allowed in presentations)\n* Inclusion in the venue map in the printed brochure\n* Logo placement at the entrance to the keynote room\n* Company promotion inside the keynote room\n* Company logo continuously shown on the stage screen throughout the day\n* Company logo included in the conference agenda materials\n* Distribution of flyers on the 250 available seats \n\n### Online Benefits\n\n* Company logo featured on the event website\n* Speakers' photo on the agenda section on the E-commerce Berlin Expo website \n* One social media blast before the event (with 21,000+ reach)\n* A possibility to publish one article throughout the year on ecommercegermany.com (with 30,000 unique visitors per month)\n* The article featured in the E-commerce Germany News newsletter (with 33,000 Newsletter subscribers)"
+      },
+      "keynotestage": {
+        "title": "Keynote Stage Patronage",
+        "description": "# Make a lasting impact with the Keynote Stage Sponsorship, which provides an exclusive speaking slot and onsite branding opportunities that are sure to capture the attention of the highly-targeted audience\n\n# Benefits:\n\n### Onsite Branding & Promotion\n\n* A speaking slot at the E-commerce Berlin Expo 2025 (please note that sales pitches are not allowed in presentations)\n* Inclusion in the venue map in the printed brochure\n* Logo placement at the entrance to the keynote room\n* Company promotion inside the keynote room\n* Company logo continuously shown on the stage screen throughout the day\n* Company logo included in the conference agenda materials\n* Distribution of flyers on the 250 available seats \n\n### Online Benefits\n\n* Company logo featured on the event website\n* Speakers' photo on the agenda section on the E-commerce Berlin Expo website \n* One social media blast before the event (with 21,000+ reach)\n* A possibility to publish one article throughout the year on ecommercegermany.com (with 30,000 unique visitors per month)\n* The article featured in the E-commerce Germany News newsletter (with 33,000 Newsletter subscribers)"
+      },
+      "openstage": {
+        "description": "# Make a lasting impact with the Open Stage Sponsorship, which provides an exclusive speaking slot and onsite branding opportunities that are sure to capture the attention of the highly-targeted audience\n\n# Benefits:\n\n### Onsite Branding & Promotion\n\n* A speaking slot at the E-commerce Berlin Expo 2025 (please note that sales pitches are not allowed in presentations)\n* Inclusion in the venue map in the printed brochure\n* Logo placement at the entrance to the keynote room\n* Company promotion inside the keynote room\n* Company logo continuously shown on the stage screen throughout the day\n* Company logo included in the conference agenda materials\n* Distribution of flyers on the 250 available seats \n\n### Online Benefits\n\n* Company logo featured on the event website\n* Speakers' photo on the agenda section on the E-commerce Berlin Expo website \n* One social media blast before the event (with 21,000+ reach)\n* A possibility to publish one article throughout the year on ecommercegermany.com (with 30,000 unique visitors per month)\n* The article featured in the E-commerce Germany News newsletter (with 33,000 Newsletter subscribers)",
+        "title": "Open Stage Patronage"
+      },
+      "lanyards": {
+        "title": "Branded Lanyards Sponsorship",
+        "description": "# Make a lasting impression by sponsoring branded lanyards and providing giveaways to all event attendees at the entrance \n\n# Specifications:\n\n* 12,000 branded lanyards to be delivered for distribution during the event\n* Production and delivery costs to be borne by the sponsor\n* Availability: limited to one sponsor, guaranteeing exclusive exposure \n\n# Additional benefits:\n\n* Company logo featured on the event website\n* Company logo featured in the official event brochure"
+      },
+      "badgesponsor": {
+        "title": "Visitor Badge Sponsorship",
+        "description": "# Put your brand in the spotlight with the exclusive Visitor Badge Sponsorship. Display your logo on all visitor badges and ensure high-level branding with excellent exposure for your company\n\n# Specifications:\n\n* Exclusive branded visitor badges sent via email to all attendees prior to the event\n* High-level branding and excellent exposure for your company\n* Your logo prominently displayed on the badges, visible to all visitors before and during the event\n* Availability: limited to one sponsor, guaranteeing exclusive exposure\n\n# Additional benefits:\n\n* Company logo featured on the event website\n* Company logo featured in the official event brochure"
+      },
+      "headline": {
+        "title": "Headline Sponsorship",
+        "description": "### The invite-only event includes the prestigious E-commerce Germany Awards Ceremony and the Networking Party, where participants can connect in a festive atmosphere, making it the perfect opportunity to bond with some of the most important companies from the e-commerce sector.\n\n### Benefits:\n\n# INCLUDED\n\n* Logotype display on the stage screen\n* Logotype presentation on the impressive wall of 36 screens in the main point of the venue\n* Branded stage decorations\n* Co-branded photo wall to provide an ideal backdrop for pictures\n* Two roll-ups placed at the entrance\n* Co-branded wristband distributed to all party participants at the entrance\n* VIP Lounge Sponsorship\n* [Finger Food Advertising](https://ecommercegermanyawards.com/premium/food)\n* Introduction and multiple announcements of the Sponsor’s company from the stage\n* 5 minutes of stage time for a Sponsor representative to introduce the company to the guests\n* 30 party tickets for Sponsor representatives and guests\n* Logo placement with the Headline Sponsor title on the [ecommercegermanyawards.com](ecommercegermanyawards.com)\n* Special mentions in the emails sent to the party attendees and contest nominees one week prior to the gala and as well as after the event\n* Two social media blasts before the event (with 21,000+ reach)\n* A mention in the official press release about the event\n* A possibility to publish an article on [ecommercegermany.com](ecommercegermany.com) (with 30,000 unique visitors per month)\n* Company logo featured in the E-commerce Germany Awards video recap\n\n### EXPO-RELATED BENEFITS\n\n* Exhibition space at the [E-commerce Berlin Expo 2025](https://ecommerceberlin.com/exhibit?_gl=1*1v67of1*_gcl_au*MTU4NzU2NTkwNi4xNzI0NjY3OTg0*_ga*MTc3NTI1ODI4NS4xNzI0NjY3OTgz*_ga_V591XRPH1V*MTcyOTY2ODExNi4yMS4xLjE3Mjk2NjgzNjQuNjAuMC4w)\n* A speaking slot at the E-commerce Berlin Expo 2025\n* Company logo featured in the official Expo brochure\n\n### OPTIONAL PACKAGE UPGRADES\n\n* Bar & Beer Sponsorship - **additional €6,000.00 net**\n* DJ Sponsorship - **additional €3,000.00 net**\n\n### Event details:\n\n* Date: February 19th, 2025\n* Attendees: Exhibitors representatives, E-commerce Berlin Awards contest members, Jury members, Speakers, Media Partners, E-commerce branch association representatives\n* Location: Spindler & Klatt, Berlin\n* Expected guests: 600+\n\nAll decoration and branding ideas must be discussed with both the Organizer and the Venue"
+      },
+      "registrationsponsor": {
+        "title": "Registration sponsor",
+        "description": "Make a lasting impact as the Registration Sponsor, reaching thousands of attendees with online and offline branding\n\n# Benefits:\n\n### Branding Benefits\n* Advertisement billboard located next to the main event entrance\n* Co-branded staff clothing\n* Company logo featured in the official event brochure\n* Company logo included in the onsite branding\n* The opportunity to distribute promotional goodies to visitors at the entrance\n\n### Online Benefits\n* Logo placement on the registration page for visitors (with est. 22,000 unique registrations)\n* A special mention in the post-registration email sent to all registered visitors\n* 1 Social media blast before the event (with 21,000+ reach)\n* A possibility to publish an article throughout the year on ecommercegermany.com (with 30,000 unique visitors per month)\n* Article feature in the E-commerce Germany News newsletter (with 33,000 subscribers)\n* E-commerce Berlin Expo marketing pack"
+      },
+      "beer": {
+        "title": "Branded Beer Sponsorship",
+        "description": "# Looking for a refreshing way to increase brand awareness? Impress attendees with a branded beer!\n\n# Specifications:\n\n* The official title of the E-commerce Berlin Expo Beer Sponsor\n* Logotype placement on 2,000 beer bottle covers \n* Beer: lager or pilsner, 330 ml bottle, paper label with 4c printing\n* Distribution of free beers to the event attendees\n* Additional costs may occur for editing the logo\n* Availability: limited to one sponsor, guaranteeing exclusive exposure\n\n# Additional benefits:\n\n* Company logo featured on the event website\n* Company logo featured in the official event brochure"
+      },
+      "ecobags": {
+        "title": "Branded Ecobags Sponsorship",
+        "description": "# Introducing the perfect way to showcase your commitment to sustainability while giving the attendees a useful and environmentally friendly takeaway \n\n# Specifications:\n\n* 1,000 eco bags to be delivered for distribution during the event\n* Equal depiction of your company's logo and the E-commerce Berlin Expo logo on the bag\n* Layout of logo placement to be approved by the organizer\n* Production and delivery costs to be borne by the sponsor\n* Availability: limited to one sponsor, guaranteeing exclusive exposure\n\n# Additional benefits:\n\n* Company logo featured on the event website\n* Company logo featured in the official event brochure"
+      },
+      "coffee": {
+        "title": "Coffee Points Sponsorship",
+        "description": "# Gain the opportunity to support attendees with a much-needed caffeine boost while increasing your visibility to a highly targeted audience\n\n# Specifications:\n\n* Your branding on the coffee cups used by participants purchasing coffee\n* Your branding on the napkins used during the event\n* One roll-up placement per coffee point (with a total of five placements available)\n* Availability: limited to one sponsor, guaranteeing exclusive exposure\n\n# Additional benefits:\n\n* Company logo featured on the event website\n* Company logo featured in the official event brochure"
+      },
+      "podcast": {
+        "title": "Podcast Appearance Sponsorship",
+        "description": "# Get your voice and expertise heard in the e-commerce world by appearing as a guest on the E-commerce Germany News Podcast\n\n# Specifications:\n\n* One videocast/podcast episode recorded in Berlin featuring the sponsor as a guest \n* Collaborative discussion of the episode topic and recording date \n* Sponsor's logo featured in the episode's cover art\n* Sponsor's company mentioned in the podcast's introduction and closing remarks\n* Episode published on YouTube, Spotify, and Apple Podcasts platforms\n* Episode shared in social media channels (with 21,000+ reach)\n* Episode featured in the newsletter (with 33,000 Newsletter subscribers)\n* Episode featured in the article on ecommercegermany.com (with 30,000 unique visitors per month)\n\n# Benefits:\n\n* Exclusive opportunity to share your knowledge with e-commerce enthusiasts\n* A chance to gain credibility and establish yourself as a thought leader in the industry\n* A possibility to reach a wider audience through various platforms (YouTube, Spotify, Apple Podcasts, social media, news portal, newsletter)\n\nThe podcast appearance sponsorship offer may be subject to availability and scheduling. Please contact us for more information and to discuss the details. "
+      },
+      "egnoffer": {
+        "title": "Maximum Visibility Bundle",
+        "description": "# Get your brand in front of thousands of potential customers with our comprehensive advertising bundle!\n\n# Benefits\n\n### Online benefits:\n\n* Five articles published on ecommercegermany.com throughout the year (with 30,000 unique visitors per month)\n* All articles featured in the E-commerce Germany News newsletter (with 33,000 Newsletter subscribers)\n* Social media promotion of all articles (with 21,000+ reach)\n* A dedicated email sent to a highly-targeted audience (exclusive offer)\n* Banner ad on ecommercegermany.com for 2 months of your choice\n\n### Offline benefits:\n\n* Ten VIP tickets for the E-commerce Berlin Expo\n* Ten tickets for the exclusive, invite-only E-commerce Germany Awards Gala & Networking Event one night prior to the event\n* Promotion of your handouts in the media and speaker corner at the E-commerce Berlin Expo\n* Advertisement in the printed visitor guide available to E-commerce Berlin Expo attendees ( ¼ A4, 9k copies)\n* Opportunity to meet-up with three of the Expo's keynote speakers of your choice\n\n### Special benefits:\n\n* A recorded interview or podcast episode with you in Berlin, later published on E-commerce Berlin Expo platforms, newsletter, and social media channels\n* 15% discount on all exhibition spaces at the Expo\n\nThe offer may be subject to availability and scheduling. Please contact us for more information and to discuss the details. "
+      },
+      "item": {
+        "button": "Explore Package"
+      }
+    },
+    "hero": {
+      "title": "FIND YOUR NEXT E-COMMERCE CLIENT HERE",
+      "description": "Join us for Europe’s leading e-commerce event. Connect with top experts, discover fresh trends, and grow your business faster than ever."
+    },
+    "recap": {
+      "title": "E-COMMERCE BERLIN EXPO 2025",
+      "description": "Our event in 2025 was a powerhouse of innovation and connection. Here’s a quick look at what made it all possible – and a taste of what’s in store for next time."
+    },
+    "speaker": {
+      "list-archive": {
+        "title": "MEET OUR SPEAKERS"
+      }
+    },
+    "support": {
+      "title": "Got questions? We're here to assist!"
+    },
+    "nav": {
+      "privacy": "",
+      "terms": "",
+      "imprint": "IMPRINT",
+      "visitors": {
+        "legal": "RULES FOR VISITORS"
+      },
+      "exhibitors": {
+        "legal": "RULES FOR EXHIBITORS"
+      },
+      "cookies": "HOW WE USE COOKIES",
+      "visiors": {
+        "data": "PERSONAL DATA PROCESSING"
+      }
+    },
+    "newsletter": {
+      "terms": "By submitting this you agree to our privacy policy and consent to receiving communications. You may opt out anytime.",
+      "button": "SUBSCRIBE"
     }
   },
   "de": {
@@ -48,20 +179,59 @@
         "title": "",
         "description": "",
         "more": ""
+      },
+      "book-a-call": {
+        "title": "",
+        "description": "",
+        "button": "",
+        "terms": ""
+      },
+      "list-archive": {
+        "title": ""
       }
     },
     "stats": {
-      "about": ""
+      "about": "",
+      "visitors": "",
+      "exhibitors": "",
+      "speakers": "",
+      "masterclasses": ""
     },
     "fields": {
       "name": {
         "label": "",
         "error": ""
+      },
+      "company": {
+        "label": ""
+      },
+      "email": {
+        "label": ""
+      },
+      "phone": {
+        "label": ""
+      },
+      "full_name": {
+        "error": ""
       }
     },
     "initiatives": {
       "news": {
-        "title": ""
+        "title": "",
+        "description": "",
+        "button": ""
+      },
+      "title": "",
+      "description": "",
+      "awards": {
+        "title": "",
+        "description": "",
+        "button": ""
+      },
+      "podcast": {
+        "title": "",
+        "description": "",
+        "button": ""
       }
     },
     "form": {
@@ -69,6 +239,98 @@
         "success": "",
         "error": ""
       }
+    },
+    "premium": {
+      "vipzone": {
+        "title": "VIP-Zone Sponsoring",
+        "description": "# Erlebe außergewöhnliche Markenbekanntheit in der exklusiven VIP-Zone. Auf 800 m² bietet der VIP-Raum ein anspruchsvolles Umfeld für die Top-Entscheider der Branche!\n\n# Vorteile:\n\n### Branding & Werbevorteile\n\n* Exklusive gebrandete Fläche von über 800 m²\n* Firmenlogo in der offiziellen, gedruckten Veranstaltungsbroschüre\n* Firmenlogo auf dem Onsite-Branding\n* Ein Speaking Slot auf der E-Commerce Berlin Expo 2025 (bitte beachte, dass Verkaufsgespräche in Präsentationen nicht erlaubt sind)\n* Gelegenheit zum Networking mit Top-Entscheidern der Branche\n* Die Möglichkeit, bis zu 100 VIP-Einladungen zur Veranstaltung zu verteilen\n* Vier Tickets für die exklusive E-commerce Germany Awards Gala & Networking Event, die am 1. Tag der Expo stattfindet\n* Zwei Meeting-Spots in der VIP-Zone, die exklusiv für den Sponsor zur Verfügung stehen\n\n\n### Vorteile vor der Expo\n\n* Co-branded E-Mail-Versand an die Teilnehmer zwei Wochen vor der Expo\n* Zugang zur Teilnehmerliste vor der E-Commerce Berlin Expo, in Übereinstimmung mit den GDPR-Richtlinien\n* Zugriff auf die Presseliste eine Woche vor der Expo\n\n### Online Vorteile\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Zwei Social Media Blasts vor der Event (mit 21.000+ Reichweite)\n* Marketing-Paket für die E-Commerce Berlin Expo\n* Möglichkeit der Veröffentlichung zwei Artikeln auf ecommercegermany.com (mit 30.000 Unique Visitors pro Monat)\n* Veröffentlichung der beiden Artikeln im Newsletter E-commerce Germany News (mit 33.000 Newsletter-Abonnenten)\n\n### Expo-Standfläche\n\n* jede 9m2 Fläche deiner Wahl vom [Standplan](https://ecommerceberlin.com/exhibit)\n\n\n# Optionales Branding-Upgrade:\n\n* Logoplatzierung an Wänden und Treppen am Eingang zur VIP-Zone (zu einem Zusatzpreis von 3000 Euro erhältlich; bitte kontaktiere uns für weitere Details)"
+      },
+      "mainstage": {
+        "title": "Main Stage Patronage",
+        "description": "# Hinterlasse einen unvergesslichen Eindruck mit dem Bühnensponsoring, das euch einen exklusiven Speaking Slot bietet und die Möglichkeit gibt, vor Ort zu werben, um die Aufmerksamkeit des Zielpublikums auf sich zu ziehen\n\n# Vorteile:\n\n### Onsite Branding & Werbung \n\n* Ein Speaking Slot auf der E-Commerce Berlin Expo 2025 (bitte beachte, dass Verkaufsgespräche in Präsentationen nicht erlaubt sind)\n* Firmenlogo in der offiziellen, gedruckten Veranstaltungsbroschüre\n* Logoplatzierung am Eingang zum Keynote-Raum\n* Firmenpromotion innerhalb des Keynote-Raums\n* Ununterbrochene Darstellung des Firmenlogos auf dem Bühnenbildschirm während des ganzen Tages\n* Firmenlogo in den Materialien der Konferenzagenda\n* Flyerverteilung auf den 250 verfügbaren Sitzplätzen\n\n### Online Vorteile\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Foto der Speaker in der Agenda auf der E-commerce Berlin Expo Website\n* Ein Social Media Blast vor der Event (mit 21.000+ Reichweite)\n* Möglichkeit der Veröffentlichung zwei Artikeln auf ecommercegermany.com (mit 30.000 Unique Visitors pro Monat)\n* Veröffentlichung der beiden Artikeln im Newsletter E-commerce Germany News (mit 33.000 Newsletter-Abonnenten)"
+      },
+      "keynotestage": {
+        "title": "Keynote Stage Patronage",
+        "description": "# Hinterlasse einen unvergesslichen Eindruck mit dem Bühnensponsoring, das euch einen exklusiven Speaking Slot bietet und die Möglichkeit gibt, vor Ort zu werben, um die Aufmerksamkeit des Zielpublikums auf sich zu ziehen\n\n# Vorteile:\n\n### Onsite Branding & Werbung \n\n* Ein Speaking Slot auf der E-Commerce Berlin Expo 2025 (bitte beachte, dass Verkaufsgespräche in Präsentationen nicht erlaubt sind)\n* Firmenlogo in der offiziellen, gedruckten Veranstaltungsbroschüre\n* Logoplatzierung am Eingang zum Keynote-Raum\n* Firmenpromotion innerhalb des Keynote-Raums\n* Ununterbrochene Darstellung des Firmenlogos auf dem Bühnenbildschirm während des ganzen Tages\n* Firmenlogo in den Materialien der Konferenzagenda\n* Flyerverteilung auf den 250 verfügbaren Sitzplätzen\n\n### Online Vorteile\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Foto der Speaker in der Agenda auf der E-commerce Berlin Expo Website\n* Ein Social Media Blast vor der Event (mit 21.000+ Reichweite)\n* Möglichkeit der Veröffentlichung zwei Artikeln auf ecommercegermany.com (mit 30.000 Unique Visitors pro Monat)\n* Veröffentlichung der beiden Artikeln im Newsletter E-commerce Germany News (mit 33.000 Newsletter-Abonnenten)"
+      },
+      "openstage": {
+        "description": "# Hinterlasse einen unvergesslichen Eindruck mit dem Bühnensponsoring, das euch einen exklusiven Speaking Slot bietet und die Möglichkeit gibt, vor Ort zu werben, um die Aufmerksamkeit des Zielpublikums auf sich zu ziehen\n\n# Vorteile:\n\n### Onsite Branding & Werbung \n\n* Ein Speaking Slot auf der E-Commerce Berlin Expo 2025 (bitte beachte, dass Verkaufsgespräche in Präsentationen nicht erlaubt sind)\n* Firmenlogo in der offiziellen, gedruckten Veranstaltungsbroschüre\n* Logoplatzierung am Eingang zum Keynote-Raum\n* Firmenpromotion innerhalb des Keynote-Raums\n* Ununterbrochene Darstellung des Firmenlogos auf dem Bühnenbildschirm während des ganzen Tages\n* Firmenlogo in den Materialien der Konferenzagenda\n* Flyerverteilung auf den 250 verfügbaren Sitzplätzen\n\n### Online Vorteile\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Foto der Speaker in der Agenda auf der E-commerce Berlin Expo Website\n* Ein Social Media Blast vor der Event (mit 21.000+ Reichweite)\n* Möglichkeit der Veröffentlichung zwei Artikeln auf ecommercegermany.com (mit 30.000 Unique Visitors pro Monat)\n* Veröffentlichung der beiden Artikeln im Newsletter E-commerce Germany News (mit 33.000 Newsletter-Abonnenten)",
+        "title": "Keynote Stage Patronage"
+      },
+      "lanyards": {
+        "title": "Marken-Lanyards Sponsoring",
+        "description": "# Hinterlasse einen unvergesslichen Eindruck und stelle allen Eventteilnehmern am Eingang Lanyards mit eurem Logo zur Verfügung\n\n# Vorteile:\n\n* 12.000 gebrandete Lanyards, die während der Expo verteilt werden\n* Produktions- und Lieferkosten gehen zu Lasten des Sponsors\n* Verfügbarkeit: Begrenzt auf einen Sponsor, der eine exklusive Präsenz garantiert\n\n# Zusätzliche Vorteile:\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Firmenlogo in der offiziellen Veranstaltungsbroschüre"
+      },
+      "badgesponsor": {
+        "title": "Sponsoring der Besucherbadges",
+        "description": "# Stelle eure Marke mit dem exklusiven Sponsoring der Besucherbadges ins Rampenlicht. Zeige euer Logo auf allen Besucherpässen und sorge für ein hochwertiges Branding mit ausgezeichneter Sichtbarkeit für euer Unternehmen\n\n# Vorteile:\n\n* Exklusive Besucherbadges mit eurem Logo, die vor der Expo per E-Mail an alle Teilnehmer verschickt werden\n* Branding auf hohem Niveau und ausgezeichnete Sichtbarkeit für euer Unternehmen\n* Euer Logo wird prominent auf den Badges angezeigt und wird für alle Besucher vor und während des Events sichtbar sein\n* Verfügbarkeit: begrenzt auf einen Sponsor, der eine exklusive Präsenz garantiert\n\n# Zusätzliche Vorteile:\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Firmenlogo in der offiziellen, gedruckten Veranstaltungsbroschüre"
+      },
+      "headline": {
+        "title": "Hauptsponsor",
+        "description": "### Die exklusive Veranstaltung umfasst die prestigeträchtige E-commerce Germany Awards Zeremonie und die Networking Party, bei der die Teilnehmer in einer festlichen Atmosphäre Kontakte knüpfen können - eine perfekte Gelegenheit, um mit einigen der wichtigsten Unternehmen der E-Commerce-Branche in Kontakt zu treten.\n\n### Vorteile:\n\n# ENTHALTEN\n\n* Logodarstellung auf dem Bühnenbildschirm\n* Präsentation des Logos auf der großen Wand mit 36 Bildschirmen im Hauptbereich des Veranstaltungsortes\n* Gebrandete Bühnendekoration\n* Co-gebrandete Fotowand als ideale Fotokulisse\n* Aufstellung von zwei Roll-Ups am Eingang\n* Co-gebrandetes Armband, das an alle Partyteilnehmer verteilt wird\n* VIP Lounge Sponsoring\n* [Finger Food Advertising](https://ecommercegermanyawards.com/premium/food)\n* Vorstellung und mehrmalige Ankündigung des Sponsorunternehmens auf der Bühne\n* 5 Minuten Bühnenzeit für einen Sponsorenvertreter zur Vorstellung des Unternehmens vor den Gästen\n* 30 Partytickets für Sponsorenvertreter und Gäste\n* Logoplatzierung mit dem Headline Sponsor Titel auf [ecommercegermanyawards.com](ecommercegermanyawards.com)\n* Besondere Erwähnung in den E-Mails, die eine Woche vor und auch nach der Gala an die Teilnehmer der Party und die Nominierten des * Wettbewerbs verschickt werden\n* Zwei Social Media Blasts vor der Event (mit 21.000+ Reichweite)\n* Eine Erwähnung in der offiziellen Pressemitteilung über die Party\n* Möglichkeit der Veröffentlichung eines Artikels auf [ecommercegermany.com](ecommercegermany.com) (mit 30.000 Unique Visitors pro Monat)\n* Firmenlogo in der Video-Recap des E-Commerce Germany Awards\n\n# EXPOBEZOGENE VORTEILE\n\n* Ausstellungsfläche auf der [E-commerce Berlin Expo 2025](https://ecommerceberlin.com/exhibit?_gl=1*e7la88*_gcl_au*MTU4NzU2NTkwNi4xNzI0NjY3OTg0*_ga*MTc3NTI1ODI4NS4xNzI0NjY3OTgz*_ga_V591XRPH1V*MTcyOTY2ODExNi4yMS4xLjE3Mjk2Njg4ODAuNjAuMC4w)\n* Redezeit auf der E-Commerce Berlin Expo 2025\n* Firmenlogo in der offiziellen Veranstaltungsbroschüre\n\n# OPTIONALE PAKET-UPGRADES\n\n* [Bar & Beer Sponsoring](https://ecommercegermanyawards.com/premium/bar) - **zusätzliche €6,000.00 net**\n* [DJ Sponsorship](https://ecommercegermanyawards.com/premium/dj) - **zusätzliche €3,000.00 net**\n\n### Veranstaltungsdetails:\n\n* Datum: Februar 19, 2025\n* Teilnehmer: Ausstellervertreter, Wettbewerbsmitglieder des E-Commerce Berlin Awards, Jurymitglieder, Speakers, Medienpartner, Vertreter der E-Commerce-Branchenverbände\n* Ort: Spindler & Klatt, Berlin\n* Erwartete Gäste: 600+\n\nAlle Dekorations- und Branding-Ideen müssen sowohl mit dem Organisator als auch mit dem Veranstaltungsort besprochen werden"
+      },
+      "registrationsponsor": {
+        "title": "Registration sponsor",
+        "description": "Hinterlasse einen starken Eindruck als Registration-Sponsor und erreiche Tausende von Teilnehmern mit Online- und Offline-Branding\n\n# Nutzen:\n\n### Werbevorteile\n* Werbeplakat in der Nähe des Haupteingangs des Events\n* Mitarbeiterkleidung mit eigenem Branding\n* Firmenlogo in der offiziellen Event-Broschüre\n* Firmenlogo beim Branding vor Ort\n* Möglichkeit zur Verteilung von Goodies an die Besucher am Eingang\n\n### Online Vorteile\n* Logoplatzierung auf der Registrierungsseite für Besucher (mit geschätzten 22.000 einzigartigen Registrierungen)\n* Eine besondere Erwähnung in der E-Mail, die nach der Registrierung an alle registrierten Besucher geschickt wird\n* 1 Social-Media-Blast vor der Veranstaltung (mit einer Reichweite von über 21.000)\n* Möglichkeit der Veröffentlichung des Artikels auf ecommercegermany.com (mit 30.000 Unique Visitors pro Monat)\n* Veröffentlichung des Artikels im Newsletter E-commerce Germany News (mit 33.000 Newsletter-Abonnenten)\n* E-Commerce Berlin Expo Marketing Paket"
+      },
+      "beer": {
+        "title": "Biersponsoring",
+        "description": "# Sucht ihr nach einer erfrischenden Möglichkeit, eure Marke bekannter zu machen? Beeindrucke die Teilnehmer mit einem gebrandeten Bier!\n\n# Vorteile:\n\n* Der offizielle Titel des E-commerce Berlin Expo Biersponsors\n* Logoplatzierung auf 2.000 Bierflaschen\n* Bier: Lagerbier oder Pilsener, 330 ml Flasche, Papieretikett mit 4c-Druck\n* Kostenfreie Verteilung von 2000 Bierflaschen an die Besucher der Expo\n* Zusätzliche Kosten für die Bearbeitung des Logos können anfallen\n* Verfügbarkeit: Begrenzt auf einen Sponsor, der eine exklusive Präsenz garantiert\n\n# Zusätzliche Vorteile:\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website \n* Firmenlogo in der offiziellen Veranstaltungsbroschüre"
+      },
+      "ecobags": {
+        "title": "Sponsoring der Besuchertaschen",
+        "description": "# Die perfekte Möglichkeit, euer Engagement für Nachhaltigkeit zu zeigen und gleichzeitig den Teilnehmern ein nützliches und umweltfreundliches Mitbringsel zu geben\n\n# Vorteile:\n\n* 1.000 Ökotaschen, die während der Veranstaltung zu verteilen sind\n* Darstellung des Logos eures Unternehmens und des Logos der E-Commerce Berlin Expo auf der Tasche\n* Das Layout der Logoplatzierung muss vom Veranstalter akzeptiert werden\n* Die Produktions- und Lieferkosten gehen zu Lasten des Sponsors\n* Verfügbarkeit: begrenzt auf einen Sponsor, der eine exklusive Präsenz garantiert\n\n# Zusätzliche Vorteile:\n\n* Firmenlogo auf der E-Commerce Berlin Expo Seite\n* Firmenlogo in der offiziellen Event-Broschüre"
+      },
+      "coffee": {
+        "title": "Sponsoring von Kaffeepunkten",
+        "description": "# Gebe den Teilnehmern die Möglichkeit, einen dringenden Kaffee-Kick zu erhalten, und erhöhe gleichzeitig euren Bekanntheitsgrad bei einem gezielten Publikum\n\n# Vorteile:\n\n* Euer Branding auf den Kaffeebechern\n* Euer Branding auf den Servietten, die während der Expo verwendet werden\n* Ein Roll-up-platzierung pro Kaffeepunkt (insgesamt fünf Platzierungen möglich)\n* Verfügbarkeit: Begrenzt auf einen Sponsor, der eine exklusive Platzierung garantiert\n\n# Zusätzliche Vorteile:\n\n* Firmenlogo auf der E-Commerce Berlin Expo Website\n* Firmenlogo in der offiziellen Veranstaltungsbroschüre"
+      },
+      "podcast": {
+        "title": "Sponsored Podcast-Auftritt",
+        "description": "# Lass deine Stimme und dein Fachwissen in der E-Commerce-Welt hören, indem du als Gast in dem E-Commerce Germany News Podcast auftrittst\n\n# Angaben:\n\n* Eine in Berlin aufgezeichnete Videocast/Podcast Folge mit dem Sponsor als Gast\n* Gemeinsame Diskussion des Themas der Episode und des Aufnahmetermins\n* Logo des Sponsors auf dem Titelbild der Episode\n* Erwähnung des Unternehmens des Sponsors in der Einleitung und im Schlusswort des Podcasts\n* Veröffentlichung der Episode auf Youtube, Spotify und Apple Podcasts\n* Weitergabe der Episode in den sozialen Medien (21.000+ Reichweite)\n* Erwähnung der Episode im Newsletter (mit 33.000 Newsletter-Abonnenten\n* Erwähnung der Episode in einem Artikel auf ecommercegermany.com (mit 30.000 Besuchern pro Monat)\n\n# Vorteile:\n\n* Exklusive Gelegenheiten, dein Wissen mit E-Commerce-Enthusiasten zu teilen\n* Eine Chance, Glaubwürdigkeit zu gewinnen und sich als Branchenexperte zu etablieren\n* Möglichkeit, über verschiedene Plattformen (YouTube, Spotify, Apple Podcasts, soziale Medien, Newsportal, Newsletter) ein größeres Publikum zu erreichen\n\nDas Sponsoringangebot für Podcast-Auftritte kann von der Verfügbarkeit und der Terminplanung abhängen. Bitte kontaktiere uns für weitere Informationen und um die Details zu besprechen."
+      },
+      "egnoffer": {
+        "title": "Maximal Sichtbarkeit-Paket",
+        "description": "# Bringe eure Marke vor Tausenden von potenziellen Kunden mit unserem umfassenden Werbepaket ins Gespräch!\n\n# Voteile\n\n### Online Vorteile:\n\n* Fünf Artikel, die im Laufe des Jahres auf ecommercegermany.com veröffentlicht werden (mit 30.000 einzigartigen Besuchern pro Monat)\n* Alle Artikel werden im Newsletter von E-commerce Germany News veröffentlicht (mit 33.000 Newsletter-Abonnenten)\n* Social Media Promotion aller Artikel (mit 21.000+ Reichweite)\n* Eine spezielle E-Mail an eine hoch targetierte Zielgruppe (exklusives Angebot)\n* Bannerwerbung auf ecommercegermany.com für 2 Monate eurer Wahl\n\n### Offline Vorteile:\n\n* Zehn VIP-Tickets für die E-commerce Berlin Expo\n* Zehn Tickets für die exklusive E-commerce Germany Awards Zeremonie & Networking Event einen Abend vor der Expo\n* Promotion eurer Handouts in der Medien- und Speaker-Corner auf der E-commerce Berlin Expo\n* Anzeige im gedruckten Besucherguide der E-commerce Berlin Expo (¼ A4, 9k Exemplare)\n* Gelegenheit zu einem Meeting mit drei Expo Keynote-Speakern eure Wahl auf der Expo\n\n### Spezielle Vorteile:\n\n* Ein Interview oder eine Podcast-Episode mit euch in Berlin, die später auf den Plattformen der E-Commerce Berlin Expo, im Newsletter und in den Social Media Kanälen veröffentlicht wird\n* 15 % Rabatt auf alle Ausstellungsflächen auf der Expo\n\nDas Angebot kann von der Verfügbarkeit und der Terminplanung abhängig sein. Bitte kontaktiere uns für weitere Informationen und um die Details zu besprechen."
+      },
+      "item": {
+        "button": "Mehr erfahren"
+      }
+    },
+    "hero": {
+      "title": "",
+      "description": ""
+    },
+    "recap": {
+      "title": "",
+      "description": ""
+    },
+    "speaker": {
+      "list-archive": {
+        "title": ""
+      }
+    },
+    "support": {
+      "title": ""
+    },
+    "nav": {
+      "privacy": "",
+      "terms": "",
+      "imprint": "",
+      "visitors": {
+        "legal": ""
+      },
+      "exhibitors": {
+        "legal": ""
+      },
+      "cookies": "",
+      "visiors": {
+        "data": ""
+      }
+    },
+    "newsletter": {
+      "terms": "",
+      "button": ""
     }
   }
 }

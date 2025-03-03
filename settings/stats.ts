@@ -5,19 +5,19 @@ import { StatItem } from "@/components/sections/stats"
 export const statItems: StatItem[] = [
     {
         label: 'stats.visitors',
-        value: '10K'
+        value: '13K'
     },
     {
         label: 'stats.exhibitors',
-        value: '300+'
+        value: '340'
     },
     {
         label: 'stats.speakers',
-        value: '100'
+        value: '150'
     },
     {
         label: 'stats.masterclasses',
-        value: '100'
+        value: '50'
     },
 ]
 
