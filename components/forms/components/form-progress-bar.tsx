@@ -1,6 +1,7 @@
 import { useFormNavigation } from "@/hooks/use-form-navigation"
+import { cn } from "@/lib/utils"
 
-export const FormProgressBar = () => {
+export const FormProgressBar = ({className}: {className?: string}) => {
 
   const currentFieldIndex = useFormNavigation(state => state.currentFieldIndex)
   const fields = useFormNavigation(state => state.fields)
@@ -10,7 +11,7 @@ export const FormProgressBar = () => {
   if (inSummaryMode || !fields.length) return null
 
   return (
-    <div className="space-y-2">
+    <div className={cn("space-y-2", className)}>
       <div className="flex justify-between text-sm text-muted-foreground">
         <span>Step {currentFieldIndex + 1} of {fields.length}</span>
         <span>{Math.round(((currentFieldIndex + 1) / fields.length) * 100)}%</span>

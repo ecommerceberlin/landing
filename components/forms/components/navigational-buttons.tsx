@@ -3,8 +3,10 @@
 import { Button } from "@/components/ui/button"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
 import { useFormContext } from "react-hook-form"
+import { cn } from "@/lib/utils"
+import { SubmitButton } from "@/components/forms/components/submit-button"
 
-export const NavigationalButtons = () => {
+export const NavigationalButtons = ({className}: {className?: string}) => {
 
   const form = useFormContext()
 
@@ -77,7 +79,7 @@ if (currentFieldIndex === fields.length - 1) {
   }
 
   return (
-    <div className="flex flex-row gap-2 w-full mt-2 md:mt-4">
+    <div className={cn("flex flex-row gap-2 w-full mt-2 md:mt-4", className)}>
       <Button 
         className="w-1/2 h-16 text-lg"
         type="button" 
@@ -89,13 +91,7 @@ if (currentFieldIndex === fields.length - 1) {
       </Button>
 
       {inSummaryMode ? (
-        <Button 
-          type="submit"
-          className="w-1/2 h-16 text-lg"
-          disabled={!form.formState.isValid}
-        >
-          Submit
-        </Button>
+        <SubmitButton />
       ) : currentFieldIndex === fields.length - 1 ? (
         <Button 
           type="button"
