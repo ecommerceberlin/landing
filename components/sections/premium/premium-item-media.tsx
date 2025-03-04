@@ -29,7 +29,9 @@ export function MediaItem({media}: {media: string}) {
     }
 
     return (
-        <Image src={media} alt={media} fill className="object-cover" />
+        <Image src={media} alt={media} fill className="object-cover" sizes="(max-width: 768px) 50vw,
+        (max-width: 1200px) 33vw,
+        25vw" />
     )
 
 }
