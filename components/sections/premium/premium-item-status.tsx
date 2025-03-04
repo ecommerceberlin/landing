@@ -3,7 +3,7 @@ import { useTicket } from "@/hooks/use-ticket"
 import { t } from "@/scripts/translate"
 import { cn } from "@/lib/utils"
 
-export function PremiumItemStatus({ticketId, className, size}: {ticketId: number, className?: string, size?: "small" | "large"}) {
+export function PremiumItemStatus({ticketId, className, size="small"}: {ticketId: number, className?: string, size?: "small" | "large"}) {
 
     const ticket = useTicket(ticketId)
 
