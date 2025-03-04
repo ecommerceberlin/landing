@@ -35,7 +35,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
 
     return (
         <FormItem className="w-full space-y-2 mb-5">
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center md:justify-start">
                 <FormLabel className="text-md mb-1">
                     {description}
                     {!optional && <span className="text-[#FCE61D] ml-1">*</span>}
