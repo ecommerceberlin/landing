@@ -1,10 +1,10 @@
 'use client'
-
+import {cloneElement} from 'react'
 import { cn } from "@/lib/utils"
 import { Form } from "@/components/ui/form"
 import { useForm, EnhancedUseFormReturn } from "@/hooks/use-form"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
-
+import { SubmitButton } from "@/components/forms/components/submit-button"
 
 import { 
   FormSchemaDefinitions, 
@@ -21,13 +21,13 @@ import { SwitchInput } from "./components/switch-input"
 import { TextareaInput } from "./components/textarea-input"
 import { longTextFields } from "@/lib/schemas"
 import { updateProfile } from "@/app/actions/register"
-import { useRouter } from 'next/navigation';
+
 
 interface SmartFormProps {
   schema: FormSchemaDefinitions
   // onSubmit: (values: Record<string, any>) => Promise<any>
   initialData?: Record<string, any>,
-  onSuccess?: (participant: Record<string, any>) => void | React.ReactNode
+  onSuccess?: React.ReactElement
 }
 
 export type InputProps = {
@@ -40,13 +40,14 @@ type FormValues = Record<string, any>
 
 export function SmartForm({
   schema,
-  initialData
+  initialData,
+  onSuccess
 }: SmartFormProps) {
   const form = useForm(schema, initialData, {
     mode: 'onChange',  // Validate on every change
   }) as EnhancedUseFormReturn
 
-  const {push} = useRouter()
+
   const currentFieldIndex = useFormNavigation(state => state.currentFieldIndex)
   const inSummaryMode = useFormNavigation(state => state.inSummaryMode)
   const fields = useFormNavigation(state => state.fields)
@@ -92,10 +93,11 @@ export function SmartForm({
       const result = await updateProfile(values)
 
       if (result?.success) {
-
-        
+        if (onSuccess) {
+          return cloneElement(onSuccess, {data: result.data})
+        }
         // form.reset(initialData)
-        push(`/qrcode/${result?.data?.code}`)
+        // push(`/qrcode/${result?.data?.code}`)
         return
       }else{
         // Handle server validation errors
@@ -120,22 +122,25 @@ export function SmartForm({
       >
         
         <div className="w-full flex flex-col">
-          <FormProgressBar />
+          <FormProgressBar className="md:hidden" />
           {inSummaryMode ? (
-            <Summary />
+            <Summary className="md:hidden" />
           ) : (
-            <div className="relative mt-[2rem] pb-[140px]">
+            <div className="relative mt-[2rem] pb-[140px] md:pb-0 md:static">
               { fields.map((fieldName, index) =>  (
                   <div
                     key={fieldName}
                     className={cn(
                       "absolute inset-0",
                       "transition-all duration-500 ease-in-out",
-                      currentFieldIndex === index 
-                        ? 'opacity-100 translate-x-0 min-h-fit pointer-events-auto'
+                      // Mobile behavior (default)
+                      currentFieldIndex === index
+                        ? 'opacity-100 translate-x-0 min-h-fit pointer-events-auto md:translate-x-0'
                         : index < currentFieldIndex
-                          ? 'opacity-0 -translate-x-full pointer-events-none' // Slide left if previous
-                          : 'opacity-0 translate-x-full pointer-events-none'  // Slide right if next
+                          ? 'opacity-0 -translate-x-full pointer-events-none md:translate-x-0' // Slide left if previous
+                          : 'opacity-0 translate-x-full pointer-events-none md:translate-x-0',  // Slide right if next
+                      // Desktop behavior
+                      'md:relative md:opacity-100 md:pointer-events-auto md:mb-4'
                     )}
                   >
                     <div className="relative">
@@ -148,7 +153,8 @@ export function SmartForm({
           )}
 
           <div className="w-full">
-            <NavigationalButtons />
+            <NavigationalButtons className="md:hidden" />
+            <SubmitButton className="hidden md:block" />
           </div>
         </div>
    

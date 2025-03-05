@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { EditIcon } from "lucide-react"
 
-export const Summary = () => {
+export const Summary = ({className}: {className?: string}) => {
   const { getValues } = useFormContext()
   const values = getValues()
   const navigateToField = useFormNavigation(state => state.navigateToField)
@@ -20,7 +20,7 @@ export const Summary = () => {
   }
 
   return (
-    <div className="w-full px-2 md:max-w-[600px]">
+    <div className={cn("w-full px-2 md:max-w-[600px]", className)}>
       <h2 className="text-lg font-semibold mb-4 border-b pb-2">Summary</h2>
       <ScrollArea className="h-[200px] max-w-[550px] rounded-md border p-4">
     

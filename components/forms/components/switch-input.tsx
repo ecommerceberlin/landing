@@ -14,7 +14,7 @@ export const SwitchInput: React.FC<InputProps> = ({ name, optional }) => {
       name={name}
       render={({ field }) => (
         <div>
-            <FormItem className="flex flex-col items-center w-full">
+            <FormItem className="flex flex-col items-center md:items-start w-full">
             <div className="flex flex-row items-center gap-2">
                 <FormControl>
                     <Switch

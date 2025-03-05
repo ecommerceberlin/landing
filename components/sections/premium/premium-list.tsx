@@ -27,7 +27,7 @@ return (
                 className="relative aspect-square w-full group"
             >
                 {/* <Link href={`/premium/${item.label}`} className="block w-full h-full"> */}
-                    <PremiumItemStatus ticketId={item.ticketId} />
+                    <PremiumItemStatus ticketId={item.ticketId} size="small" />
                     <PremiumListItemImage image={item.thumbnail} />
                     <Gradient 
                         variation={index % 3} 
