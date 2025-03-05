@@ -75,7 +75,7 @@ export const TextInput = ({ name, className, optional }: InputProps) => {
         />
         </FormControl>
         <div className="flex justify-center md:justify-start w-full">
-          <FormMessage className="" />
+          <FormMessage />
         </div>
         </FormItem>
     )} />

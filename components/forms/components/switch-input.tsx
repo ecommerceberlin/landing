@@ -29,7 +29,7 @@ export const SwitchInput: React.FC<InputProps> = ({ name, optional }) => {
                     {!optional && <span className="text-destructive ml-1">*</span>}
                 </FormLabel>
             </div>
-            <FormMessage className="w-full text-[#FCE61D]"/>
+            <FormMessage className="w-full"/>
 
             </FormItem>
         </div>

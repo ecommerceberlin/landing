@@ -116,7 +116,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                     </Command>
                                 </PopoverContent>
                             </Popover>
-                            <FormMessage className="text-[#FCE61D]" />
+                            <FormMessage />
                         </div>
                     )}
                 />
