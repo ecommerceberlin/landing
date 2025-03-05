@@ -1,5 +1,8 @@
 import { z } from "zod"
 import { isValidPhoneNumber } from 'libphonenumber-js'
+import { t } from "@/scripts/translate"
+
+
 export type ZodSelectOptions = Record<string, string>
   
 export const getKeys = (obj: ZodSelectOptions) => Object.keys(obj) as [keyof typeof obj, ...Array<keyof typeof obj>]
@@ -20,32 +23,32 @@ export const longTextFields = []
 
 export const commonValidators = {
   email: z.string({
-    required_error: "Email is required",
-  }).email("Invalid email address"),
+    required_error: t("fields.email.error"),
+  }).email( t("fields.email.error") ),
   cname: z.string({
-    required_error: "Company name is required",
-  }).min(2, "Company name is required").max(255),
+    required_error: t("fields.cname.error"),
+  }).min(2, t("fields.cname.error")).max(255),
   cname2: z.string({
-    required_error: "Company name is required",
-  }).min(2, "Company name is required").max(255),
+    required_error: t("fields.cname2.error"),
+  }).min(2, t("fields.cname2.error")).max(255),
   position: z.string({
-    required_error: "Position is required",
-  }).min(2, "Position is required").max(255),
+    required_error: t("fields.position.error"),
+  }).min(2, t("fields.position.error")).max(255),
   fname: z.string({
-    required_error: "First name is required",
-  }).min(2, "First name is required").max(255),
+    required_error: t("fields.fname.error"),
+  }).min(2, t("fields.fname.error")).max(255),
   lname: z.string({
-    required_error: "Last name is required",
-  }).min(2, "Last name is required").max(255),
+    required_error: t("fields.lname.error"),
+  }).min(2, t("fields.lname.error")).max(255),
   name: z.string({
-    required_error: "Name is required",
-  }).min(2, "Name is required").max(255),
+    required_error: t("fields.name.error"),
+  }).min(2, t("fields.name.error")).max(255),
   company_website: z.string({
-    required_error: "Company website is required",
+    required_error: t("fields.company_website.error"),
   }).max(255),
   phone: z.object({
-    countryCode: z.string().min(1, "Country code is required"),
-    number: z.string().min(1, "Phone number is required")
+    countryCode: z.string().min(1, t("fields.phone.error")),
+    number: z.string().min(1, t("fields.phone.error"))
   }).refine((data) => {
     try {
       return isValidPhoneNumber(`${data.countryCode}${data.number}`)
@@ -53,7 +56,7 @@ export const commonValidators = {
       return false
     }
   }, {
-    message: "Invalid phone number for selected country",
+    message: t("fields.phone.error"),
     path: ["number"] // This will show error under the number field
   }),
   accept: z.boolean()
@@ -62,7 +65,7 @@ export const commonValidators = {
       if (val !== true) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: "You must accept the terms"
+          message: t("fields.accept.error")
         });
       }
     })

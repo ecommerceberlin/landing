@@ -4,14 +4,13 @@ import { cn } from "@/lib/utils"
 import { useFormContext } from "react-hook-form"
 import type { InputProps } from "../smart-form"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
-
+import { t } from "@/scripts/translate"
 
 export const SelectInput: React.FC<InputProps> = ({ name, className, optional }) => {
   
   const form = useFormContext()
   const setPreventAutoAdvance = useFormNavigation(state => state.setPreventAutoAdvance)
   const autoAdvanceIfValid = useFormNavigation(state => state.autoAdvanceIfValid)
-  const description = useFormNavigation(state => state.fieldDescriptions[name])
   const labels = useFormNavigation(state => state.fieldLabels[name])
 
   const handleValueChange = async (value: string) => {
@@ -40,9 +39,9 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
         <div className="w-full flex justify-center md:justify-start">
           <FormLabel className={cn(
             "text-md mb-1",
-            form.formState.errors[name] && "text-[#FCE61D]"
+            // form.formState.errors[name] && "text-[#FCE61D]"
           )}>
-            {description}
+            {t(`fields.${name}.label`)}
             {!optional && <span className="ml-1">*</span>}
           </FormLabel>
         </div>
@@ -64,7 +63,7 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
         </Select>
         </FormControl>
         <div className="flex justify-center md:justify-start w-full">
-          <FormMessage className="text-[#FCE61D]" />
+          <FormMessage className="text-destructive-foreground" />
         </div>
         </FormItem>
 

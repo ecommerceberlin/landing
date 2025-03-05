@@ -4,7 +4,7 @@ import { useFormNavigation } from "@/hooks/use-form-navigation"
 import { cn } from "@/lib/utils"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { EditIcon } from "lucide-react"
-
+import { t } from "@/scripts/translate"
 export const Summary = ({className}: {className?: string}) => {
   const { getValues } = useFormContext()
   const values = getValues()
@@ -31,7 +31,7 @@ export const Summary = ({className}: {className?: string}) => {
           )}>
             <div className="flex-1 flex flex-col gap-1">
             <span className="text-sm text-muted-foreground">
-              {fieldDescriptions?.[fieldName]}
+              {t(`fields.${fieldName}.label`)}
             </span>
             <span className="font-medium">
               {typeof values[fieldName] === 'boolean' 
