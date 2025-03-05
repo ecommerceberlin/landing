@@ -1,3 +1,5 @@
+import { t } from "@/scripts/translate";
+
 export default function PremiumTitle() {
-    return <h1>Premium Page</h1>
+    return <h1>{t("page.premium.title")}</h1>
 }
