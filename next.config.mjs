@@ -4,7 +4,12 @@ const nextConfig = {
 
   async rewrites() {
     return [
-      
+      {
+        // Match URLs with any text followed by ,c, and numbers
+        source: '/:slug,c,:id(\\d+)',
+        // Rewrite to exhibitors/[id]
+        destination: '/exhibitors/:id',
+      }
     ]
   },
   images: {
