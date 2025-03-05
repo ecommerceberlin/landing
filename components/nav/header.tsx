@@ -18,8 +18,8 @@ export function Header() {
           />
           </Link>
           <div className="uppercase text-sm font-light">
-            10TH EDITION
-            <br />17-18th FEB 2026 • MESSE BERLIN
+            10 EDITION
+            <br />17.–18. FEB 2026  Messe Berlin
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import { RecapProps } from "@/components/sections/recap"
 
 export const recap: RecapProps = {
     baseLabel: "recap",
-    videoSrc: "https://res.cloudinary.com/eventjuicer/video/upload/v1738233915/EBE_recap_ogxdam.mov",
+    videoSrc: "https://res.cloudinary.com/eventjuicer/video/upload/v1741166754/recap_EBE9_ohsnqg.mov",
     stats: [
         // {
         //     value: "97%",
