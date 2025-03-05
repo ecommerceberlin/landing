@@ -56,6 +56,7 @@
     "react-intersection-observer": "^9.15.1",
     "react-markdown": "^10.0.0",
     "react-player": "^2.16.0",
+    "react-social-icons": "^6.22.0",
     "swr": "^2.3.2",
     "tailwind-merge": "^3.0.1",
     "vaul": "^1.1.2",
