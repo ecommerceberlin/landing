@@ -11,8 +11,6 @@ export function LocaleSwitcher({className}: {className?: string}) {
         <NavigationMenuLink asChild>
         <a 
         href={altLocale.href} 
-        target="_blank" 
-        rel="noopener noreferrer"
         className={cn(navigationMenuTriggerStyle(), className)}
         >
         {altLocale.locale}
