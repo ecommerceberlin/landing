@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { t } from "@/scripts/translate";
 // import { Logo } from "@/components/icons"
 import {
   NavigationMenu,
@@ -84,7 +85,7 @@ export function MainMenu() {
         <NavigationMenuItem className="h-full">
           <Link href="/visit" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
-              Visit
+            {t("navigation.menu.visit")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -93,7 +94,7 @@ export function MainMenu() {
         <NavigationMenuItem className="h-full">
           <Link href="/exhibit" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
-              Exhibit
+            {t("navigation.menu.exhibit")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

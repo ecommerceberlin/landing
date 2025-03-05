@@ -9,7 +9,7 @@
     },
     "exhibitor": {
       "role": {
-        "title": "GET YOUR BOOTH",
+        "title": "BECOME AN EXHIBITOR",
         "description": "Showcase your brand to a global audience. Join our exhibitor lineup, meet new clients on the spot, and expand your reach at Europe’s premier eCommerce event.",
         "more": "JOIN"
       },
@@ -20,7 +20,7 @@
         "terms": "By submitting this form, you agree to our privacy policy and consent to receiving communications. You may opt out anytime."
       },
       "list-archive": {
-        "title": "SEE WHO EXHIBITED WITH US"
+        "title": "OUR 2025 EXHIBITORS"
       }
     },
     "stats": {
@@ -33,19 +33,25 @@
     "fields": {
       "name": {
         "label": "NAME AND SURNAME",
-        "error": "Name must be at least 3 chars long"
+        "error": "Please enter at least 3 characters"
       },
       "company": {
-        "label": "COMPANY"
+        "label": "COMPANY",
+        "error": "Please enter at least 3 characters"
       },
       "email": {
-        "label": "EMAIL"
+        "label": "E-MAIL",
+        "error": "Please enter a valid email address"
       },
       "phone": {
-        "label": "PHONE NUMBER"
+        "label": "PHONE NUMBER",
+        "error": "Please enter a valid phone number"
       },
       "full_name": {
         "error": "Please enter at least 3 characters in the full name field"
+      },
+      "accept": {
+        "error": "Please accept terms to proceed"
       }
     },
     "initiatives": {
@@ -135,12 +141,12 @@
       "description": "Join us for Europe’s leading e-commerce event. Connect with top experts, discover fresh trends, and grow your business faster than ever."
     },
     "recap": {
-      "title": "E-COMMERCE BERLIN EXPO 2025",
+      "title": "E-COMMERCE BERLIN EXPO 2025 RECAP",
       "description": "Our event in 2025 was a powerhouse of innovation and connection. Here’s a quick look at what made it all possible – and a taste of what’s in store for next time."
     },
     "speaker": {
       "list-archive": {
-        "title": "MEET OUR SPEAKERS"
+        "title": "MEET OUR 2025 SPEAKERS"
       }
     },
     "support": {
@@ -169,75 +175,81 @@
   "de": {
     "visitor": {
       "role": {
-        "title": "",
+        "title": "TICKET SICHERN",
         "description": "",
-        "more": ""
+        "more": "ANMELDEN"
       }
     },
     "exhibitor": {
       "role": {
-        "title": "",
-        "description": "",
-        "more": ""
+        "title": "AUSSTELLER WERDEN",
+        "description": "Zeig dein Unternehmen einem internationalen Publikum. Knüpfe direkt vor Ort neue Geschäftskontakte und erweitere dein Netzwerk auf dem führenden E-Commerce-Event in Europa.",
+        "more": "MITMACHEN"
       },
       "book-a-call": {
-        "title": "",
-        "description": "",
-        "button": "",
-        "terms": ""
+        "title": "WERDE AUSSTELLER:IN",
+        "description": "Präsentiere deine Marke vor über 13.000 Besucher:innen und 340 zukunftsorientierten Aussteller:innen. Europas dynamischstes E-Commerce-Event bietet dir die perfekte Bühne, um neue Partnerschaften zu schmieden und die Zukunft des Online-Handels mitzugestalten.",
+        "button": "BERATUNG GEBUCHT",
+        "terms": "Mit dem Absenden dieses Formulars stimmst du unseren Datenschutzrichtlinien zu und erklärst dich einverstanden, von uns kontaktiert zu werden. Du kannst dich jederzeit abmelden."
       },
       "list-archive": {
-        "title": ""
+        "title": "UNSERE AUSSTELLER 2025"
       }
     },
     "stats": {
-      "about": "",
-      "visitors": "",
-      "exhibitors": "",
-      "speakers": "",
-      "masterclasses": ""
+      "about": "Willkommen beim spannendsten E-Commerce-Event Europas!\n\nÜber 13.000 Besucher:innen, 340 innovative Aussteller:innen und eine Menge neuer Impulse – hier wird die Zukunft des Online-Handels gestaltet. Nutze die Chance, dich mit den besten Köpfen der Branche auszutauschen, frische Trends zu entdecken und deine Position im E-Commerce weiter auszubauen.",
+      "visitors": "Besucher:innen ",
+      "exhibitors": "Aussteller",
+      "speakers": "Speaker:innen",
+      "masterclasses": "Masterclasses"
     },
     "fields": {
       "name": {
-        "label": "",
-        "error": ""
+        "label": "NAME UND NACHNAME",
+        "error": "Bitte gib mindestens 3 Zeichen ein."
       },
       "company": {
-        "label": ""
+        "label": "UNTERNEHMEN",
+        "error": "Bitte gib mindestens 3 Zeichen ein"
       },
       "email": {
-        "label": ""
+        "label": "E-MAIL",
+        "error": "Bitte gib eine gültige E-Mail-Adresse an"
       },
       "phone": {
-        "label": ""
+        "label": "TELEFON",
+        "error": "Bitte gib eine gültige Telefonnummer an"
       },
       "full_name": {
-        "error": ""
+        "error": "Bitte gib mindestens 3 Zeichen im Feld für den vollständigen Namen ein."
+      },
+      "accept": {
+        "error": "Bitte stimme den AGB zu, um fortzufahren"
       }
     },
     "initiatives": {
       "news": {
-        "title": "",
-        "description": "",
-        "button": ""
+        "title": "News",
+        "description": "Bleib immer auf dem Laufenden mit fundierten Artikeln, aktuellen Trends und Insights, die dir helfen, deine E-Commerce-Strategie weiter auszubauen.",
+        "button": "MEHR ERFAHREN"
       },
-      "title": "",
-      "description": "",
+      "title": "ENTDECKE UNSERE WEITEREN INITIATIVEN",
+      "description": "Du möchtest über die Expo hinaus noch mehr erreichen? Wir bieten dir zahlreiche Möglichkeiten, dich weiterzuentwickeln und in der E-Commerce-Welt noch stärker zu vernetzen.",
       "awards": {
         "title": "",
-        "description": "",
+        "description": "Feiere mit uns die besten Unternehmen des Jahres bei unserer exklusiven Gala und entdecke, wer im Online-Handel neue Maßstäbe setzt.",
         "button": ""
       },
       "podcast": {
-        "title": "",
-        "description": "",
-        "button": ""
+        "title": "PODCAST",
+        "description": "Lass dich von tiefgehenden Gesprächen mit E-Commerce-Expert:innen inspirieren und erhalte wertvolle Impulse für dein Business.",
+        "button": "MEHR ERFAHREN"
       }
     },
     "form": {
       "status": {
-        "success": "",
-        "error": ""
+        "success": "Danke!",
+        "error": "Ein Fehler ist leider aufgetreten :("
       }
     },
     "premium": {
@@ -294,43 +306,43 @@
         "description": "# Bringe eure Marke vor Tausenden von potenziellen Kunden mit unserem umfassenden Werbepaket ins Gespräch!\n\n# Voteile\n\n### Online Vorteile:\n\n* Fünf Artikel, die im Laufe des Jahres auf ecommercegermany.com veröffentlicht werden (mit 30.000 einzigartigen Besuchern pro Monat)\n* Alle Artikel werden im Newsletter von E-commerce Germany News veröffentlicht (mit 33.000 Newsletter-Abonnenten)\n* Social Media Promotion aller Artikel (mit 21.000+ Reichweite)\n* Eine spezielle E-Mail an eine hoch targetierte Zielgruppe (exklusives Angebot)\n* Bannerwerbung auf ecommercegermany.com für 2 Monate eurer Wahl\n\n### Offline Vorteile:\n\n* Zehn VIP-Tickets für die E-commerce Berlin Expo\n* Zehn Tickets für die exklusive E-commerce Germany Awards Zeremonie & Networking Event einen Abend vor der Expo\n* Promotion eurer Handouts in der Medien- und Speaker-Corner auf der E-commerce Berlin Expo\n* Anzeige im gedruckten Besucherguide der E-commerce Berlin Expo (¼ A4, 9k Exemplare)\n* Gelegenheit zu einem Meeting mit drei Expo Keynote-Speakern eure Wahl auf der Expo\n\n### Spezielle Vorteile:\n\n* Ein Interview oder eine Podcast-Episode mit euch in Berlin, die später auf den Plattformen der E-Commerce Berlin Expo, im Newsletter und in den Social Media Kanälen veröffentlicht wird\n* 15 % Rabatt auf alle Ausstellungsflächen auf der Expo\n\nDas Angebot kann von der Verfügbarkeit und der Terminplanung abhängig sein. Bitte kontaktiere uns für weitere Informationen und um die Details zu besprechen."
       },
       "item": {
-        "button": "Mehr erfahren"
+        "button": "Pakete ansehen"
       }
     },
     "hero": {
-      "title": "",
-      "description": ""
+      "title": "FINDEN SIE IHREN NÄCHSTEN E-COMMERCE-KUND:IN HIER",
+      "description": "Erlebe Europas führendes E-Commerce-Event! Vernetze dich mit Expert:innen, entdecke neue Trends und bringe dein Business schneller voran als je zuvor."
     },
     "recap": {
-      "title": "",
-      "description": ""
+      "title": "E-COMMERCE BERLIN EXPO 2025 RÜCKBLICK",
+      "description": "Die E-Commerce Berlin Expo 2025 war ein echtes Highlight in der Branche. Hier ein Rückblick auf die Highlights – und ein Vorgeschmack auf das, was dich 2026 erwartet."
     },
     "speaker": {
       "list-archive": {
-        "title": ""
+        "title": "UNSERE SPEAKER:INNEN 2025"
       }
     },
     "support": {
-      "title": ""
+      "title": "Hast du Fragen? Wir helfen dir gerne weiter!"
     },
     "nav": {
       "privacy": "",
       "terms": "",
-      "imprint": "",
+      "imprint": "IMPRESSUM",
       "visitors": {
-        "legal": ""
+        "legal": "REGELN FÜR BESUCHER"
       },
       "exhibitors": {
-        "legal": ""
+        "legal": "REGELN FÜR AUSSTELLER"
       },
-      "cookies": "",
+      "cookies": "WIE WIR COOKIES NUTZEN",
       "visiors": {
-        "data": ""
+        "data": "VERARBEITUNG PERSONENBEZOGENER DATEN"
       }
     },
     "newsletter": {
-      "terms": "",
-      "button": ""
+      "terms": "Mit dem Absenden stimmst du unserer Datenschutzerklärung zu und erklärst dich damit einverstanden, Informationen von uns zu erhalten. Du kannst dich jederzeit abmelden.",
+      "button": "ABONNIEREN"
     }
   }
 }
