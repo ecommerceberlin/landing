@@ -15,7 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { menuExhibitors } from '@/settings/menu';
-
+import { LocaleSwitcher } from '@/components/nav/switch-locale';
 export interface MainMenuProps {
   className?: string;
 }
@@ -99,13 +99,7 @@ export function MainMenu() {
           </Link>
         </NavigationMenuItem>
 
-        {/* <NavigationMenuItem className="h-full">
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"h-[7rem]")}>
-              DE
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem> */}
+        <LocaleSwitcher className="h-[7rem]" />
 
 
       </NavigationMenuList>

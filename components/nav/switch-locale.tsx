@@ -1,30 +1,23 @@
-"use client";
+import {NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle} from '@/components/ui/navigation-menu'
+import { cn } from '@/lib/utils';
+import { resolveAltLocale } from '@/settings/locale';
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { i18n, type Locale } from "@/i18n-config";
+export function LocaleSwitcher({className}: {className?: string}) {
 
-export default function LocaleSwitcher() {
-  const pathname = usePathname();
-  const redirectedPathname = (locale: Locale) => {
-    if (!pathname) return "/";
-    const segments = pathname.split("/");
-    segments[1] = locale;
-    return segments.join("/");
-  };
+  const altLocale = resolveAltLocale();
 
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathname(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <NavigationMenuItem className="h-full">
+        <NavigationMenuLink asChild>
+        <a 
+        href={altLocale.href} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={cn(navigationMenuTriggerStyle(), className)}
+        >
+        {altLocale.locale}
+        </a>
+        </NavigationMenuLink>
+        </NavigationMenuItem>
   );
 }
