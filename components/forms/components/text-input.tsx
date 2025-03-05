@@ -5,12 +5,12 @@ import { useFormContext } from "react-hook-form"
 import type { InputProps } from "../smart-form"
 import { autoCompleteOptions } from "./autocomplete"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
- 
+import { t } from "@/scripts/translate"
+
 export const TextInput = ({ name, className, optional }: InputProps) => {
 
   const form = useFormContext()
   const nextField = useFormNavigation(state => state.nextField)
-  const description = useFormNavigation(state => state.fieldDescriptions[name])
 
 //   const { register, setError, clearErrors } = useForm()
 
@@ -57,9 +57,9 @@ export const TextInput = ({ name, className, optional }: InputProps) => {
         <div className="w-full flex justify-center md:justify-start">
           <FormLabel className={cn(
             "text-md mb-1",
-            form.formState.errors[name] && "text-[#000000]"
+            "data-[error=true]:text-[#222222]"
           )}>
-            {description}
+            {t(`fields.${name}.label`)}
             {!optional && <span className="ml-1">*</span>}
           </FormLabel>
         </div>
@@ -75,7 +75,7 @@ export const TextInput = ({ name, className, optional }: InputProps) => {
         />
         </FormControl>
         <div className="flex justify-center md:justify-start w-full">
-          <FormMessage className="text-destructive" />
+          <FormMessage />
         </div>
         </FormItem>
     )} />

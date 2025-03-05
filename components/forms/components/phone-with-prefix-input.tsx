@@ -11,13 +11,14 @@ import { useFormContext } from "react-hook-form"
 import type { InputProps } from "../smart-form"
 import { useState } from "react"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
+import { t } from "@/scripts/translate"
 
 export function PhoneWithPrefixInput({ name, optional }: InputProps) {
     const form = useFormContext()
     const [open, setOpen] = useState(false)
     const nextField = useFormNavigation(state => state.nextField)
-    const description = useFormNavigation(state => state.fieldDescriptions[name])
 
+    
     // Validate entire phone object
     const validatePhoneObject = () => {
         form.trigger(name) // Trigger validation for the entire phone object
@@ -37,7 +38,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
         <FormItem className="w-full space-y-2 mb-5">
             <div className="w-full flex justify-center md:justify-start">
                 <FormLabel className="text-md mb-1">
-                    {description}
+                    {t(`fields.${name}.label`)}
                     {!optional && <span className="text-[#FCE61D] ml-1">*</span>}
                 </FormLabel>
             </div>
@@ -115,7 +116,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                     </Command>
                                 </PopoverContent>
                             </Popover>
-                            <FormMessage className="text-[#FCE61D]" />
+                            <FormMessage />
                         </div>
                     )}
                 />
@@ -137,7 +138,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                 }}
                                 onKeyDown={(e) => handleKeyDown(e)}
                             />
-                            <FormMessage className="text-[#FCE61D]" />
+                            <FormMessage />
                         </div>
                     )}
                 />
