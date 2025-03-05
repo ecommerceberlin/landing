@@ -1,5 +1,6 @@
 'use client'
-import {cloneElement} from 'react'
+
+import {cloneElement, useState, isValidElement} from 'react'
 import { cn } from "@/lib/utils"
 import { Form } from "@/components/ui/form"
 import { useForm, EnhancedUseFormReturn } from "@/hooks/use-form"
@@ -27,7 +28,7 @@ interface SmartFormProps {
   schema: FormSchemaDefinitions
   // onSubmit: (values: Record<string, any>) => Promise<any>
   initialData?: Record<string, any>,
-  onSuccess?: React.ReactElement
+  onSuccess?: React.ReactElement<{ data?: any }>
 }
 
 export type InputProps = {
@@ -47,7 +48,7 @@ export function SmartForm({
     mode: 'onChange',  // Validate on every change
   }) as EnhancedUseFormReturn
 
-
+  const [success, setSuccess] = useState<React.ReactElement<{ data?: any }> | null>(null)
   const currentFieldIndex = useFormNavigation(state => state.currentFieldIndex)
   const inSummaryMode = useFormNavigation(state => state.inSummaryMode)
   const fields = useFormNavigation(state => state.fields)
@@ -91,23 +92,24 @@ export function SmartForm({
     try {
       console.log({values})
       const result = await updateProfile(values)
-
+      console.log({result})
       if (result?.success) {
-        if (onSuccess) {
-          return cloneElement(onSuccess, {data: result.data})
+        if (onSuccess && isValidElement(onSuccess)) {
+          setSuccess(cloneElement(onSuccess, {data: result.data}))
+          form.reset(initialData)
         }
-        // form.reset(initialData)
-        // push(`/qrcode/${result?.data?.code}`)
-        return
+        return 
       }else{
-        // Handle server validation errors
+       
       }
     } catch (error) {
       console.error('Form submission error:', error)
-    } finally {
-    }
+    } 
   }
 
+  if(success) {
+    return success
+  }
 
 
   return (
