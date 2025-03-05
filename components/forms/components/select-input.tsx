@@ -63,7 +63,7 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
         </Select>
         </FormControl>
         <div className="flex justify-center md:justify-start w-full">
-          <FormMessage className="text-destructive-foreground" />
+          <FormMessage  />
         </div>
         </FormItem>
 
