@@ -50,7 +50,7 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
         onValueChange={handleValueChange} 
         value={field.value}
       >
-        <SelectTrigger className={cn(className, "w-full")}>
+        <SelectTrigger className={cn(className, "w-full bg-white/80")}>
           <SelectValue placeholder="Select an option" />
         </SelectTrigger>
         <SelectContent>
