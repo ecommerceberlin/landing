@@ -3,9 +3,10 @@ import { FormItem, FormMessage, FormLabel, FormControl, FormField } from "@/comp
 import { useFormContext } from "react-hook-form"
 import type { InputProps } from "../smart-form"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
+import { t } from "@/scripts/translate"
+
 export const SwitchInput: React.FC<InputProps> = ({ name, optional }) => {
   const form = useFormContext()
-  const description = useFormNavigation(state => state.fieldDescriptions[name])
 
   return (
     <div className="w-full max-w-[600px]">
@@ -24,7 +25,7 @@ export const SwitchInput: React.FC<InputProps> = ({ name, optional }) => {
                     />
                 </FormControl>
                 <FormLabel className="text-md mb-1">
-                    {description}
+                    {t(`fields.${name}.label`)}
                     {!optional && <span className="text-destructive ml-1">*</span>}
                 </FormLabel>
             </div>

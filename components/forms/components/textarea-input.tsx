@@ -4,11 +4,11 @@ import { cn } from "@/lib/utils"
 import { useFormContext } from "react-hook-form"
 import type { InputProps } from "../smart-form"
 import { useFormNavigation } from "@/hooks/use-form-navigation"
+import { t } from "@/scripts/translate"
 
 export const TextareaInput = ({ name, className, optional }: InputProps) => {
 
   const form = useFormContext()
-  const description = useFormNavigation(state => state.fieldDescriptions[name])
 
   return (
     <div className="w-full max-w-[600px]">
@@ -20,9 +20,9 @@ export const TextareaInput = ({ name, className, optional }: InputProps) => {
         <div className="w-full flex justify-center md:justify-start">
           <FormLabel className={cn(
             "text-md mb-1",
-            form.formState.errors[name] && "text-[#FCE61D]"
+            "data-[error=true]:text-[#222222]"
           )}>
-            {description}
+            {t(`fields.${name}.label`)}
             {!optional && <span className="ml-1">*</span>}
           </FormLabel>
         </div>
