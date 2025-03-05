@@ -11,6 +11,7 @@ import { newsletterSchema } from "@/settings/schemas";
 import { t } from "@/scripts/translate";
 import { catchFormAction } from "@/app/actions/catch-form-action";
 import { useState } from "react";
+import { Heading } from "@/components/text/heading";
 
 interface RequestACallProps {
     baseLabel: string
@@ -57,8 +58,9 @@ export function Newsletter({ baseLabel, className }: RequestACallProps) {
     }
 
     return (
-        <div className={cn("flex-1 p-5 w-full", className)}>
+        <div className={cn("flex-1 w-full", className)}>
 
+            <Heading label={`${baseLabel}.title`} className="mb-4" />
 
             {isSubmitSuccessful && (
                 <div className="text-center text-[2rem] my-4 font-medium">
@@ -68,13 +70,13 @@ export function Newsletter({ baseLabel, className }: RequestACallProps) {
 
 
             <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex flex-row">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-0">
                 
             <Input {...register("email")} placeholder="your@email.com" className="flex-1 h-11" /> 
 
                 <Button 
                 type="submit" 
-                className="cursor-pointer w-auto h-11"
+                className="cursor-pointer w-auto h-11 px-10 xl:px-20"
                 disabled={isSubmitting}
             >
                 {isSubmitting ? 'Sending...' : t(`${baseLabel}.button`)}
@@ -85,10 +87,10 @@ export function Newsletter({ baseLabel, className }: RequestACallProps) {
 
             <ErrorMessage error={errors.email} />
             
-            <div className="space-y-4 mt-10">
+            <div className="space-y-4 mt-4">
             
            
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-row items-start gap-2">
             <Controller
                 name="accept"
                 control={control}
@@ -100,6 +102,7 @@ export function Newsletter({ baseLabel, className }: RequestACallProps) {
                             field.onChange(checked);
                             trigger("accept"); 
                         }}
+                        className="mt-1"
                     />
                 )}
                 />
