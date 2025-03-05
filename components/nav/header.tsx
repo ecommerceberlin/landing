@@ -1,6 +1,8 @@
 import { MainMenu } from '@/components/nav/main-menu';
 import Image from 'next/image';
 import Link from 'next/link';
+import { t } from '@/scripts/translate';
+
 
 export function Header() {
   return (
@@ -19,7 +21,7 @@ export function Header() {
           </Link>
           <div className="uppercase text-sm font-light">
             10 EDITION
-            <br />17.–18. FEB 2026  Messe Berlin
+            <br />{t("event.date")}  Messe Berlin
           </div>
         </div>
 
