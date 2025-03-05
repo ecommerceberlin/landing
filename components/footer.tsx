@@ -3,8 +3,13 @@ import { SectionSecondaryTitle } from "@/components/text/section-secondary-title
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { t } from "@/scripts/translate";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+
 import { Newsletter } from "@/components/forms/newsletter";
+import { SocialLinks } from "@/components/nav/social-links";
+
+
+
+
 interface SalesPerson {
   name: string;
   email: string;
@@ -25,94 +30,91 @@ export interface FooterProps {
 }
 
 
-const socialIcons = {
-  twitter: (props: any) => <Twitter {...props} fill="currentColor" />,
-  linkedin: (props: any) => <Linkedin {...props} fill="currentColor" />,
-  facebook: (props: any) => <Facebook {...props} fill="currentColor" />,
-  instagram: (props: any) => <Instagram {...props}  />,
-  youtube: (props: any) => <Youtube {...props} fill="currentColor" />,
-  // Add more as needed
-}
 
 
 export function Footer({baseLabel="support", people=[], links=[], legal=[], social=[]}: FooterProps) {
 
-
-
   return (
-    <footer className="bg-ebe w-full p-5 min-h-[50vh]">
+    <footer className="bg-ebe w-full p-5 pb-20">
 
-    <div className="flex flex-col md:flex-row gap-4">
 
-      <div className="w-full md:w-1/2">
-      <SectionSecondaryTitle label={`${baseLabel}.title`} />
+    <div className="flex flex-col lg:flex-row gap-4">
 
-      <div className="grid grid-cols-2 gap-4 mt-10">
+      <div className="w-full lg:w-1/2">
+      <SectionSecondaryTitle label={`${baseLabel}.title`} className="md:mr-[20%]" />
+
+      <div className="flex flex-col md:flex-row gap-10 mt-10">
 
         {people.map((person) => (
-          <div key={person.name}>
-            <div className="uppercase">{person.name}</div>
+          <div key={person.name} className="flex-1">
+            <div className="uppercase text-xl mb-4">{person.name}</div>
             <div>{person.email}</div>
             <div>{person.phone}</div>
           </div>
         ))}
       </div>
-
-
-      <div className="mt-4">
-      {social.map((link) => {
-
-const IconComponent = socialIcons[link.label.toLowerCase() as keyof typeof socialIcons] || socialIcons.twitter;
-
-        return (
-          <Button 
-          key={link.label}
-          variant="ghost" 
-          size="icon" 
-          className="rounded-full hover:bg-gray-100/10"
-          asChild
-          >
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
-            <IconComponent className="h-7 w-7"  fill="currentColor"  />
-            </a>
-          </Button>
-        )})}
       </div>
 
-
-      <div className="mt-4">
-
-      {legal.map((link) => (
-        
-          <Button key={link.href} variant="link" asChild className="text-base font-extralight">
-          <Link href={link.href} >{t(`nav.${link.label}`)}</Link>
-          </Button>
-       
-      ))}
-
-      </div>
-
-
-
-
-      </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2">
       
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 mt-10 lg:mt-2">
       {links.map((link) => (
         <div key={link.label}>
-          <Button variant="link" asChild className="text-[1.5rem] font-extralight">
-          <Link href={link.href} >{t(`nav.${link.label}`)}</Link>
+          <Button variant="link" asChild className="text-[1.5rem] font-light">
+          <Link href={link.href} >{t(link.label)}</Link>
           </Button>
         </div>
       ))}
       </div>
 
-      <Newsletter baseLabel="newsletter" />
+      <SocialLinks links={social} className="lg:hidden block" />
+
+      <Newsletter baseLabel="newsletter" className="mt-20" />
       
       </div>
+    </div>
+
+    
+    <SocialLinks links={social} className="lg:block hidden" />
+
+
+
+    <div className="flex flex-col-reverse lg:flex-row gap-4">
+
+
+    <div className="w-full lg:w-1/2">{legal.map((link) => (
+      <Button key={link.href} variant="link" asChild className="text-base font-light">
+      <Link href={link.href} >{t(link.label)}</Link>
+      </Button>
+    ))}</div>
+
+
+    <div className="w-full lg:w-1/2 flex flex-row lg:flex-row-reverse gap-4 uppercase text-[1.5rem] font-light my-20 lg:my-0 leading-none">
+    
+    <div className="w-1/2">{t("event.location")}</div>
+    <div className="w-1/2">{t("event.date")}</div>
+
+    </div>
+
+  
     </div>
     
     </footer>
   );
 }
+
+
+
+
+
+/*
+<div className="mt-4">
+
+</div>
+
+
+<div className="mt-4">
+
+
+</div>
+ */

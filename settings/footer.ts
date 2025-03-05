@@ -8,21 +8,23 @@ export const footer: FooterProps = {
     { name: "Lucas Zarna", email: "sales@ecommerceberlin.com", phone: "+49 176 316 244 92" },
   ],
   links: [
-    // { label: "visit", href: "/visit" },
-    // { label: "exhibit", href: "/exhibit" },
+    { label: "navigation.menu.visit", href: "/visit" },
+    { label: "navigation.menu.exhibit", href: "/exhibit" },
   ],
 
   legal: [
-    { label: "imprint", href: "/imprint" },
-    { label: "visitors.legal", href: "/visiotrs-legal" },
-    { label: "exhibitors.legal", href: "/exhibitors-legal" },
-    { label: "cookies", href: "/cookies" },
-    { label: "visiors.data", href: "/visitors-data" },
+    { label: "legal.imprint", href: "/legal/imprint" },
+    { label: "legal.visitors", href: "/legal/visitors" },
+    { label: "legal.exhibitors", href: "/legal/exhibitors" },
+    { label: "legal.cookies", href: "/legal/cookies" },
+    { label: "legal.visitors-data", href: "/legal/visitors-data" },
   ],
 
   social: [
     { label: "facebook", href: "https://www.facebook.com/ecommerceberlin/" },
     { label: "instagram", href: "https://www.instagram.com/ecommerce_berlin_expo/" },
     { label: "linkedin", href: "https://www.linkedin.com/company/e-commerce-berlin-expo/" },
+    { label: "x", href: "https://x.com/ecommerceberlin" },
+    { label: "youtube", href: "https://www.youtube.com/@e-commerceberlinexpo" },
   ]
 };
