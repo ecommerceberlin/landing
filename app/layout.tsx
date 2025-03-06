@@ -5,7 +5,8 @@ import { metadata as metadataSettings } from '@/settings/metadata';
 import Script from 'next/script';
 import { chatlioWidgetId } from '@/settings/app_rules';
 import { RefererTracker } from '@/components/forms/referer-tracker';
-
+import { GoogleTagManager } from '@/components/analytics/google-tag-manager';
+import { GTM_ID } from '@/settings/app_rules';
 
 declare global {
   namespace JSX {
@@ -44,11 +45,11 @@ export default async function RootLayout({
       <Script src="https://js.chatlio.com/widget.js" strategy="lazyOnload" />
       <chatlio-widget widgetid={chatlioWidgetId} disable-favicon-badge></chatlio-widget>
 
-      </body>
-      <RefererTracker />
-    </html>
-  );
+    </body>
+    <RefererTracker />
+    <GoogleTagManager gtmId={GTM_ID} />
+  </html>
+  )
 }
-
 
 
