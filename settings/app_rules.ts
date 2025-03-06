@@ -7,3 +7,5 @@ export const visitorTicketId = 3175;
 export const basePriceCurrency = "EUR";
 
 export const pricesNetGross = "net";
+
+export const GTM_ID = "GTM-5RJC4J"
