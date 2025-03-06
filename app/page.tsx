@@ -84,7 +84,7 @@ export default function Home() {
         <Initiatives baseLabel="initiatives" />
       </GrayBox>
 
-      <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70dvh]" />
+      <FullPagePhoto src="https://res.cloudinary.com/eventjuicer/image/upload/v1738234530/DSC01467-eventshooters--2048px.jpg" className="h-[70svh]" />
 
       <Recap {...recap} />
 
