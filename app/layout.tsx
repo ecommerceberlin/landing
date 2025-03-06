@@ -52,8 +52,4 @@ export default async function RootLayout({
   )
 }
 
-  );
-}
-
-
 
