@@ -1,7 +1,7 @@
 import { Button} from "@/components/ui/button"
 import Link from 'next/link'
 import {t} from '@/scripts/translate'
-
+import { isExternalLink } from "@/lib/utils"
 
 interface MoreButtonProps {
     label: string;
@@ -12,7 +12,7 @@ interface MoreButtonProps {
 }
 
 export function MoreButton({label, href, className, variant="default", size="default"}: MoreButtonProps){
-    return href.includes('http') ? (
+    return isExternalLink(href) ? (
         <Button className={className} asChild variant={variant} size={size}>
         <a href={href} target="_blank" rel="noopener noreferrer">
             {t(label)}
