@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
 
         const response = await fetch(`${process.env.API_READONLY_URL}/tickets`, {
             next: { 
-                revalidate: 600,
+                revalidate: 600, // Reduce to 60 seconds
                 tags: ['tickets-premium'] 
             }
         })
@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
 
         return NextResponse.json(premiumTicketsDTO, {
             headers: {
-                'Cache-Control': 'public, s-maxage=100, stale-while-revalidate=59'
+                'Cache-Control': 'no-cache, no-store, must-revalidate'
             }
         })
     } catch (error) {
