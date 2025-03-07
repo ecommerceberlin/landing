@@ -9,7 +9,7 @@ export function useTicket(ticketId: number): ApiTicketPremiumDTO | null {
     const { data, isLoading, error } = useSWR<ApiTicketPremiumDTO[]>(ticketId? "/api/tickets/premium": null, fetcher, {
         revalidateOnFocus: false,
         dedupingInterval: 600,
-        refreshInterval: 600
+        refreshInterval: 1000 * 30
     })
 
     const ticket = data?.find((ticket) => ticket.id === ticketId)
