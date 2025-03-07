@@ -22,7 +22,7 @@ export function MediaItem({media}: {media: string}) {
         height="610"
         playsInline
         controls={true}
-        autoPlay={true}
+        autoPlay={false}
         loop={false}
         className="w-full h-full absolute inset-0 object-cover"
       />
