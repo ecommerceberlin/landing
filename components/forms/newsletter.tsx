@@ -16,6 +16,7 @@ import { Heading } from "@/components/text/heading";
 interface RequestACallProps {
     baseLabel: string
     className?: string
+    context?: string
 }
 
 const ErrorMessage = ({error}: {error: any}) => {
@@ -27,7 +28,7 @@ const ErrorMessage = ({error}: {error: any}) => {
     )
 }
 
-export function Newsletter({ baseLabel, className }: RequestACallProps) {
+export function Newsletter({ baseLabel, className, context }: RequestACallProps) {
 
     const { 
         handleSubmit, 
@@ -47,7 +48,7 @@ export function Newsletter({ baseLabel, className }: RequestACallProps) {
     const onSubmit = async (data: any) => {
         console.log(data)
 
-        const response = await catchFormAction(baseLabel, data)
+        const response = await catchFormAction(context || baseLabel, data)
 
         if(response.success) {
             console.log("Form submitted successfully")
