@@ -5,6 +5,7 @@ import {MoreButton} from '@/components/nav/morebutton'
 import {PremiumItemPrice} from '@/components/sections/premium/premium-item-price'
 import {PremiumListItemImage} from '@/components/sections/premium/premium-list-item-image'
 import { PremiumItemStatus } from '@/components/sections/premium/premium-item-status'
+import { Suspense } from 'react'
 
 interface PremiumListProps {
     items: PremiumItem[];
@@ -27,7 +28,10 @@ return (
                 className="relative aspect-square w-full group"
             >
                 {/* <Link href={`/premium/${item.label}`} className="block w-full h-full"> */}
+                    <Suspense fallback={null}>
                     <PremiumItemStatus ticketId={item.ticketId} size="small" />
+                    </Suspense>
+                    
                     <PremiumListItemImage image={item.thumbnail} />
                     <Gradient 
                         variation={index % 3} 
