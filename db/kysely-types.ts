@@ -64,6 +64,20 @@ export interface Chat {
   user_id: string;
 }
 
+export interface Company {
+  account_user_id: string | null;
+  company_data: Json | null;
+  company_id: Generated<number>;
+  created_at: Generated<Timestamp | null>;
+  group_id: Generated<number | null>;
+  is_featured: Generated<number | null>;
+  is_premium: Generated<number | null>;
+  lang: Generated<string | null>;
+  organizer_id: Generated<number | null>;
+  slug: string | null;
+  updated_at: Generated<Timestamp | null>;
+}
+
 export interface Favorite {
   created_at: Generated<Timestamp>;
   event_id: Generated<number>;
@@ -74,12 +88,29 @@ export interface Favorite {
   user_id: string;
 }
 
+export interface NeonAuthUsersSync {
+  created_at: Generated<Timestamp | null>;
+  deleted_at: Timestamp | null;
+  email: Generated<string | null>;
+  id: Generated<string>;
+  name: Generated<string | null>;
+  raw_json: Json;
+  updated_at: Timestamp | null;
+}
+
 export interface Newsletter {
   context: string;
   created_at: Generated<Timestamp>;
   data: Json;
   id: Generated<number>;
   organizer_id: number;
+}
+
+export interface Notification {
+  id: Generated<number>;
+  name: string | null;
+  organizer_id: Generated<number | null>;
+  webhook: string | null;
 }
 
 export interface Participant {
@@ -199,8 +230,11 @@ export interface VipInvite {
 export interface DB {
   Account: Account;
   Chat: Chat;
+  Company: Company;
   Favorite: Favorite;
+  "neon_auth.users_sync": NeonAuthUsersSync;
   Newsletter: Newsletter;
+  Notification: Notification;
   Participant: Participant;
   Poke: Poke;
   PokeComment: PokeComment;
