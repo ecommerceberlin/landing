@@ -54,3 +54,8 @@ export function formatObject(obj: Record<string, any>): string {
     })
     .join('\n');
 }
+
+
+export function isExternalLink(link: string): boolean {
+  return link.startsWith('http') || link.startsWith('//');
+}
