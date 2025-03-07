@@ -5,7 +5,7 @@ import { StatItem } from "@/components/sections/stats"
 export const statItems: StatItem[] = [
     {
         label: 'stats.visitors',
-        value: '13K'
+        value: '14K'
     },
     {
         label: 'stats.exhibitors',
