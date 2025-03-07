@@ -20,7 +20,7 @@ export function MoreButton({label, href, className, variant="default", size="def
         </Button>
     ) : (
         <Button className={className} asChild variant={variant} size={size}>
-        <Link href={href}>{t(label)}</Link>
+        <Link prefetch={true} href={href}>{t(label)}</Link>
         </Button>
     )
 }
