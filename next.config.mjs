@@ -26,8 +26,7 @@ const nextConfig = {
   },
   experimental: {
     optimizeCss: false,
-    optimizePackageImports: ['@radix-ui/react-tabs'],
-    ppr: true,
+    optimizePackageImports: ['@radix-ui/react-tabs']
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
