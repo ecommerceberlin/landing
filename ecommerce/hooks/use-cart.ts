@@ -1,3 +1,5 @@
+"use client"
+
 // hooks/useCart.ts
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
