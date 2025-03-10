@@ -4,11 +4,11 @@ import { items } from "@/settings/premium"
 
 export const dynamic = 'force-static'
 
-export async function generateStaticParams() {
-    return items.map(item => ({
-        name: item.label
-    }))
-}
+// export async function generateStaticParams() {
+//     return items.map(item => ({
+//         name: item.label
+//     }))
+// }
 
 export default async function PagePremium({params}: {params: {name: string}}) {
 
