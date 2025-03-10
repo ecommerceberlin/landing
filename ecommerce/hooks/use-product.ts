@@ -8,8 +8,10 @@ export function useProduct(productId: number) {
     productId ? `/api/products/${productId}` : null,
     fetcher,
     {
-      revalidateOnFocus: false,
-      dedupingInterval: 600,
+      revalidateOnFocus: true,
+      dedupingInterval: 200,
+      refreshInterval: 1000*60,
+      revalidateIfStale: true
     }
   )
 
