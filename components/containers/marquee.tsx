@@ -7,8 +7,6 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
         {/* Duplicate the content for a continuous loop */}
         <div className="mr-8">{children}</div>
         <div className="mr-8">{children}</div>
-        <div className="mr-8">{children}</div>
-        <div className="mr-8">{children}</div>
       </div>
     </div>
   );
