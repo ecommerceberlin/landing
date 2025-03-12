@@ -22,7 +22,7 @@ export const testimonies: Testimony[] = [
     },
 
     { 
-      text: "It's a a very good mix between content and many possibilities for for networking.",
+      text: "It's a very good mix between content and many possibilities for networking.",
       logotype: "https://res.cloudinary.com/eventjuicer/image/upload/v1741173416/otto-logo_ie2ghl.png" 
     },
 
