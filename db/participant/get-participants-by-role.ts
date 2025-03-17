@@ -17,7 +17,8 @@ export async function getParticipantsByRole(
       sql<string[]>`array_remove(string_to_array(trim(both '{}' from roles::text), ','), '')`.as('roles')
     ])
     .where('event_id', '=', eventId)
-    .where(sql`roles::text`, 'ilike', `%${role}%`)
+    .where(sql<boolean>`roles @> ARRAY[${role}]::participant_role[]`)
+
    
     if(orderBy === 'featured'){
       query = query.orderBy(sql`CAST(NULLIF(searchable_data->>'featured', '') AS numeric) DESC NULLS LAST`)

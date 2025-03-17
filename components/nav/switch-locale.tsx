@@ -1,3 +1,5 @@
+"use client"
+
 import {NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle} from '@/components/ui/navigation-menu'
 import { cn } from '@/lib/utils';
 import { resolveAltLocale } from '@/settings/locale';
