@@ -10,4 +10,4 @@ export const basePriceCurrency = "EUR";
 
 export const pricesNetGross = "net";
 
-export const GTM_ID = "GTM-5RJC4J"
+export const GTM_ID = "GTM-P3VS4G8P" //"GTM-5RJC4J"
