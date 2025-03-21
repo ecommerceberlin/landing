@@ -10,6 +10,12 @@ export async function GET(request: NextRequest) {
         const ticketIds = items.map((item) => Number(item.ticketId))
 
         const response = await fetch(`${process.env.API_READONLY_URL}/tickets`, {
+            headers: {
+                'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+                'Pragma': 'no-cache',
+                'Expires': '0',
+                'Surrogate-Control': 'no-store'
+            },
             next: { 
                 revalidate: 600, // Reduce to 60 seconds
                 tags: ['tickets-premium'] 
