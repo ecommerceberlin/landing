@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useCart } from "@/ecommerce/hooks/use-cart"
-import { useProduct } from "@/hooks/use-product"
+import { useProduct } from "@/ecommerce/hooks/use-product"
 
 interface AddToCartButtonProps {
   productId: number
