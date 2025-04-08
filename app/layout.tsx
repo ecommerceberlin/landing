@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { DM_Sans } from 'next/font/google';
 import { metadata as metadataSettings } from '@/settings/metadata';
 import Script from 'next/script';
 import { chatlioWidgetId } from '@/settings/app_rules';
 import { RefererTracker } from '@/components/forms/referer-tracker';
 import { GoogleTagManager } from '@/components/analytics/google-tag-manager';
 import { GTM_ID } from '@/settings/app_rules';
+import fonts from '@/settings/fonts'
+
 
 declare global {
   namespace JSX {
@@ -17,9 +18,7 @@ declare global {
 }
 
 
-
-const dmSans = DM_Sans({ subsets: ['latin'] });
-
+ 
 export const metadata: Metadata = {
   title: metadataSettings.title,
   description: metadataSettings.description,
@@ -33,7 +32,7 @@ export default async function RootLayout({
 }) {
 
   return (
-    <html lang="en" className={dmSans.className}>
+    <html lang="en" className={fonts}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
