@@ -38,6 +38,7 @@
     "@radix-ui/react-toast": "^1.2.6",
     "@sentry/nextjs": "^9.2.0",
     "@tailwindcss/postcss": "^4.0.8",
+    "@upstash/qstash": "^2.7.23",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
