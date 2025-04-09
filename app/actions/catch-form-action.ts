@@ -4,10 +4,8 @@ import { requestACallSchema, newsletterSchema } from "@/settings/schemas";
 import { z } from "zod";
 import { getReferer } from "@/app/actions/get-referer";
 import { catchFormDataToNewsletter } from "@/db/newsletter/catch-form-data-to-newsletter";
-import { fireAndForget } from "@/lib/fire-and-forget";
-import { mapContextToSlackWebhook } from "@/settings/notifications";
-import { getWebhookByName } from "@/db/notifications/get-webhooks";
-import { formatObject } from "@/lib/utils";
+import { publishToQueue } from "@/lib/qstash";
+import { baseUrl, organizerId } from "@/settings/app_rules";
 
 export async function catchFormAction(context: string, formData: FormData) {
 
@@ -23,19 +21,22 @@ export async function catchFormAction(context: string, formData: FormData) {
     const newsletter = await catchFormDataToNewsletter({
         context,
         data: {...data, referer},
-        organizer_id: 5
+        organizer_id: organizerId
     })
 
-    // Create a new object without the accept property
     const { accept, ...dataWithoutAccept } = data;
 
-    const webhook = await(getWebhookByName(mapContextToSlackWebhook(context)))
-
-    if (webhook?.webhook) {
-        fireAndForget(webhook.webhook, {
-            text: formatObject({context, ...dataWithoutAccept, referer })
-        })
-    }
+    await publishToQueue({
+        url: `${baseUrl}/api/queue-workers/slack`,
+        data: {
+            context,
+            ...dataWithoutAccept,
+            referer
+        },
+        retries: 2,
+        deduplicationId: `slack-${newsletter?.id}`,
+    });
+    
 
     return {success: true, id: newsletter?.id}
 }
