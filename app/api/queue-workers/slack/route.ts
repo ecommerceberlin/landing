@@ -31,18 +31,32 @@ export async function POST(request: Request) {
 
   if (webhook?.webhook) {
 
-  await fetch(webhook.webhook, {
-    method: 'POST',
-    body: JSON.stringify({text: formatObject(body)})
-  })
+    const response = await fetch(webhook.webhook, {
+      method: 'POST',
+      headers: {
+       'Content-Type': 'application/json'  
+      },
+      body: JSON.stringify({text: formatObject(body)})
+    })
 
-  }else{
-    throw new Error(`Webhook not found for context: ${body.context}`)
-  }
+    const data = await response.json()
 
-  return NextResponse.json({
+    console.log('Slack webhook response:', data)
+
+
+    return NextResponse.json({
     message: "Worker processed successfully",
     receivedAt: new Date(),
-    data: body
-  })
+    data: body,
+    response: data
+    }, { status: 200 })
+
+  }else{
+    return NextResponse.json({
+      message: "Webhook not found",
+      receivedAt: new Date(),
+      data: body
+    }, { status: 500 })
+  }
+
 } 
