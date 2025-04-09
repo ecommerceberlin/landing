@@ -8,8 +8,9 @@ const PPSupplySans = localFont({
     style: 'normal',
     display: 'swap',
 })
-
-// const dmSans = DM_Sans({ subsets: ['latin'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['200','300','400', '500', '600', '700'], display: 'swap' });
+
+
+const dmSans = DM_Sans({ subsets: ['latin'] });
  
-export default cn(PPSupplySans.className, poppins.className)
+export default dmSans.className
