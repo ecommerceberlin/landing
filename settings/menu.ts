@@ -1,41 +1,16 @@
 
 import { MenuOption } from "@/components/nav/main-menu";
-
+import { t } from "@/scripts/translate";
 
 export const menuExhibitors: MenuOption[] = [
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?a',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?b',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?c',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?d',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?e',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      href: '/exhibitors?f',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    },
-  ];
+  {
+    title: t("navigation.menu.exhibitors.exhibit.title"),
+    href: "/exhibit",
+    description: t("navigation.menu.exhibitors.exhibit.description"),
+  },
+  {
+    title: t("navigation.menu.exhibitors.premium.title"),
+    href: "/premium",
+    description: t("navigation.menu.exhibitors.premium.description"),
+  },
+];

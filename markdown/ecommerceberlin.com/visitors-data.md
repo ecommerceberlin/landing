@@ -24,6 +24,7 @@ providing the following personal data:
 * email address,
 * job position and represented brand (the company of the employer or their own company).
 * photo image and video image
+* phone number
 
 4. The Company is also the organizer of Call for Papers Contest, hereinafter referred to as ‘Contest’, 
 in which anyone who has an active profile on LinkedIn can cast seven votes. 

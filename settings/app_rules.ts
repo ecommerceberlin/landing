@@ -13,3 +13,4 @@ export const pricesNetGross = "net";
 export const GTM_ID = "GTM-5RJC4J" //"GTM-P3VS4G8P"
 
 export const baseUrl = process.env.NODE_ENV === "production" ? `${process.env.NEXT_PUBLIC_BASE_URL}`: "https://legible-key-frog.ngrok-free.app"
+
