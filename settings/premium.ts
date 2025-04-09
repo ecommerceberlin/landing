@@ -6,88 +6,96 @@ export const items: PremiumItem[] = [
     {
         ticketId: 3162, 
         label: "vipzone",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571266/ebe9_photos/Premium/Ecom_Berlin_2025_JB_160.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741275496/Website/PREMIUM%20SERVICES/ebe26_premium_services_VIP_Zone/HEADER.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596348/E-commerce_Berlin_Expo_-_VIP_Zone_Sponsorship_lzazpc.mp4", 
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571266/ebe9_photos/Premium/Ecom_Berlin_2025_JB_160.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562382/ebe9_photos/Premium/20250220-1041-ecommerce-berlin-2025-eventshooters-pl-DSC07245.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562469/ebe9_photos/Premium/20250220-1115-ecommerce-berlin-2025-eventshooters-pl-_AOG4108.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741618917/Website/PREMIUM%20SERVICES/ebe26_premium_services_VIP_Zone/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741621474/Website/PREMIUM%20SERVICES/ebe26_premium_services_VIP_Zone/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741620047/Website/PREMIUM%20SERVICES/ebe26_premium_services_VIP_Zone/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741622870/Website/PREMIUM%20SERVICES/ebe26_premium_services_VIP_Zone/ZDJECIE%204.jpg"
         ]
     },
     {
         ticketId: 3155, 
         label: "mainstage",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562749/ebe9_photos/Premium/20250220-1452-ecommerce-berlin-2025-eventshooters-pl-_AOG4735.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741338775/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/HEADER.jpg",
         media: [
-            "https://res.cloudinary.com/eventjuicer/video/upload/v1740596348/E-commerce_Berlin_Expo_-_Stage_Patronage_h28utu.mp4",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571372/ebe9_photos/Premium/Ecom_Berlin_2025_JB_284.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571348/ebe9_photos/Premium/Ecom_Berlin_2025_JB_289.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571254/ebe9_photos/Premium/Ecom_Berlin_2025_JB_056.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562749/ebe9_photos/Premium/20250220-1452-ecommerce-berlin-2025-eventshooters-pl-_AOG4735.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741616469/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741364135/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741616374/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741338774/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/ZDJECIE%204.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741364048/Website/PREMIUM%20SERVICES/ebe26_premium_services_Main_Stage_Patronage/ZDJECIE%205.jpg"
         ]
     },
     {
         ticketId: 3156, 
         label: "keynotestage",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571282/ebe9_photos/Premium/Ecom_Berlin_2025_JB_254.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741341938/Website/PREMIUM%20SERVICES/ebe26_premium_services_keynote_stage/BACKUP%20ZDJECIA%20PRZED%20RESIZE/Ecom_Berlin_2025_JB_257.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596348/E-commerce_Berlin_Expo_-_Stage_Patronage_h28utu.mp4",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740569061/ebe9_photos/Premium/20250220-1154-ecommerce-berlin-2025-eventshooters-pl-RXA01495.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560928/ebe9_photos/Premium/20250219-1120-ecommerce-berlin-2025-eventshooters-pl-RXA00364.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571282/ebe9_photos/Premium/Ecom_Berlin_2025_JB_254.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741618266/Website/PREMIUM%20SERVICES/ebe26_premium_services_keynote_stage/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741358052/Website/PREMIUM%20SERVICES/ebe26_premium_services_keynote_stage/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741682337/Website/PREMIUM%20SERVICES/ebe26_premium_services_keynote_stage/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741357915/Website/PREMIUM%20SERVICES/ebe26_premium_services_keynote_stage/ZDJECIE%204.jpg"
 
         ]
     },
     {
         ticketId: 3216, 
         label: "openstage",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740569152/ebe9_photos/Premium/20250220-1104-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC09836.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741364595/Website/PREMIUM%20SERVICES/ebe26_premium_services_open_stage/HEADER.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596348/E-commerce_Berlin_Expo_-_Stage_Patronage_h28utu.mp4",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740569152/ebe9_photos/Premium/20250220-1104-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC09836.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571067/ebe9_photos/Premium/20250219-1151-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC08624.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740569014/ebe9_photos/Premium/20250220-1235-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC00145.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741344478/Website/PREMIUM%20SERVICES/ebe26_premium_services_open_stage/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741616013/Website/PREMIUM%20SERVICES/ebe26_premium_services_open_stage/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741364696/Website/PREMIUM%20SERVICES/ebe26_premium_services_open_stage/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741616238/Website/PREMIUM%20SERVICES/ebe26_premium_services_open_stage/ZDJECIE%204.jpg"
         ]
     },
     {
         ticketId: 3158, 
         label: "lanyards",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571231/ebe9_photos/Premium/20250220-1542-ecommerce-berlin-2025-eventshooters-pl-DSC07916.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741344877/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/HEADER%20-%20ZDJECIE%201.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596353/E-commerce_Berlin_Expo_-_Branded_Lanyards_Sponsorship_xd1xdp.mp4",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560228/ebe9_photos/Premium/20250219-0830-ecommerce-berlin-2025-eventshooters-pl-IMG_7590.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571177/ebe9_photos/Premium/20250220-1553-ecommerce-berlin-2025-eventshooters-pl-DSC07989.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741344877/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/HEADER%20-%20ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741351134/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741344876/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741618837/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/ZDJECIE%204.jpg"
         ]
     },
     {
         ticketId: 3197, 
         label: "badgesponsor",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571177/ebe9_photos/Premium/20250220-1553-ecommerce-berlin-2025-eventshooters-pl-DSC07989.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741353157/Website/PREMIUM%20SERVICES/ebe26_premium_services_badges/HEADER.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596356/E-commerce_Berlin_Expo_-_Branded_Visitor_Badges_Sponsorship_tgfrmu.mp4", 
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740571231/ebe9_photos/Premium/20250220-1542-ecommerce-berlin-2025-eventshooters-pl-DSC07916.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741616757/Website/PREMIUM%20SERVICES/ebe26_premium_services_badges/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741619671/Website/PREMIUM%20SERVICES/ebe26_premium_services_badges/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741619750/Website/PREMIUM%20SERVICES/ebe26_premium_services_badges/ZDJECIE%203.jpg"
         ]
     },
     {
         ticketId: 3167, 
         label: "headline",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740561830/ebe9_photos/Premium/20250219-1923-ecommerce-berlin-2025-eventshooters-pl-_AOG3150.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741347555/Website/PREMIUM%20SERVICES/EBE26_premium_services_headline/HEADER.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596343/E-commerce_Germany_Awards_-_Headline_Sponsorship_ysu7tq.mp4",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740561830/ebe9_photos/Premium/20250219-1923-ecommerce-berlin-2025-eventshooters-pl-_AOG3150.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740561920/ebe9_photos/Premium/20250219-2039-ecommerce-berlin-2025-eventshooters-pl-_AOG3326.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740561793/ebe9_photos/Premium/20250219-1904-ecommerce-berlin-2025-eventshooters-pl-_AOG3046.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740561739/ebe9_photos/Premium/20250219-1819-ecommerce-berlin-2025-eventshooters-pl-_AOG2969.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741365876/Website/PREMIUM%20SERVICES/EBE26_premium_services_headline/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741347552/Website/PREMIUM%20SERVICES/EBE26_premium_services_headline/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741347554/Website/PREMIUM%20SERVICES/EBE26_premium_services_headline/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741347557/Website/PREMIUM%20SERVICES/EBE26_premium_services_headline/ZDJECIE%204.jpg"
         ]
     },
     {
         ticketId: 3173, 
         label: "registrationsponsor",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560750/ebe9_photos/Premium/20250219-1030-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC08242.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741348967/Website/PREMIUM%20SERVICES/EBE26_premium_services_reg_sponsor/HEADER%20-%20ZDJECIE%203.jpg",
         media: [
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560649/ebe9_photos/Premium/20250219-0944-ecommerce-berlin-2025-eventshooters-pl-DSC05820.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560596/ebe9_photos/Premium/20250219-0922-ecommerce-berlin-2025-eventshooters-pl-_AOG1447.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740560750/ebe9_photos/Premium/20250219-1030-ecommerce-berlin-2025-eventshooters-pl-mrk-DSC08242.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741348969/Website/PREMIUM%20SERVICES/EBE26_premium_services_reg_sponsor/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741619342/Website/PREMIUM%20SERVICES/EBE26_premium_services_reg_sponsor/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741348967/Website/PREMIUM%20SERVICES/EBE26_premium_services_reg_sponsor/HEADER%20-%20ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741619239/Website/PREMIUM%20SERVICES/EBE26_premium_services_reg_sponsor/ZDJECIE%204.jpg"
         ]
     },
     {
@@ -95,20 +103,22 @@ export const items: PremiumItem[] = [
         label: "beer",
         thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562661/ebe9_photos/Premium/20250220-1507-ecommerce-berlin-2025-eventshooters-pl-DSC07771.jpg",
         media: [
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562677/ebe9_photos/Premium/20250220-1504-ecommerce-berlin-2025-eventshooters-pl-IMG_0690.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562606/ebe9_photos/Premium/20250220-1553-ecommerce-berlin-2025-eventshooters-pl-DSC07995.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562695/ebe9_photos/Premium/20250220-1503-ecommerce-berlin-2025-eventshooters-pl-DSC07749.jpg",
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1740562703/ebe9_photos/Premium/20250220-1502-ecommerce-berlin-2025-eventshooters-pl-DSC07740.jpg"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741349383/Website/PREMIUM%20SERVICES/ebe26_premium_services_beer/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741349376/Website/PREMIUM%20SERVICES/ebe26_premium_services_beer/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741349378/Website/PREMIUM%20SERVICES/ebe26_premium_services_beer/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741349380/Website/PREMIUM%20SERVICES/ebe26_premium_services_beer/ZDJECIE%204.jpg"
 
         ]
     },
     {
         ticketId: 3147, 
         label: "ecobags",
-        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822424/Website/PREMIUM%20SERVICES/ebe-premium-services-bags-cover.jpg",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741773467/Website/PREMIUM%20SERVICES/ebe26_premium_services_ecobags/HEADER%20-%20ZDJECIE%201.jpg",
         media: [
             "https://res.cloudinary.com/eventjuicer/video/upload/v1740596343/E-commerce_Berlin_Expo_-_Branded_Ecobags_Sponsorship_b8cece.mp4", 
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1681822424/Website/PREMIUM%20SERVICES/ebe-premium-services-bags.png"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741773467/Website/PREMIUM%20SERVICES/ebe26_premium_services_ecobags/HEADER%20-%20ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741773463/Website/PREMIUM%20SERVICES/ebe26_premium_services_ecobags/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741773459/Website/PREMIUM%20SERVICES/ebe26_premium_services_ecobags/ZDJECIE%203.jpg"
         ]
     },   
     {
@@ -125,7 +135,10 @@ export const items: PremiumItem[] = [
         thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1722855755/Website/PREMIUM%20SERVICES/ebe25_premium_services_podcast_cover.jpg",
         media: [
             "https://youtu.be/dRIBVjRTv_s?si=886T_qOIOXGzkRlj", 
-            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1722856454/Website/PREMIUM%20SERVICES/ebe25_premium_services_podcast_collage.png"
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741350391/Website/PREMIUM%20SERVICES/ebe26_premium_services_podcast/ZDJECIE%201.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741350390/Website/PREMIUM%20SERVICES/ebe26_premium_services_podcast/ZDJECIE%202.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741350386/Website/PREMIUM%20SERVICES/ebe26_premium_services_podcast/ZDJECIE%203.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741365241/Website/PREMIUM%20SERVICES/ebe26_premium_services_podcast/ZDJECIE%204.jpg"
         ]
     }, 
     {   ticketId: 3217, 

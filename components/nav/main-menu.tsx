@@ -65,22 +65,22 @@ export function MainMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem> */}
-        {/* <NavigationMenuItem>
-          <NavigationMenuTrigger>Exhibitors</NavigationMenuTrigger>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>{t("navigation.menu.exhibitors.title")}</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          <ul className="flex flex-col gap-3 p-4 md:flex-row md:flex-wrap md:gap-4">
               {menuExhibitors.map((component) => (
                 <ListItem
                   key={component.href}
                   title={component.title}
                   href={component.href}
                 >
-                  {component.description}
+                  {/* {component.description} */}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
 
         <NavigationMenuItem className="h-full">
           <Link href="/visit" legacyBehavior passHref>
@@ -119,10 +119,12 @@ return (
   "block select-none space-y-1 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground p-3 leading-none rounded-none",
   className)}>
 
-<div className="text-sm font-medium leading-none">{title}</div>
-<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-{children}
-</p>
+<div className="text-sm font-medium leading-none whitespace-nowrap">{title}</div>
+{children && (
+  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+    {children}
+  </p>
+)}
 
 </NavigationMenuLink>
 </Link>
