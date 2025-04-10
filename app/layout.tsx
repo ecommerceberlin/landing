@@ -36,6 +36,8 @@ export default async function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <GoogleTagManager gtmId={GTM_ID} />
      
       </head>
 
@@ -43,7 +45,7 @@ export default async function RootLayout({
 
       <Script src="https://js.chatlio.com/widget.js" strategy="lazyOnload" />
       <chatlio-widget widgetid={chatlioWidgetId} disable-favicon-badge></chatlio-widget>
-      <GoogleTagManager gtmId={GTM_ID} />
+
     </body>
     <RefererTracker />
   
