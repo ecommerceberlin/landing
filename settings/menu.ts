@@ -13,4 +13,9 @@ export const menuExhibitors: MenuOption[] = [
     href: "/premium",
     description: t("navigation.menu.exhibitors.premium.description"),
   },
+  {
+    title: t("navigation.menu.exhibitors.about.title"),
+    href: "/about",
+    description: t("navigation.menu.exhibitors.about.description"),
+  },
 ];
