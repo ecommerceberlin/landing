@@ -3,7 +3,7 @@ import { HeroProps } from "@/components/hero/main";
 export const hero: HeroProps = {
   label: "hero.title",
   secondaryLabel: "hero.description",
-  image: "https://res.cloudinary.com/eventjuicer/image/upload/q_auto,f_auto,w_auto,c_scale/v1738234466/header.jpg",
+  image: "https://res.cloudinary.com/ecommerceberlin/image/upload/q_auto,f_auto,w_auto,c_scale/v1744789577/Website/ebe26-header-pic.jpg",
   buttons: [
     {
       label: "exhibitor.role.title",
