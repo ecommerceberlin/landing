@@ -31,6 +31,13 @@ export function MainMenu() {
   return (
     <NavigationMenu className="hidden lg:block z-101 relative">
       <NavigationMenuList>
+        <NavigationMenuItem className="h-full">
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle()," h-[7rem]")}>
+            {t("navigation.menu.about")}
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>
             Visit

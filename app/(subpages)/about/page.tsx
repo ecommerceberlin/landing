@@ -13,11 +13,15 @@ const slides = [
 export default function AboutPage() {
   return (
 
-  <div className="mt-8 grid grid-cols-1 gap-8">
-    {slides.map((src, index) => (
-      <img key={index} src={src} alt={`Slide ${index + 1}`} className="w-full h-auto" />
-    ))}
-  </div>
-
+    <div className="mt-8 flex flex-col items-center gap-8">
+      {slides.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Slide ${index + 1}`}
+          className="w-full max-w-[1200px] h-auto rounded-md shadow"
+        />
+      ))}
+    </div>
   )
 }
