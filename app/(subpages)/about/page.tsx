@@ -28,8 +28,8 @@ export default function AboutPage() {
 
       <div className="w-full max-w-[100dvw] flex mt-12">
         <BoxWithHorizontalItems className="bg-ebe w-full">
-          <RoleButton baseLabel="exhibitor.report-request" />
-          <RequestACall baseLabel="exhibitor.report-request" />
+          <RoleButton baseLabel="about.book-a-call" />
+          <RequestACall baseLabel="about.book-a-call" />
         </BoxWithHorizontalItems>
       </div>
     </>
