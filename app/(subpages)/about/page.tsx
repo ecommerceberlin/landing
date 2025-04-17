@@ -1,5 +1,6 @@
-import { SectionTitle } from "@/components/text/section-title"
-import { SectionSecondaryTitle } from "@/components/text/section-secondary-title"
+import { BoxWithHorizontalItems } from "@/components/containers/box-horizontal"
+import { RoleButton } from "@/components/nav/rolebutton"
+import { RequestACall } from "@/components/forms/request-a-call"
 
 export const dynamic = 'force-static'
 
@@ -12,16 +13,25 @@ const slides = [
 
 export default function AboutPage() {
   return (
+    <>
+      <div className="mt-8 flex flex-col items-center gap-8">
 
-    <div className="mt-8 flex flex-col items-center gap-8">
-      {slides.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          alt={`Slide ${index + 1}`}
-          className="w-full max-w-[1200px] h-auto rounded-md shadow"
-        />
-      ))}
-    </div>
+        {slides.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`Slide ${index + 1}`}
+            className="w-full max-w-[1200px] h-auto"
+          />
+        ))}
+      </div>
+
+      <div className="w-full max-w-[100dvw] flex mt-12">
+        <BoxWithHorizontalItems className="bg-ebe w-full">
+          <RoleButton baseLabel="exhibitor.report-request" />
+          <RequestACall baseLabel="exhibitor.report-request" />
+        </BoxWithHorizontalItems>
+      </div>
+    </>
   )
 }
