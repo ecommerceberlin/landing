@@ -26,6 +26,11 @@ export function Initiatives({
   baseLabel,
   className
 }: InitiativesProps) {
+
+
+
+
+
   return (
 
     <div className="w-full">
@@ -55,7 +60,7 @@ export function Initiatives({
             
             <div className="flex flex-col-reverse md:flex-row gap-4 mb-5">
               <div className="flex flex-col gap-4 w-1/2 justify-end">
-              {initiative.link && <MoreButton label={t(`${baseLabel}.${initiative.label}.button`)} href={initiative.link} variant="hero" size="hero" className="w-fit"/>}
+              {initiative.link && <MoreButton label={t(`${baseLabel}.${initiative.label}.button`)} href={initiative.link} variant="hero" size="hero" className={cn("w-fit", index % 2 !== 0 && 'bg-ebe' )}/>}
               </div>
 
               <div className="flex flex-col gap-4 w-1/2 justify-end">
