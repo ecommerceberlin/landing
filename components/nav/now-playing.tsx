@@ -8,13 +8,16 @@ export function NowPlaying({baseLabel, link, enabled }: NowPlayingType) {
 
   if(!enabled || !link) return null;
 
+  const title = t(`now-playing.${baseLabel}.title`);
+  const linkTitle = t(`now-playing.${baseLabel}.link`);   
+
   return (
     <div className="w-full h-[3rem] bg-[#FCE61D] flex flex-row items-center">
 
       <Marquee>
       <div className="uppercase text-lg">
-      {t(`now-playing.${baseLabel}.title`)}
-      {isExternalLink(link)?<a href={link} className="underline ml-2">{t(`now-playing.${baseLabel}.link`)}</a>:<Link href={link} className="underline ml-2">{t(`now-playing.${baseLabel}.link`)}</Link>}
+      
+      {isExternalLink(link)?<a href={link} className="underline ml-2">{`${title} ${linkTitle}`}</a>:<Link href={link} className="underline ml-2">{`${title} ${linkTitle}`}</Link>}
       </div>
       </Marquee>
     </div>
