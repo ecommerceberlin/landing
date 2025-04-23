@@ -26,10 +26,10 @@ export function Hero({ label, secondaryLabel, buttons = [], image }: HeroProps) 
       <div className="z-50 absolute bottom-0 left-0 w-[100%] max-w-[1200px] h-fit  text-white p-5">
       <div className="flex flex-col justify-between h-fit space-y-20 md:space-y-[10rem]">
       <div className="space-y-2">
-      <h3 className="uppercase font-light text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[6rem] leading-[1]">
+      <h3 className="uppercase font-light text-[2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem] leading-[1]">
       {t(label)}
       </h3>
-      <p className="font-extralight md:font-thin text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[3rem] leading-[1]">
+      <p className="font-extralight md:font-thin text-[1.2rem] md:text-[1.35rem] lg:text-[1.5rem] xl:text-[2rem] 2xl:text-[2.5rem] leading-[1]">
       {t(secondaryLabel)}
       </p>
       </div>
