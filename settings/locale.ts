@@ -19,7 +19,7 @@ export function resolveAltLocale(){
 }
 
 
-export const primaryPrefixes = ["DE", "AT", "FR"] 
+export const primaryPrefixes = ["DE"] 
 
 
 export const countryPrefixes: CountryPrefixes = {
