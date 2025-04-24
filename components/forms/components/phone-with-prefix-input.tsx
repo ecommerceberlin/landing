@@ -4,7 +4,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
 import { Check } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { getSortedCountries } from "@/lib/country-prefixes"
+import { getSortedCountries, howmanyPrimaryPrefixes } from "@/lib/country-prefixes"
 import { Input } from "../../ui/input"
 import { ChevronsUpDown } from "lucide-react"
 import { useFormContext } from "react-hook-form"
@@ -92,15 +92,19 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                         <CommandList>
                                             <CommandEmpty>No country found.</CommandEmpty>
                                             <CommandGroup>
-                                                {getSortedCountries().map(([code, { name, prefix }]) => (
+                                                {getSortedCountries().map(([code, { en, prefix }], index) => (
                                                     <CommandItem
                                                         key={code}
-                                                        value={name}
+                                                        value={en}
                                                         onSelect={() => {
                                                             countryField.onChange(prefix)
                                                             setOpen(false)
                                                             validatePhoneObject() // Validate on prefix selection
                                                         }}
+                                                        className={cn(
+                                                            "rounded-none",
+                                                            index+1 === howmanyPrimaryPrefixes ? "border-b-2 border-[#666666]" : ""
+                                                        )}
                                                     >
                                                         <Check
                                                             className={cn(
@@ -108,7 +112,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                                                 countryField.value === prefix ? "opacity-100" : "opacity-0"
                                                             )}
                                                         />
-                                                        {name} ({prefix})
+                                                        {en} ({prefix})
                                                     </CommandItem>
                                                 ))}
                                             </CommandGroup>
