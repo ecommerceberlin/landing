@@ -20,7 +20,7 @@ export function Header() {
           />
           </Link>
           <div className="uppercase text-sm font-light">
-            10 EDITION
+            {t("event.edition")}
             <br />{t("event.date")}  Messe Berlin
           </div>
         </div>

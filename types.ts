@@ -14,6 +14,7 @@ export interface PremiumItem {
 
 export interface CountryPrefix {
     en: string;
+    de: string;
     prefix: string;
 }
 
