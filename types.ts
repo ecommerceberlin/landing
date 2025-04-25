@@ -11,3 +11,12 @@ export interface PremiumItem {
     thumbnail: string;
     media: string[];
 }
+
+export interface CountryPrefix {
+    en: string;
+    prefix: string;
+}
+
+export interface CountryPrefixes {
+    [key: string]: CountryPrefix;
+}
