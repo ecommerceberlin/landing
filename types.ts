@@ -1,4 +1,3 @@
-
 export interface NowPlaying {
     enabled: boolean;
     baseLabel: string;
@@ -13,11 +12,10 @@ export interface PremiumItem {
 }
 
 export interface CountryPrefix {
+    code: string;
     en: string;
     de: string;
     prefix: string;
 }
 
-export interface CountryPrefixes {
-    [key: string]: CountryPrefix;
-}
+ 

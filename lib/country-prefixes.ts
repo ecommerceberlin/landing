@@ -1,18 +1,28 @@
 import { primaryPrefixes, countryPrefixes } from "@/settings/locale";
+import { CountryPrefix } from "@/types";
 
+const locale = process.env.NEXT_PUBLIC_LOCALE || 'en';
 
-// Helper function to get sorted entries (Germany first, then alphabetically)
+export const howmanyPrimaryPrefixes = primaryPrefixes?.length || 0
+
 export const getSortedCountries = () => {
-  const sortedRest = Object.entries(countryPrefixes).filter(([key]) => !primaryPrefixes.includes(key)).sort((a, b) => 
-    a[1].en.localeCompare(b[1].en)
-  )
-  
-  const enhancedPrimaryPrefixes = primaryPrefixes
-    .filter(prefix => countryPrefixes[prefix as keyof typeof countryPrefixes])
-    .map(prefix => [prefix, countryPrefixes[prefix as keyof typeof countryPrefixes]])
 
-  return [...enhancedPrimaryPrefixes, ...sortedRest]
+  if(howmanyPrimaryPrefixes > 8){
+    throw new Error("Primary prefixes must be less than 8")
+  }
+
+  const mapped = countryPrefixes.map(country => ({
+    name: country[locale as keyof CountryPrefix],
+    prefix: country.prefix,
+    code: country.code
+  }))
+
+  const sortedAll = mapped.sort((a, b) => a.name.localeCompare(b.name))
+
+  const sortedPrimary = sortedAll.filter(country => primaryPrefixes.includes(country.code))
+  const sortedSecondary = sortedAll.filter(country => !primaryPrefixes.includes(country.code))
+
+  return [ ...sortedPrimary, ...sortedSecondary]
 } 
 
 
-export const howmanyPrimaryPrefixes = primaryPrefixes?.length

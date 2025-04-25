@@ -92,10 +92,10 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                         <CommandList>
                                             <CommandEmpty>No country found.</CommandEmpty>
                                             <CommandGroup>
-                                                {getSortedCountries().map(([code, { en, prefix }], index) => (
+                                                {getSortedCountries().map(({ code, name, prefix }, index) => (
                                                     <CommandItem
                                                         key={code}
-                                                        value={en}
+                                                        value={name}
                                                         onSelect={() => {
                                                             countryField.onChange(prefix)
                                                             setOpen(false)
@@ -112,7 +112,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                                                 countryField.value === prefix ? "opacity-100" : "opacity-0"
                                                             )}
                                                         />
-                                                        {en} ({prefix})
+                                                        {name} ({prefix})
                                                     </CommandItem>
                                                 ))}
                                             </CommandGroup>
