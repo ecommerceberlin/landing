@@ -28,7 +28,7 @@ export const commonValidators = {
 
     if(!blockedEmailDomains || !Array.isArray(blockedEmailDomains)) return true
 
-    return !blockedEmailDomains.some(domain => val.endsWith(domain))
+    return !blockedEmailDomains.some(domain => val.includes(domain))
   }, {
     message: t("fields.email.bad_email_domain_error"),
     path: []
