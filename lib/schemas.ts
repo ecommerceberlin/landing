@@ -1,7 +1,7 @@
 import { z } from "zod"
 import { isValidPhoneNumber } from 'libphonenumber-js'
 import { t } from "@/scripts/translate"
-
+import { blockedEmailDomains } from "@/settings/app_rules"
 
 export type ZodSelectOptions = Record<string, string>
   
@@ -24,7 +24,15 @@ export const longTextFields = []
 export const commonValidators = {
   email: z.string({
     required_error: t("fields.email.error"),
-  }).email( t("fields.email.error") ),
+  }).email( t("fields.email.error") ).refine((val) => {
+
+    if(!blockedEmailDomains || !Array.isArray(blockedEmailDomains)) return true
+
+    return !blockedEmailDomains.some(domain => val.endsWith(domain))
+  }, {
+    message: t("fields.email.bad_email_domain_error"),
+    path: []
+  }),
   cname: z.string({
     required_error: t("fields.cname.error"),
   }).min(2, t("fields.cname.error")).max(255),
