@@ -17,7 +17,7 @@ export const getSortedCountries = () => {
     code: country.code
   }))
 
-  const sortedAll = mapped.sort((a, b) => a.name.localeCompare(b.name))
+  const sortedAll = mapped.sort((a, b) => a.name.localeCompare(b.name, locale, {sensitivity: 'accent'}))
 
   const sortedPrimary = sortedAll.filter(country => primaryPrefixes.includes(country.code))
   const sortedSecondary = sortedAll.filter(country => !primaryPrefixes.includes(country.code))
