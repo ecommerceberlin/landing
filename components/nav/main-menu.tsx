@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/navigation-menu';
 import { menuExhibitors } from '@/settings/menu';
 import { LocaleSwitcher } from '@/components/nav/switch-locale';
+import { MobileMenu } from "@/components/nav/mobile-menu";
 export interface MainMenuProps {
   className?: string;
 }
@@ -29,16 +30,18 @@ export interface MenuOption {
 
 export function MainMenu() {
   return (
-    <NavigationMenu className="hidden lg:block z-101 relative">
-      <NavigationMenuList>
-        <NavigationMenuItem className="h-full">
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle()," h-[7rem]")}>
-            {t("navigation.menu.about")}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+    <>
+      {/* Desktop menu */}
+      <NavigationMenu className="hidden lg:block z-101 relative">
+        <NavigationMenuList>
+          <NavigationMenuItem className="h-full">
+            <Link href="/about" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(navigationMenuTriggerStyle()," h-[7rem]")}>
+                {t("navigation.menu.about")}
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          {/* <NavigationMenuItem>
           <NavigationMenuTrigger>
             Visit
           </NavigationMenuTrigger>
@@ -72,45 +75,48 @@ export function MainMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem> */}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>{t("navigation.menu.exhibitors.title")}</NavigationMenuTrigger>
-          <NavigationMenuContent>
-          <ul className="flex flex-col gap-3 p-4 md:flex-row md:flex-wrap md:gap-4">
-              {menuExhibitors.map((component) => (
-                <ListItem
-                  key={component.href}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {/* {component.description} */}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="h-[7rem]">{t("navigation.menu.exhibitors.title")}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+            <ul className="flex flex-col gap-3 p-4 md:flex-row md:flex-wrap md:gap-4">
+                {menuExhibitors.map((component) => (
+                  <ListItem
+                    key={component.href}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {/* {component.description} */}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
 
-        <NavigationMenuItem className="h-full">
-          <Link href="/visit" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
-            {t("navigation.menu.visit")}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-
-
-        <NavigationMenuItem className="h-full">
-          <Link href="/exhibit" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
-            {t("navigation.menu.exhibit")}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-
-        <LocaleSwitcher className="h-[7rem]" />
+          <NavigationMenuItem className="h-full">
+            <Link href="/visit" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
+                {t("navigation.menu.visit")}
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
 
 
-      </NavigationMenuList>
-    </NavigationMenu>
+          <NavigationMenuItem className="h-full">
+            <Link href="/exhibit" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),"bg-ebe h-[7rem]")}>
+                {t("navigation.menu.exhibit")}
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <LocaleSwitcher className="h-[7rem]" />
+
+
+        </NavigationMenuList>
+      </NavigationMenu>
+
+      <MobileMenu />
+    </>
   );
 }
 
