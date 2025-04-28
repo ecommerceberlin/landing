@@ -11,7 +11,7 @@ export type SchemaDefinition = {
     type: SchemaDefinitionFieldType
     schema?: z.ZodType | z.ZodTypeAny | null
     description: string
-    labels?: ZodSelectOptions
+    labels?: Array<{value: string, label: string}>
 }
 
 export type FormSchemaDefinitions = Record<string, SchemaDefinition>
