@@ -3,9 +3,7 @@ import { isValidPhoneNumber } from 'libphonenumber-js'
 import { t } from "@/scripts/translate"
 import { blockedEmailDomains } from "@/settings/app_rules"
 
-export type ZodSelectOptions = Record<string, string>
-  
-export const getKeys = (obj: ZodSelectOptions) => Object.keys(obj) as [keyof typeof obj, ...Array<keyof typeof obj>]
+export type ZodSelectOptions = string[]
 
 export type SchemaDefinitionFieldType = "SWITCH" | "ACCEPT" | "TEXT" | "LONGTEXT" | "NUMBER" | "SELECT" | "PHONE" | "EMAIL"
 
@@ -18,6 +16,12 @@ export type SchemaDefinition = {
 
 export type FormSchemaDefinitions = Record<string, SchemaDefinition>
 
+export const translateSelectOptions = (options: ZodSelectOptions) => {
+  return options.map(option => ({
+    value: option,
+    label: t(option)
+  }))
+}
 
 export const longTextFields = []
 

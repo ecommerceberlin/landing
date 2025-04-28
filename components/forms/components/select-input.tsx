@@ -54,7 +54,7 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
           <SelectValue placeholder="Select an option" />
         </SelectTrigger>
         <SelectContent>
-          {Object.entries(labels || {}).map(([value, label]) => (
+          {(labels || []).map(({value, label}) => (
             <SelectItem key={value} value={value}>
               {label}
               </SelectItem>

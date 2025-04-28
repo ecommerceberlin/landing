@@ -1,56 +1,56 @@
 "use client"
 
 import { z } from "zod"
-import { ZodSelectOptions, getKeys, FormSchemaDefinitions } from "@/lib/schemas"
+import { ZodSelectOptions, FormSchemaDefinitions, translateSelectOptions } from "@/lib/schemas"
 
-export const participantTypes: ZodSelectOptions  = {
-    retailer_wholesaler: "Retailer/Wholesaler",  
-    brand_manufacturer: "Brand/Manufacturer",
-    service_provider: "Service Provider",
-    consultant: "Consultant",
-    developer: "Developer",
-    media: "Media",
-    student: "Student",
-} as const
+export const participantTypes: ZodSelectOptions  = [
+    "retailer_wholesaler", 
+    "brand_manufacturer",
+    "service_provider",
+    "consultant",
+    "developer",
+    "media",
+    "student"
+ ] as const
 
-export const companyRoles: ZodSelectOptions = {
-    student: "Student",
-    entry: "Entry",
-    manager: "Manager",
-    professional: "Professional",
-    head_of_department: "Head of Department",
-    director: "Director",
-    c_level: "C-Level",
-    board_member: "Board Member",
-    other: "Other",
-} as const
+export const companyRoles: ZodSelectOptions = [
+    "student",
+    "entry",
+    "manager",
+    "professional",
+    "head_of_department",
+    "director",
+    "c_level",
+    "board_member",
+    "other",
+] as const
 
-const objective: ZodSelectOptions = {
-    solutions: "Solutions",
-    conference: "Conference",
-    networking: "Networking",
-} as const
+const objective: ZodSelectOptions = [
+    "solutions",
+    "conference",
+    "networking",
+] as const
 
-const businessModel: ZodSelectOptions = {
-    b2b_model: "B2B Model",
-    b2c_model: "B2C Model",
-    d2c_model: "D2C Model",
-    wholesale: "Wholesale",
-    other_model: "Other Model",
-} as const
+const businessModel: ZodSelectOptions = [
+    "b2b_model",
+    "b2c_model",
+    "d2c_model",
+    "wholesale",
+    "other_model",
+] as const
 
-const employee: ZodSelectOptions = {
-    "1_20_ppl": "1-20 People",
-    "21_100_ppl": "21-100 People",
-    "101_500_ppl": "101-500 People",
-    "501_ppl": "501+ People",
-} as const
+const employee: ZodSelectOptions = [
+    "1_20_ppl",
+    "21_100_ppl",
+    "101_500_ppl",
+    "501_ppl",
+] as const
 
-const revenue: ZodSelectOptions = {
-    "0_5_revenue": "0-5M EUR Revenue",
-    "5_50_revenue": "5-50M EUR Revenue",
-    "50_revenue": ">50M EUR Revenue",
-} as const
+const revenue: ZodSelectOptions = [
+    "0_5_revenue",
+    "5_50_revenue",
+    "50_revenue",
+] as const
 
 export const visitorRegistrationSchema: FormSchemaDefinitions = {
 
@@ -92,59 +92,59 @@ export const visitorRegistrationSchema: FormSchemaDefinitions = {
 
     participant_type: {
         type: "SELECT",
-        schema: z.enum(getKeys(participantTypes), {
+        schema: z.enum(participantTypes, {
             required_error: "Please select a participant type.",
             invalid_type_error: "Invalid participant type",
             description: "User role"
         }),
         //.default(getKeys(participantTypes)[0]),
         description: "How would you describe yourself?",
-        labels: participantTypes,
+        labels: translateSelectOptions(participantTypes),
     },
 
     company_role: {
         type: "SELECT",
-        schema: z.enum(getKeys(companyRoles), {
+        schema: z.enum(companyRoles, {
             description: "Company role",
         }),
         description: "What's your job level?",
-        labels: companyRoles,
+        labels: translateSelectOptions(companyRoles),
     },
 
     objective: {
         type: "SELECT",
-        schema: z.enum(getKeys(objective), {
+        schema: z.enum(objective, {
             description: "Objective",
         }),
         description: "What's your main objective for attending?",
-        labels: objective,
+        labels: translateSelectOptions(objective),
     },  
 
     business_model: {
         type: "SELECT",
-        schema: z.enum(getKeys(businessModel), {
+        schema: z.enum(businessModel, {
             description: "Business model",
         }),
         description: "Which business model do you operate?",
-        labels: businessModel,
+        labels: translateSelectOptions(businessModel),
     },
 
     employee: {
         type: "SELECT",
-        schema: z.enum(getKeys(employee), {
+        schema: z.enum(employee, {
             description: "Employee",
         }).optional(),
         description: "How many employees does your company have?",
-        labels: employee,
+        labels: translateSelectOptions(employee),
     },  
 
     revenue: {
         type: "SELECT",
-        schema: z.enum(getKeys(revenue), {
+        schema: z.enum(revenue, {
             description: "Revenue",
         }).optional(),
         description: "What's your company's revenue?",
-        labels: revenue,
+        labels: translateSelectOptions(revenue),
     },    
     
     location: {
