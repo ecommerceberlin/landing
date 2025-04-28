@@ -27,7 +27,7 @@ export const visitDepartments: ZodSelectOptions = [
 ] as const;
 
 export const companyRoles: ZodSelectOptions = [
-    "student",
+    "student_intern",
     "entry",
     "manager",
     "professional",
@@ -64,7 +64,7 @@ const revenue: ZodSelectOptions = [
 ] as const
 
 export const industrySelect: ZodSelectOptions = [
-    "service_provider",
+    "service_provider_na",
     "agriculture",
     "automotive",
     "baby_nursery",
