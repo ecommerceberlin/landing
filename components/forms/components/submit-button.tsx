@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { useFormContext } from "react-hook-form"
 import { cn } from "@/lib/utils"
-
+import { t } from "@/scripts/translate"
 export const SubmitButton = ({className}: {className?: string}) => {
     const form = useFormContext()
     return (
@@ -12,7 +12,7 @@ export const SubmitButton = ({className}: {className?: string}) => {
         className={cn("w-1/2 h-16 text-lg cursor-pointer", className)}
         disabled={!form.formState.isValid}
       >
-        Submit
+      {t(`common.submit`)}
       </Button>
     )
 }

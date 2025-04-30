@@ -51,7 +51,7 @@ export const SelectInput: React.FC<InputProps> = ({ name, className, optional })
         value={field.value}
       >
         <SelectTrigger className={cn(className, "w-full bg-white/80")}>
-          <SelectValue placeholder="Select an option" />
+          <SelectValue placeholder={t(`common.select-an-option`)} />
         </SelectTrigger>
         <SelectContent>
           {(labels || []).map(({value, label}) => (
