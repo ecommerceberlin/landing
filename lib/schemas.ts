@@ -3,7 +3,7 @@ import { isValidPhoneNumber } from 'libphonenumber-js'
 import { t } from "@/scripts/translate"
 import { blockedEmailDomains } from "@/settings/app_rules"
 
-export type ZodSelectOptions = string[]
+export type ZodSelectOptions = [string, ...string[]]
 
 export type SchemaDefinitionFieldType = "SWITCH" | "ACCEPT" | "TEXT" | "LONGTEXT" | "NUMBER" | "SELECT" | "PHONE" | "EMAIL"
 
