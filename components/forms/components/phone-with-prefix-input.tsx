@@ -59,7 +59,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                     >
                                         {countryField.value
                                             ? countryField.value
-                                            : "Select prefix..."}
+                                            : t(`fields.${name}.select-prefix`)}
                                         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                                     </Button>
                                 </PopoverTrigger>
@@ -72,7 +72,7 @@ export function PhoneWithPrefixInput({ name, optional }: InputProps) {
                                         }}
                                     >
                                         <CommandInput 
-                                            placeholder="Search country..." 
+                                            placeholder={t(`fields.${name}.search-country`)} 
                                             className="h-9"
                                             onKeyDown={(e) => {
                                                 if (e.key === 'Tab') {
