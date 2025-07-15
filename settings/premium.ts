@@ -53,6 +53,17 @@ export const items: PremiumItem[] = [
         ]
     },
     {
+        ticketId: 3368, 
+        label: "masterclass",
+        thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1751551916/Website/PREMIUM%20SERVICES/ebe26_premium_services_masterclass/HEADER-min.jpg",
+        media: [
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1751551917/Website/PREMIUM%20SERVICES/ebe26_premium_services_masterclass/1-min.jpg", 
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1751551916/Website/PREMIUM%20SERVICES/ebe26_premium_services_masterclass/2-min.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1751551917/Website/PREMIUM%20SERVICES/ebe26_premium_services_masterclass/3-min.jpg",
+            "https://res.cloudinary.com/ecommerceberlin/image/upload/v1751551916/Website/PREMIUM%20SERVICES/ebe26_premium_services_masterclass/4-min.jpg"
+        ]
+    },
+    {
         ticketId: 3158, 
         label: "lanyards",
         thumbnail: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1741344877/Website/PREMIUM%20SERVICES/ebe26_premium_services_lanyards/HEADER%20-%20ZDJECIE%201.jpg",
@@ -152,6 +163,3 @@ export const items: PremiumItem[] = [
 
 
 ]
-
-
- 
